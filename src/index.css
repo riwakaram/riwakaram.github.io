@@ -56,6 +56,10 @@ a {
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for both hover effects */
 }
 
+.nav-link {
+    text-align: center;
+}
+
 /* Hover effect */
 .navbar-nav .nav-link:hover {
     transform: scale(1.1); /* Slightly scale the link on hover */
@@ -127,4 +131,38 @@ a {
     .bio-section {
         text-align: center;
     }
+}
+
+.home-container {
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bio-section {
+    margin-bottom: 20px;
+}
+
+.bio-section p:first-of-type {
+    margin-top: 20px; /* Adds space between the image and the paragraph */
+}
+
+.school-link,
+.company-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.school-link:hover,
+.company-link:hover {
+    text-decoration: none;
+}
+
+.bio-section p {
+    text-align: justify;
 }
