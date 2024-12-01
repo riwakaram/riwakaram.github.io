@@ -1,16 +1,12 @@
 import React from "react";
 import photo from "../Images/Photo Passeport.JPG";
+import Header from "../Components/Header";
 
 const Home = () => {
     return (
         <div className="container home-container">
             {/* Header Section */}
-            <div className="row justify-content-center text-center mb-4">
-                <h1 className="col-12 name">Riwa Karam</h1>
-                <p className="col-12 description">
-                    PhD Student at the University of California Irvine
-                </p>
-            </div>
+            <Header />
 
             {/* Main Content Section */}
             <div className="row justify-content-center align-items-center">
@@ -58,7 +54,8 @@ const Home = () => {
 
             {/* Remaining Paragraphs */}
             <div className="row">
-                <div className="col-12 bio-section">
+                <div className="col-12 bio-section text-center">
+                    <h2>Get to know me more!</h2>
                     <p>
                         I earned my Bachelor of Science in Computer Engineering
                         from the{" "}

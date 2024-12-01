@@ -1,13 +1,26 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import logo from "../Images/favicon.ico";
 
 const MyNavbar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
                 {/* Left side - Name */}
-                <Navbar.Brand>Riwa Karam</Navbar.Brand>
+                <Navbar.Brand className="d-flex align-items-center">
+                    {/* Favicon as Image */}
+                    <img
+                        src={logo}
+                        alt="logo"
+                        style={{
+                            width: "30px",
+                            height: "30px",
+                            marginRight: "10px",
+                        }}
+                    />
+                    Riwa Karam
+                </Navbar.Brand>
 
                 {/* Centered nav items */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
