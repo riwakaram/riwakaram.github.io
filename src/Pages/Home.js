@@ -46,8 +46,8 @@ const Home = () => {
                         under the guidance of Professor Magnus Egerstedt. My
                         research interests span a range of topics in robotics
                         and control, including multi-agent systems, formation
-                        control, optimization, networked control, applied
-                        computer vision, and machine learning.
+                        control, coverage control, optimization, networked
+                        control, applied computer vision, and machine learning.
                     </p>
                 </div>
             </div>
@@ -77,7 +77,7 @@ const Home = () => {
                     <p>
                         In addition to my academic background, I have practical
                         industry experience in software and systems engineering.
-                        I worked remotely as a software engineer at{" "}
+                        I worked part-time, remotely as a software engineer at{" "}
                         <a
                             href="https://www.aviaproconsulting.com/"
                             target="_blank"
@@ -86,7 +86,7 @@ const Home = () => {
                         >
                             AviaPro Consulting Inc.
                         </a>{" "}
-                        I also served as a Mechatronics and Control Systems
+                        I also interned as a Mechatronics and Control Systems
                         Engineer at{" "}
                         <a
                             href="https://www.asml.com/"

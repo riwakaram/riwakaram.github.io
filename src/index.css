@@ -86,6 +86,15 @@ a {
         position: static; /* Revert to normal flow for small screens */
         transform: none;
     }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bio-section {
+        text-align: center;
+    }
 }
 
 /* Home.css */
@@ -95,6 +104,7 @@ a {
     color: var(--text-color);
     padding: 20px;
     font-family: Arial, sans-serif;
+    margin-top: 20px;
 }
 
 /* Name and Description */
@@ -119,23 +129,6 @@ a {
 .bio-section h2 {
     font-size: 2rem;
     color: var(--accent-color);
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-    .profile-image {
-        width: 200px;
-        height: 200px;
-    }
-
-    .bio-section {
-        text-align: center;
-    }
-}
-
-.home-container {
-    margin-top: 20px;
-    color: var(--text-color);
 }
 
 .profile-image {

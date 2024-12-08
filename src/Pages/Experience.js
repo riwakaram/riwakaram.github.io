@@ -1,9 +1,10 @@
 import React from "react";
+import Header from "../Components/Header";
 
 const Experience = () => (
-    <div className="container text-center mt-5">
-        <h1>Experience</h1>
-        <p className="mt-3">Coming soon.</p>
+    <div className="container home-container">
+        {/* Header Section */}
+        <Header />
     </div>
 );
 
