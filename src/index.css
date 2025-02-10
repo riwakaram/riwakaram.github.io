@@ -8,7 +8,7 @@
 
 /* Prevent text selection and cursor change on hover */
 * {
-    user-select: none;
+    /* user-select: none; */
     pointer-events: none;
 }
 
@@ -17,7 +17,7 @@ a,
 button,
 input,
 textarea {
-    user-select: text;
+    /* user-select: text; */
     pointer-events: auto;
 }
 
@@ -158,4 +158,21 @@ a {
 
 .bio-section p {
     text-align: justify;
+}
+
+.custom-btn {
+    font-size: 0.6rem; /* Adjust font size */
+    padding: 0.25rem 0.5rem; /* Adjust padding */
+    border-radius: 0.2rem; /* Optional: makes the button slightly more rounded */
+}
+
+/* For the toggle section */
+.toggle-section {
+    max-height: 0; /* Initially collapsed */
+    overflow: hidden; /* Hide content when collapsed */
+    transition: max-height 0.5s ease-in-out; /* Smooth transition */
+}
+
+.toggle-section.open {
+    max-height: 5000px; /* Or a value large enough to fit the content */
 }

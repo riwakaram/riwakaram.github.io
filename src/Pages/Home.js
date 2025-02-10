@@ -45,9 +45,11 @@ const Home = () => {
                         </a>{" "}
                         under the guidance of Professor Magnus Egerstedt. My
                         research interests span a range of topics in robotics
-                        and control, including multi-agent systems, formation
-                        control, coverage control, optimization, networked
-                        control, applied computer vision, and machine learning.
+                        and control, including multi-agent systems,
+                        collaboration, formation control, coverage control,
+                        optimization, networked control systems, quantum
+                        computing, applied computer vision, and machine
+                        learning.
                     </p>
                 </div>
             </div>
@@ -67,12 +69,13 @@ const Home = () => {
                         >
                             University of Balamand
                         </a>
-                        , graduating as valedictorian of my class. During my
-                        undergraduate years, I actively participated in IEEE
-                        activities, technical competitions, and academic
-                        projects that honed my problem-solving and technical
-                        skills. These experiences reinforced my commitment to
-                        pursuing advanced research in engineering and robotics.
+                        , graduating as valedictorian of my class with a 3.9
+                        GPA. During my undergraduate years, I actively
+                        participated in IEEE activities, technical competitions,
+                        and academic projects that honed my problem-solving and
+                        technical skills. These experiences reinforced my
+                        commitment to pursuing advanced research in engineering
+                        and robotics.
                     </p>
                     <p>
                         In addition to my academic background, I have practical
