@@ -1,23 +1,20 @@
 :root {
     --bg-color: #1a1a1a; /* Dark gray */
-    --card-bg: #2e2e2e; /* Slightly lighter gray */
+    --card-bg: #2a2a2a; /* Slightly lighter gray for containers */
     --text-color: #ffffff; /* White */
     --accent-color: #9b4dca; /* Lighter purple */
     --border-color: #444444; /* Medium gray for borders */
 }
 
-/* Prevent text selection and cursor change on hover */
+/* Global settings */
 * {
-    /* user-select: none; */
     pointer-events: none;
 }
 
-/* Allow interaction with links, buttons, inputs, etc. */
 a,
 button,
 input,
 textarea {
-    /* user-select: text; */
     pointer-events: auto;
 }
 
@@ -38,40 +35,29 @@ a {
     text-decoration: none;
 }
 
-/* Navbar styles */
+/* Navbar Styles */
 .navbar {
-    background-color: var(--bg-color); /* Use the defined dark gray */
+    background-color: var(--bg-color);
     background-image: linear-gradient(
         135deg,
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.5)
-    ); /* Dark glossy gradient from top right to bottom left */
+    );
     box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.1),
-        0 4px 6px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
-    border-bottom: 1px solid var(--border-color); /* Optional, for more definition */
+        0 4px 6px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* Navbar link styles */
 .navbar-nav .nav-link {
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for both hover effects */
-}
-
-.nav-link {
+    transition: transform 0.3s ease, color 0.3s ease;
     text-align: center;
 }
 
-/* Hover effect */
 .navbar-nav .nav-link:hover {
-    transform: scale(1.1); /* Slightly scale the link on hover */
-    color: var(--accent-color); /* Ensure the color remains on hover */
+    transform: scale(1.1);
+    color: var(--accent-color);
 }
 
-/* Add space between the navbar links */
-.centered-nav .nav-link {
-    margin: 0 20px; /* Adjust the distance as needed */
-}
-
-/* Centered navigation */
 .centered-nav {
     position: absolute;
     left: 50%;
@@ -81,9 +67,13 @@ a {
     width: 100%;
 }
 
+.centered-nav .nav-link {
+    margin: 0 20px;
+}
+
 @media (max-width: 992px) {
     .centered-nav {
-        position: static; /* Revert to normal flow for small screens */
+        position: static;
         transform: none;
     }
 
@@ -97,17 +87,13 @@ a {
     }
 }
 
-/* Home.css */
-
 .home-container {
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 20px;
-    font-family: Arial, sans-serif;
     margin-top: 20px;
 }
 
-/* Name and Description */
 .name {
     font-size: 3rem;
     font-weight: bold;
@@ -117,32 +103,29 @@ a {
     font-size: 1.5rem;
 }
 
-/* Profile Image styling */
 .profile-image {
-    border-radius: 50%;
     width: 250px;
     height: 250px;
-    object-fit: cover;
-}
-
-/* Bio styling */
-.bio-section h2 {
-    font-size: 2rem;
-    color: var(--accent-color);
-}
-
-.profile-image {
     max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .bio-section {
     margin-bottom: 20px;
 }
 
+.bio-section h2 {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
 .bio-section p:first-of-type {
-    margin-top: 20px; /* Adds space between the image and the paragraph */
+    margin-top: 20px;
+}
+
+.bio-section p {
+    text-align: justify;
 }
 
 .school-link,
@@ -156,23 +139,97 @@ a {
     text-decoration: none;
 }
 
-.bio-section p {
-    text-align: justify;
-}
-
 .custom-btn {
-    font-size: 0.6rem; /* Adjust font size */
-    padding: 0.25rem 0.5rem; /* Adjust padding */
-    border-radius: 0.2rem; /* Optional: makes the button slightly more rounded */
+    font-size: 0.6rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
 }
 
-/* For the toggle section */
 .toggle-section {
-    max-height: 0; /* Initially collapsed */
-    overflow: hidden; /* Hide content when collapsed */
-    transition: max-height 0.5s ease-in-out; /* Smooth transition */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-in-out;
 }
 
-.toggle-section.open {
-    max-height: 5000px; /* Or a value large enough to fit the content */
+.accordion {
+    background-color: var(--bg-color);
+}
+
+.accordion-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.accordion-body {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+}
+
+.accordion-button.collapsed {
+    color: var(--accent-color);
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%239b4dca' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+.education-section {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 4px solid var(--accent-color);
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.education-title {
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    font-size: 1.4em;
+}
+
+.education-subtitle {
+    color: #bbbbbb;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.education-description {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.education-subsection-title {
+    color: var(--accent-color);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.education-list {
+    margin-left: 20px;
+    color: var(--text-color);
+    line-height: 1.6;
 }

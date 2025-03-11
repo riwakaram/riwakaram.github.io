@@ -1,79 +1,74 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../Components/Header";
 
 const About = () => {
-    const [isEducationOpen, setIsEducationOpen] = useState(false);
-    const [isCertificationsOpen, setIsCertificationsOpen] = useState(false);
-    const [isAwardsOpen, setIsAwardsOpen] = useState(false);
-    const [isLanguagesOpen, setIsLanguagesOpen] = useState(false);
-    const [isOrganizationsOpen, setIsOrganizationsOpen] = useState(false);
-
-    const toggleSection = (section) => {
-        if (section === "education") {
-            setIsEducationOpen(!isEducationOpen);
-        } else if (section === "certifications") {
-            setIsCertificationsOpen(!isCertificationsOpen);
-        } else if (section === "awards") {
-            setIsAwardsOpen(!isAwardsOpen);
-        } else if (section === "languages") {
-            setIsLanguagesOpen(!isLanguagesOpen);
-        } else if (section === "organizations") {
-            setIsOrganizationsOpen(!isOrganizationsOpen);
-        }
-    };
-
-    return (
-        <div className="container home-container">
-            {/* Header Section */}
-            <Header />
-
-            <section>
-                <div className="d-flex align-items-center gap-2">
-                    <h2 className="mb-0">Education</h2>
-                    <button
-                        className="btn btn-outline-light custom-btn"
-                        onClick={() => toggleSection("education")}
-                        aria-expanded={isEducationOpen}
-                        aria-controls="education-section"
-                    >
-                        {isEducationOpen ? "▲" : "▼"}
-                    </button>
-                </div>
-                <div
-                    id="education-section"
-                    className={`toggle-section ${
-                        isEducationOpen ? "open" : ""
-                    }`}
-                >
-                    <div>
-                        <h3 title="PhD - Ecology Robotics"></h3>
-                        <h4>
-                            University of California, Irvine | 09/2023 - PRESENT
+    const sections = [
+        {
+            id: "education",
+            title: "Education",
+            content: (
+                <div className="education-section">
+                    <div className="education-item">
+                        <h3 className="education-title">
+                            Doctor of Philosophy, Electrical and Computer
+                            Engineering
+                        </h3>
+                        <h4 className="education-subtitle">
+                            University of California, Irvine | 09/2023 - 06/2028
                         </h4>
-                        <p>
-                            Focus on multi-agent systems, collaboration,
-                            formation control, coverage control, networked
-                            control systems, quantum computing, applied computer
+                        <p className="education-description">
+                            Research in multi-agent systems, collaboration in
+                            heterogenous systems, formation control, coverage
+                            control, networked control systems, quantum
+                            computing, graph neural networks, applied computer
                             vision and machine learning.
                         </p>
                     </div>
-                    <div>
-                        <h3>M.S. in Computer Engineering</h3>
-                        <h4>
+                    <div className="education-item">
+                        <h3 className="education-title">
+                            Master of Science, Electrical and Computer
+                            Engineering
+                        </h3>
+                        <h4 className="education-subtitle">
                             University of California, Irvine | 09/2023 - 03/2025
                         </h4>
-                        <p>GPA: 3.95/4.0</p>
-                        <h5>Master Thesis:</h5>
-                        <ul>
+                        <p className="education-description">GPA: 3.95/4.0</p>
+                        <h5 className="education-subsection-title">
+                            Master Thesis:
+                        </h5>
+                        <ul className="education-list">
                             <li>
-                                <strong>Title: </strong>
+                                <strong>Title: </strong>A Graphical Interface
+                                for Specifying and Establishing Multi-Robot
+                                Formations
                             </li>
                             <li>
                                 <strong>Abstract: </strong>
+                                We introduce in this thesis a novel method that
+                                enables users to describe desired swarm for-
+                                mations in an intuitive manner through digital
+                                sketches on a graphical interface. We propose a
+                                method that uses computer vision techniques to
+                                extract relevant, critical points, rather than
+                                specifying how many robots are needed or what
+                                their pre-assigned relative displace- ments
+                                should be. The critical points are used to
+                                construct a rigid graph, and the Hungarian
+                                algorithm is then applied to solve the linear
+                                assignment problem, optimally mapping robots to
+                                formation nodes while ensuring spatial
+                                consistency and efficient deployment. We provide
+                                a theoretical analysis to ensure that the
+                                formation does not undergo unintended flips. Ex-
+                                perimental results demonstrate the effectiveness
+                                of this approach in achieving user-defined
+                                formations with high accuracy and robustness,
+                                offering a scalable and interactive solution for
+                                multi-agent coordination.
                             </li>
                         </ul>
-                        <h5>Courses</h5>
-                        <ul>
+                        <h5 className="education-subsection-title">Courses</h5>
+                        <ul className="education-list">
                             <li>
                                 Taken Courses: Computer Architecture, Design &
                                 Analysis of Algorithms, Advanced System
@@ -82,34 +77,36 @@ const About = () => {
                                 Science, Master Thesis, EECS Seminar Series.
                             </li>
                             <li>
-                                Audited Courses: Linear Systems, Optimization
+                                Audited Courses: Linear Systems, Optimization.
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>B.S. in Computer Engineering</h3>
-                        <h4>
+                    <div className="education-item">
+                        <h3 className="education-title">
+                            Bachelor of Science, Computer Engineering
+                        </h3>
+                        <h4 className="education-subtitle">
                             University of Balamand, Al-Kurah | 09/2020 - 05/2023
                         </h4>
-                        <p>
+                        <p className="education-description">
                             Completed a Bachelor's degree in Computer
-                            Engineering and graduated as valedicatorian of my
-                            class. Worked on projects involving embedded
-                            systems, computer architecture, engineering
-                            programming, and complex engineering design and
-                            programming.
+                            Engineering and graduated as valedictorian of class
+                            2023. Worked on projects involving embedded systems,
+                            computer architecture, and complex engineering
+                            design.
                         </p>
-                        <p>GPA: 3.90/4.0</p>
-                        <p>
+                        <p className="education-description">GPA: 3.9/4.0</p>
+                        <p className="education-description">
                             Activities: Varsity Volleyball Team, IEEE UoB
-                            Student Member
+                            Student Member.
                         </p>
-                        <h5>Graduation Project:</h5>
-                        <ul>
+                        <h5 className="education-subsection-title">
+                            Graduation Project:
+                        </h5>
+                        <ul className="education-list">
                             <li>
-                                <strong>Title: </strong>
-                                Gamification of Virtual Reality Kitchen
-                                Scenarios
+                                <strong>Title: </strong>Gamification of Virtual
+                                Reality Kitchen Scenarios
                             </li>
                             <li>
                                 <strong>Abstract: </strong>
@@ -144,8 +141,8 @@ const About = () => {
                                 combination for this project.
                             </li>
                         </ul>
-                        <h5>Courses</h5>
-                        <ul>
+                        <h5 className="education-subsection-title">Courses</h5>
+                        <ul className="education-list">
                             <li>
                                 Calculus I, Calculus II, Circuit Analysis I,
                                 Circuit Analysis Lab, Computer Architecture,
@@ -153,7 +150,7 @@ const About = () => {
                                 Lab, Cybersecurity, Cybersecurity Lab,
                                 Differential Equations, Electrical Simulation &
                                 Design, Electronics I, Electronics Lab,
-                                Engineering Drawing, Engineering Mangement &
+                                Engineering Drawing, Engineering Management &
                                 Economics, English Communication Skills III,
                                 Information Networking I, Information Skills &
                                 Search Techniques, Instrumentation Lab,
@@ -175,177 +172,257 @@ const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <h3>
+                    <div className="education-item">
+                        <h3 className="education-title">
                             French & Lebanese Baccalaureates, General Sciences
                         </h3>
-                        <h4>
+                        <h4 className="education-subtitle">
                             Collège de la Sainte Famille Française Fanar |
                             09/2005 - 06/2020
                         </h4>
-                        <p>
+                        <p className="education-description">
                             Graduated High School with both the French and the
-                            Lebanese Baccalaureates with High Distinction
+                            Lebanese Baccalaureates with High Distinction.
                         </p>
-                        <p>GPA: 17/20</p>
-                        <p>
+                        <p className="education-description">GPA: 17/20</p>
+                        <p className="education-description">
                             Activities: Volleyball Team Captain and Opposite
                             Hitter, Ping-Pong Team, Gymnastics Team, Guides du
-                            Liban
+                            Liban.
                         </p>
                     </div>
-                    <div>
-                        <h3>Violin</h3>
-                        <h4>
+                    <div className="education-item">
+                        <h3 className="education-title">Violin</h3>
+                        <h4 className="education-subtitle">
                             Lebanese National Higher Conservatory of Music |
                             09/2011 - 06/2016
                         </h4>
-                        <p>
+                        <p className="education-description">
                             Learned the art of playing the violin for 5 years
                             (reached the 5th grade) by playing classical music
-                            from famous european artists, in addition to taking
-                            courses in Music Theory, Solfège, Harmonies, etc.
+                            from famous European artists, as well as taking
+                            courses in Music Theory, Solfège, and Harmonies.
                         </p>
                     </div>
                 </div>
-            </section>
-
-            <section>
-                <h2>Licenses and Certifications</h2>
-                <ul>
-                    <li>
-                        <strong>ZAKA AI Bootcamp</strong> | ZAKA | Issued Sep
-                        2023
-                        <p>
-                            Skills: Artificial Intelligence (AI), Computer
-                            Vision, Machine Learning, Natural Language
-                            Processing (NLP), Deep Learning, Data Science, Time
-                            Series Analysis
-                        </p>
-                    </li>
-                    <li>
-                        <strong>
-                            IEEE Grand Tech 2023 Certification of Attendance
-                        </strong>
-                        | IEEE Computer Society
-                        <p>SKills: Virtual Reality (VR), Metaverse</p>
-                    </li>
-                    <li>
-                        <strong>Introduction to Sinulink</strong> | ASME
-                        University of Balamand Student Section | Issued May 2022
-                        <p></p>
-                    </li>
-                    <li>
-                        <strong>
-                            First Place Winner in the Lebanon IoT & AI Challenge
-                            2021
-                        </strong>
-                        | Arab IoT & AI Challenge | Issued Nov 2021
-                        <p></p>
-                    </li>
-                    <li>
-                        <strong>Simulink Onramp</strong> | Mathworks | Issued
-                        Apr 2021
-                    </li>
-                    <li>
-                        <strong>MATLAB Onramp</strong> | Mathworks | Issued Feb
-                        2021
-                    </li>
-                    <li>
-                        <strong>Dean's Honor List</strong> | Faculty of
-                        Engineering at the University of Balamand, Al-Kurah
-                        <ul>
-                            <li>Spring 2023</li>
-                            <li>Fall 2022</li>
-                            <li>Spring 2022</li>
-                            <li>Fall 2021</li>
-                            <li>Spring 2021</li>
-                            <li>Fall 2020</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>IELTS Academic</strong> | Beirut | Issued Sep
-                        2022 - Expired Sep 2024
-                        <p>
+            ),
+        },
+        {
+            id: "certifications",
+            title: "Licenses and Certifications",
+            content: (
+                <div>
+                    <ul>
+                        <li>
+                            <strong>ZAKA AI Bootcamp</strong> | ZAKA | Issued
+                            Sep 2023
                             <ul>
-                                <li>Score: 8.0/9.0</li>
-                                <li>Listening: 9.0</li>
-                                <li>Reading: 8.0</li>
-                                <li>Writing: 6.5</li>
-                                <li>Speaking: 7.5</li>
+                                <li style={{ margin: 0 }}>
+                                    Artificial Intelligence
+                                </li>
+                                <li style={{ margin: 0 }}>Computer Vision</li>
+                                <li style={{ margin: 0 }}>Machine Learning</li>
+                                <li style={{ margin: 0 }}>
+                                    Natural Language Processing
+                                </li>
+                                <li style={{ margin: 0 }}>Deep Learning</li>
+                                <li style={{ margin: 0 }}>Data Science</li>
+                                <li style={{ margin: 0 }}>
+                                    Time Series Analysis
+                                </li>
                             </ul>
-                        </p>
-                    </li>
-                    <li>
-                        <strong>SAT</strong> | Beirut | Issued Dec 2018
-                        <p>
+                        </li>
+                        <li>
+                            <strong>
+                                IEEE Grand Tech 2023 Certification of Attendance
+                            </strong>{" "}
+                            | IEEE Computer Society | Issued Jun 2023
                             <ul>
-                                <li>Score: 1300/1600</li>
-                                <li>
+                                <li style={{ margin: 0 }}>Virtual Reality</li>
+                                <li style={{ margin: 0 }}>Metaverse</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Introduction to Simulink</strong> | ASME
+                            University of Balamand Student Section | Issued May
+                            2022
+                        </li>
+                        <li>
+                            <strong>
+                                First Place Winner in the Lebanon IoT & AI
+                                Challenge 2021
+                            </strong>{" "}
+                            | Arab IoT & AI Challenge | Issued Nov 2021
+                        </li>
+                        <li>
+                            <strong>Simulink Onramp</strong> | Mathworks |
+                            Issued Apr 2021
+                        </li>
+                        <li>
+                            <strong>MATLAB Onramp</strong> | Mathworks | Issued
+                            Feb 2021
+                        </li>
+                        <li>
+                            <strong>Dean's Honor List</strong> | Faculty of
+                            Engineering at the University of Balamand, Al-Kurah
+                            <ul>
+                                <li style={{ margin: 0 }}>Spring 2023</li>
+                                <li style={{ margin: 0 }}>Fall 2022</li>
+                                <li style={{ margin: 0 }}>Spring 2022</li>
+                                <li style={{ margin: 0 }}>Fall 2021</li>
+                                <li style={{ margin: 0 }}>Spring 2021</li>
+                                <li style={{ margin: 0 }}>Fall 2020</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>IELTS Academic</strong> | Beirut | Issued
+                            Sep 2022 - Expired Sep 2024
+                            <ul>
+                                <li style={{ margin: 0 }}>Score: 8.0/9.0</li>
+                                <li style={{ margin: 0 }}>Listening: 9.0</li>
+                                <li style={{ margin: 0 }}>Reading: 8.0</li>
+                                <li style={{ margin: 0 }}>Writing: 6.5</li>
+                                <li style={{ margin: 0 }}>Speaking: 7.5</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>SAT</strong> | Beirut | Issued Dec 2018
+                            <ul>
+                                <li style={{ margin: 0 }}>Score: 1300/1600</li>
+                                <li style={{ margin: 0 }}>
                                     Evidence-Based Reading and Writing Score:
                                     610/800
                                 </li>
-                                <li>Math Score: 690/800</li>
+                                <li style={{ margin: 0 }}>
+                                    Math Score: 690/800
+                                </li>
                             </ul>
-                        </p>
-                    </li>
-                </ul>
-            </section>
+                        </li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            id: "awards",
+            title: "Awards",
+            content: (
+                <div>
+                    <ul>
+                        <li>
+                            <strong>
+                                Faculty Award for Academic Excellence
+                            </strong>{" "}
+                            | Faculty of Engineering at the University of
+                            Balamand | Jun 2023
+                            <p>
+                                Recipient of the Faculty Excellent Achievement
+                                Award for obtaining the highest GPA among all
+                                graduating computer engineering undergraduate
+                                students of class 2023.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            id: "languages",
+            title: "Languages",
+            content: (
+                <div>
+                    <ul>
+                        <li>
+                            <strong>Arabic</strong>
+                            <p>Native language</p>
+                        </li>
+                        <li>
+                            <strong>French</strong>
+                            <p>Native language, language of education.</p>
+                        </li>
+                        <li>
+                            <strong>English</strong>
+                            <p>
+                                Fluent in both spoken and written English, used
+                                in academic and professional contexts.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Spanish</strong>
+                            <p>Beginner in both speaking and writing.</p>
+                        </li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            id: "organizations",
+            title: "Organizations",
+            content: (
+                <div>
+                    <ul>
+                        <li>
+                            <strong>Member, IEEE</strong> | 05/2022 - Present
+                            <ul>
+                                <li style={{ margin: 0 }}>Computer Society</li>
+                                <li style={{ margin: 0 }}>
+                                    Women In Engineering
+                                </li>
+                                <li style={{ margin: 0 }}>
+                                    Controls System Society
+                                </li>
+                                <li style={{ margin: 0 }}>
+                                    Robotics and Automation Society
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Les Guides du Liban</strong> | 09/2009 -
+                            08/2015
+                        </li>
+                    </ul>
+                </div>
+            ),
+        },
+    ];
 
-            <section>
-                <h2>Awards</h2>
-                <ul>
-                    <li>
-                        <strong>Faculty Award for Academic Excellence</strong> |
-                        Faculty of Engineering at the Univerity of Balamand |
-                        2023
-                        <p>
-                            Recipient of the Faculty Excellent Achievement Award
-                            for obtaining the highest GPA between all the
-                            graduating computer engineering undergraduate
-                            students of class 2023.
-                        </p>
-                    </li>
-                </ul>
-            </section>
+    return (
+        <div className="container home-container">
+            {/* Header Section */}
+            <Header />
 
-            <section>
-                <h2>Languages</h2>
-                <ul>
-                    <li>
-                        <strong>Arabic</strong> (Native)
-                        <p>Native language</p>
-                    </li>
-                    <li>
-                        <strong>French</strong> (Native)
-                        <p>Native language, language of education.</p>
-                    </li>
-                    <li>
-                        <strong>English</strong> (Fluent)
-                        <p>
-                            Fluent in both spoken and written English, used in
-                            academic and professional contexts.
-                        </p>
-                    </li>
-                    <li>
-                        <strong>Spanish</strong> (Beginner)
-                        <p>Beginner in both speaking and writing.</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <h2>Organizations</h2>
-                <ul>
-                    <li>
-                        <strong>Member, IEEE</strong> | 05/2022 - PRESENT
-                    </li>
-                    <li>
-                        <strong>Les Guides du Liban</strong> | 09/2009 - 08/2015
-                    </li>
-                </ul>
-            </section>
+            <div className="accordion" id="accordionExample">
+                {sections.map((section, index) => (
+                    <div className="accordion-item" key={section.id}>
+                        <h1
+                            className="accordion-header"
+                            id={`heading-${section.id}`}
+                        >
+                            <button
+                                className="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target={`#collapse-${section.id}`}
+                                aria-expanded="false"
+                                aria-controls={`collapse-${section.id}`}
+                            >
+                                {section.title}
+                            </button>
+                        </h1>
+                        <div
+                            id={`collapse-${section.id}`}
+                            className="accordion-collapse collapse"
+                            aria-labelledby={`heading-${section.id}`}
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div className="accordion-body">
+                                {section.content}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
+
 export default About;
