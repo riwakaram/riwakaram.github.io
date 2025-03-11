@@ -1,44 +1,24 @@
-if (process.env.GENERATE_SITEMAP === "true") {
-    const extensionsToIgnore = [
-        ".jpg",
-        ".jpeg",
-        ".png",
-        ".gif",
-        ".pdf",
-        ".ico",
-    ];
-    extensionsToIgnore.forEach((ext) => {
-        require.extensions[ext] = () => {};
-        require.extensions[ext.toUpperCase()] = () => {};
-    });
-}
+const { SitemapStream, streamToPromise } = require("sitemap");
+const { Readable } = require("stream");
+const fs = require("fs");
 
-require("@babel/register")({
-    presets: ["@babel/preset-env", "@babel/preset-react"],
-    extensions: [".js", ".jsx"],
-    ignore: [/node_modules/],
-});
+const links = [
+    { url: "/", changefreq: "daily", priority: 1.0 },
+    { url: "/about", changefreq: "monthly", priority: 0.8 },
+    { url: "/experience", changefreq: "monthly", priority: 0.8 },
+    { url: "/publications", changefreq: "monthly", priority: 0.8 },
+    { url: "/contact", changefreq: "monthly", priority: 0.8 },
+];
 
-const router = require("./src/App").default;
-const Sitemap = require("react-router-sitemap").default;
-
-const sitemapInstance = new Sitemap(router).build(
-    "https://riwakaram.github.io"
-);
-
-if (sitemapInstance && sitemapInstance.urls) {
-    sitemapInstance.urls.push({
-        loc: "https://riwakaram.github.io/about",
-    });
-    sitemapInstance.urls.push({
-        loc: "https://riwakaram.github.io/experience",
-    });
-    sitemapInstance.urls.push({
-        loc: "https://riwakaram.github.io/publications",
-    });
-    sitemapInstance.urls.push({
-        loc: "https://riwakaram.github.io/contact",
-    });
-}
-
-sitemapInstance.save("./public/sitemap.xml");
+(async () => {
+    try {
+        const stream = new SitemapStream({
+            hostname: "https://riwakaram.github.io",
+        });
+        const xml = await streamToPromise(Readable.from(links).pipe(stream));
+        fs.writeFileSync("./public/sitemap.xml", xml.toString());
+        console.log("Sitemap successfully generated.");
+    } catch (error) {
+        console.error("Error generating sitemap:", error);
+    }
+})();
