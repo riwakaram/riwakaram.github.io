@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.1bdc54f8.css",
+    "main.css": "/static/css/main.8572e0dc.css",
     "main.js": "/static/js/main.bc10ca54.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/Photo Passeport.JPG": "/static/media/Photo Passeport.56afa5ac5ccd9d7cd742.JPG",
     "static/media/RiwaKaram_Resume.pdf": "/static/media/RiwaKaram_Resume.d2f55b48703f38f21fd1.pdf",
     "static/media/favicon.ico": "/static/media/favicon.888841408681c1ee289a.ico",
     "index.html": "/index.html",
-    "main.1bdc54f8.css.map": "/static/css/main.1bdc54f8.css.map",
+    "main.8572e0dc.css.map": "/static/css/main.8572e0dc.css.map",
     "main.bc10ca54.js.map": "/static/js/main.bc10ca54.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bdc54f8.css",
+    "static/css/main.8572e0dc.css",
     "static/js/main.bc10ca54.js"
   ]
 }
