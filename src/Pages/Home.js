@@ -19,13 +19,12 @@ const Home = () => {
                     />
                 </div>
 
-                {/* First Paragraph */}
+                {/* Bio Section */}
                 <div className="col-12 col-lg-6 bio-section text-center text-lg-left">
                     <h2>Bio</h2>
                     <p>
                         I am a second-year Ph.D. student in the Electrical
-                        Engineering and Computer Science (EECS) Department at
-                        the{" "}
+                        Engineering and Computer Science (EECS) Department at{" "}
                         <a
                             href="https://uci.edu/"
                             target="_blank"
@@ -89,7 +88,7 @@ const Home = () => {
                         >
                             AviaPro Consulting Inc.
                         </a>{" "}
-                        I also interned as a Mechatronics and Control Systems
+                        and interned as a Mechatronics and Control Systems
                         Engineer at{" "}
                         <a
                             href="https://www.asml.com/"
@@ -102,7 +101,7 @@ const Home = () => {
                         , focusing on high-precision systems, where I gained
                         expertise in modeling, control design, and force
                         estimation using techniques such as Gaussian Process
-                        Regression. I also tutored back in my undergrad years.
+                        Regression. I also tutored during my undergrad years.
                     </p>
                     <p>
                         Outside of my academic and professional endeavors, I am
@@ -117,6 +116,31 @@ const Home = () => {
                         creative. These diverse interests reflect my commitment
                         to maintaining a well-rounded and balanced approach to
                         life.
+                    </p>
+                </div>
+            </div>
+
+            {/* Research Keywords and Interests Section */}
+            <div className="row">
+                <div className="col-12 bio-section text-center">
+                    <h2>Research Keywords</h2>
+                    <p>
+                        <em>
+                            Multi-agent Systems, Collaboration, Human-Swarm
+                            Interaction, Networked Control Systems, Applied
+                            Computer Vision, Graph Neural Networks
+                        </em>
+                    </p>
+                    <h2>Research Interests</h2>
+                    <p>
+                        My research focuses on developing collaborative
+                        algorithms and frameworks for heterogenous multi-robot
+                        systems, enhancing human-robot collaboration, exploring
+                        solutions in ecological robotics, and leverage graph
+                        neural networks for learning robotic behaviors. I am
+                        particularly interested in bridging theoretical insights
+                        with practical applications in the fields of control and
+                        robotics.
                     </p>
                 </div>
             </div>

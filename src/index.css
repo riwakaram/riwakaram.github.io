@@ -8,6 +8,10 @@
 
 /* Global settings */
 * {
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
     pointer-events: none;
 }
 
@@ -35,6 +39,11 @@ a {
     text-decoration: none;
 }
 
+p,
+li {
+    text-align: justify;
+}
+
 /* Navbar Styles */
 .navbar {
     background-color: var(--bg-color);
@@ -43,9 +52,9 @@ a {
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.5)
     );
-    box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.1),
-        0 4px 6px rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid var(--border-color);
+    box-shadow: inset 0 0.2rem 0.5rem rgba(255, 255, 255, 0.1),
+        0 0.4rem 0.6rem rgba(0, 0, 0, 0.5);
+    border-bottom: 0.1rem solid var(--border-color);
 }
 
 .navbar-nav .nav-link {
@@ -68,18 +77,13 @@ a {
 }
 
 .centered-nav .nav-link {
-    margin: 0 20px;
+    margin: 1.5rem;
 }
 
 @media (max-width: 992px) {
     .centered-nav {
         position: static;
         transform: none;
-    }
-
-    .profile-image {
-        width: 200px;
-        height: 200px;
     }
 
     .bio-section {
@@ -90,8 +94,7 @@ a {
 .home-container {
     background-color: var(--bg-color);
     color: var(--text-color);
-    padding: 20px;
-    margin-top: 20px;
+    padding: 3rem;
 }
 
 .name {
@@ -101,18 +104,19 @@ a {
 
 .description {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 20rem;
+    height: 20rem;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 .bio-section {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .bio-section h2 {
@@ -121,7 +125,7 @@ a {
 }
 
 .bio-section p:first-of-type {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .bio-section p {
@@ -157,13 +161,13 @@ a {
 
 .accordion-item {
     background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 0.1rem solid var(--border-color);
 }
 
 .accordion-button {
     background-color: var(--card-bg);
     color: var(--text-color);
-    border: 1px solid var(--border-color);
+    border: 0.1rem solid var(--border-color);
 }
 
 .accordion-button:not(.collapsed) {
@@ -174,7 +178,7 @@ a {
 .accordion-body {
     background-color: var(--card-bg);
     color: var(--text-color);
-    border-top: 1px solid var(--border-color);
+    border-top: 0.1rem solid var(--border-color);
 }
 
 .accordion-button.collapsed {
@@ -190,31 +194,31 @@ a {
 /* Container for the whole card section */
 .card-section {
     background-color: var(--card-bg);
-    padding: 20px;
-    border-radius: 8px;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 /* Each card item */
 .card-item {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-left: 4px solid var(--accent-color);
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 0.3rem solid var(--accent-color);
     background-color: var(--bg-color);
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.7);
 }
 
 /* Title styling */
 .card-title {
     color: var(--accent-color);
-    margin-bottom: 5px;
+    margin-bottom: 0.2rem;
     font-size: 1.4em;
 }
 
 /* Subtitle styling */
 .card-subtitle {
     color: #bbbbbb;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     font-size: 1.1em;
 }
 
@@ -227,7 +231,7 @@ a {
 /* Subsection titles within a card item */
 .card-subsection-title {
     color: var(--accent-color);
-    margin-top: 10px;
+    margin-top: 0rem;
     margin-bottom: 5px;
     font-size: 1.2em;
 }
@@ -237,4 +241,61 @@ a {
     margin-left: 20px;
     color: var(--text-color);
     line-height: 1.6;
+}
+
+.contact-wrapper {
+    margin-top: 40px;
+    text-align: center; /* Centers the heading/intro, not the row content */
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Card container is centered horizontally */
+.contact-info {
+    max-width: 33rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Dark card styling */
+.contact-card-item {
+    padding: 1.5rem;
+    border-left: 0.3rem solid var(--accent-color);
+    background-color: var(--bg-color);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.7);
+}
+
+/* One row per label/link pair */
+.contact-row {
+    display: flex;
+    align-items: baseline;
+    margin: 0.2rem 0;
+    gap: 1.5rem; /* Space between columns */
+}
+
+/* White label, right-aligned, fixed width */
+.contact-row strong {
+    width: 10rem;
+    text-align: right;
+    color: #ffffff;
+}
+
+/* Purple link, left-aligned, flexible width */
+.contact-row a {
+    max-width: 14rem;
+    flex: 1;
+    text-align: left;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.contact-row a:hover {
+    text-decoration: underline;
 }

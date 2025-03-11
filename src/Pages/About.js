@@ -24,6 +24,10 @@ const About = () => {
                             computing, graph neural networks, applied computer
                             vision and machine learning.
                         </p>
+                        <ul className="card-list">
+                            <li>UCI Robot Ecology Lab</li>
+                            <li>PI: Professor Magnus Egerstedt</li>
+                        </ul>
                     </div>
                     <div className="card-item">
                         <h3 className="card-title">
@@ -33,7 +37,13 @@ const About = () => {
                         <h4 className="card-subtitle">
                             University of California, Irvine | 09/2023 - 03/2025
                         </h4>
-                        <p className="card-description">GPA: 3.95/4.0</p>
+                        <p className="card-descripton">
+                            Thesis and research based master's degree: courses,
+                            seminars, and thesis requirements.
+                        </p>
+                        <ul className="card-list">
+                            <li>GPA: 3.95/4.0</li>
+                        </ul>
                         <h5 className="card-subsection-title">
                             Master Thesis:
                         </h5>
@@ -96,11 +106,13 @@ const About = () => {
                             computer architecture, and complex engineering
                             design.
                         </p>
-                        <p className="card-description">GPA: 3.9/4.0</p>
-                        <p className="card-description">
-                            Activities: Varsity Volleyball Team, IEEE UoB
-                            Student Member.
-                        </p>
+                        <ul className="card-list">
+                            <li>GPA: 3.9/4.0</li>
+                            <li>
+                                Activities: Varsity Volleyball Team, IEEE UoB
+                                Student Member.
+                            </li>
+                        </ul>
                         <h5 className="card-subsection-title">
                             Graduation Project:
                         </h5>
@@ -185,12 +197,14 @@ const About = () => {
                             Graduated High School with both the French and the
                             Lebanese Baccalaureates with High Distinction.
                         </p>
-                        <p className="card-description">GPA: 17/20</p>
-                        <p className="card-description">
-                            Activities: Volleyball Team Captain and Opposite
-                            Hitter, Ping-Pong Team, Gymnastics Team, Guides du
-                            Liban.
-                        </p>
+                        <ul className="card-list">
+                            <li>GPA: 17/20</li>
+                            <li>
+                                Activities: Volleyball Team Captain and Opposite
+                                Hitter, Ping-Pong Team, Gymnastics Team, Guides
+                                du Liban.
+                            </li>
+                        </ul>
                     </div>
                     <div className="card-item">
                         <h3 className="card-title">Violin</h3>
@@ -255,6 +269,7 @@ const About = () => {
                         <h4 className="card-subtitle">
                             Arab IoT & AI Challenge | Issued Nov 2021
                         </h4>
+                        <p className="card-description">1st out of 12 teams</p>
                     </div>
                     <div className="card-item">
                         <h3 className="card-title">Simulink Onramp</h3>
@@ -318,6 +333,20 @@ const About = () => {
             title: "Awards",
             content: (
                 <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">
+                            UCI EECS Department Fellowship
+                        </h3>
+                        <h4 className="card-subtitle">
+                            Electrical Engineering and Computer Science
+                            Department at the University of California, Irvine
+                        </h4>
+                        <ul className="card-list">
+                            <li>Winter 2025</li>
+                            <li>Fall 2024</li>
+                            <li>Fall 2023</li>
+                        </ul>
+                    </div>
                     <div className="card-item">
                         <h3 className="card-title">
                             Faculty Award for Academic Excellence
@@ -385,6 +414,10 @@ const About = () => {
                     <div className="card-item">
                         <h3 className="card-title">Les Guides du Liban</h3>
                         <h4 className="card-subtitle">09/2009 - 08/2015</h4>
+                        <ul className="card-list">
+                            <li>Team Leader</li>
+                            <li>Member</li>
+                        </ul>
                     </div>
                 </div>
             ),

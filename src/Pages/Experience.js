@@ -13,6 +13,20 @@ const Experience = () => {
                     <div className="card-item">
                         <h3 className="card-title">ASML, Inc.</h3>
                         <h4 className="card-subtitle">
+                            Mechatronics Research Engineer Intern
+                        </h4>
+                        <p className="card-description">
+                            June 2025 - September 2025 | Wilton, CT
+                        </p>
+                        {/* <ul className="card-list">
+                            
+                        </ul> */}
+                    </div>
+
+                    {/* ASML Card */}
+                    <div className="card-item">
+                        <h3 className="card-title">ASML, Inc.</h3>
+                        <h4 className="card-subtitle">
                             Mechatronics and Control Systems Engineer Intern
                         </h4>
                         <p className="card-description">
@@ -88,7 +102,32 @@ const Experience = () => {
                             Graduate Student Researcher
                         </h4>
                         <p className="card-description">
-                            September 2023 - Present | Irvine, CA
+                            April 2025 - June 2025 | Irvine, CA
+                        </p>
+                        <ul className="card-list">
+                            <li>
+                                Conducting research in collaborative
+                                heterogenous multi-agent systems, graph neural
+                                networks, and reinforcement learning
+                            </li>
+                            <li>
+                                Working on multiple projects based on
+                                collaboration in multi-agent systems, coverage
+                                control, graph neural networks, and applied
+                                machine learning
+                            </li>
+                        </ul>
+                    </div>
+                    {/* University of California, Irvine Card */}
+                    <div className="card-item">
+                        <h3 className="card-title">
+                            University of California, Irvine
+                        </h3>
+                        <h4 className="card-subtitle">
+                            Graduate Student Researcher
+                        </h4>
+                        <p className="card-description">
+                            January 2024 - June 2024 | Irvine, CA
                         </p>
                         <ul className="card-list">
                             <li>
