@@ -1,12 +1,8 @@
 import React from "react";
 import Header from "../Components/Header";
+import Photo from "../Images/Photo Passeport.JPG";
 
 const Home = () => {
-    let photoUrl = "";
-    if (process.env.GENERATE_SITEMAP !== "true") {
-        // Use dynamic require so Node doesn't try to process it during sitemap generation
-        photoUrl = require("../Images/Photo Passeport.JPG").default;
-    }
     return (
         <div className="container home-container">
             {/* Header Section */}
@@ -16,13 +12,11 @@ const Home = () => {
             <div className="row justify-content-center align-items-center">
                 {/* Image Section */}
                 <div className="col-12 col-lg-6 image-section mb-4 mb-lg-0 d-flex justify-content-center">
-                    {photoUrl && (
-                        <img
-                            src={photoUrl}
-                            alt="Riwa Karam"
-                            className="profile-image img-fluid"
-                        />
-                    )}
+                    <img
+                        src={Photo}
+                        alt="Riwa Karam"
+                        className="profile-image img-fluid"
+                    />
                 </div>
 
                 {/* Bio Section */}
