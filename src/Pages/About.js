@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
+import Accordion from "../Components/Accordion";
 
 const About = () => {
     const sections = [
@@ -7,16 +8,16 @@ const About = () => {
             id: "education",
             title: "Education",
             content: (
-                <div className="education-section">
-                    <div className="education-item">
-                        <h3 className="education-title">
+                <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">
                             Doctor of Philosophy, Electrical and Computer
                             Engineering
                         </h3>
-                        <h4 className="education-subtitle">
+                        <h4 className="card-subtitle">
                             University of California, Irvine | 09/2023 - 06/2028
                         </h4>
-                        <p className="education-description">
+                        <p className="card-description">
                             Research in multi-agent systems, collaboration in
                             heterogenous systems, formation control, coverage
                             control, networked control systems, quantum
@@ -24,19 +25,19 @@ const About = () => {
                             vision and machine learning.
                         </p>
                     </div>
-                    <div className="education-item">
-                        <h3 className="education-title">
+                    <div className="card-item">
+                        <h3 className="card-title">
                             Master of Science, Electrical and Computer
                             Engineering
                         </h3>
-                        <h4 className="education-subtitle">
+                        <h4 className="card-subtitle">
                             University of California, Irvine | 09/2023 - 03/2025
                         </h4>
-                        <p className="education-description">GPA: 3.95/4.0</p>
-                        <h5 className="education-subsection-title">
+                        <p className="card-description">GPA: 3.95/4.0</p>
+                        <h5 className="card-subsection-title">
                             Master Thesis:
                         </h5>
-                        <ul className="education-list">
+                        <ul className="card-list">
                             <li>
                                 <strong>Title: </strong>A Graphical Interface
                                 for Specifying and Establishing Multi-Robot
@@ -67,8 +68,8 @@ const About = () => {
                                 multi-agent coordination.
                             </li>
                         </ul>
-                        <h5 className="education-subsection-title">Courses</h5>
-                        <ul className="education-list">
+                        <h5 className="card-subsection-title">Courses</h5>
+                        <ul className="card-list">
                             <li>
                                 Taken Courses: Computer Architecture, Design &
                                 Analysis of Algorithms, Advanced System
@@ -81,29 +82,29 @@ const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="education-item">
-                        <h3 className="education-title">
+                    <div className="card-item">
+                        <h3 className="card-title">
                             Bachelor of Science, Computer Engineering
                         </h3>
-                        <h4 className="education-subtitle">
+                        <h4 className="card-subtitle">
                             University of Balamand, Al-Kurah | 09/2020 - 05/2023
                         </h4>
-                        <p className="education-description">
+                        <p className="card-description">
                             Completed a Bachelor's degree in Computer
                             Engineering and graduated as valedictorian of class
                             2023. Worked on projects involving embedded systems,
                             computer architecture, and complex engineering
                             design.
                         </p>
-                        <p className="education-description">GPA: 3.9/4.0</p>
-                        <p className="education-description">
+                        <p className="card-description">GPA: 3.9/4.0</p>
+                        <p className="card-description">
                             Activities: Varsity Volleyball Team, IEEE UoB
                             Student Member.
                         </p>
-                        <h5 className="education-subsection-title">
+                        <h5 className="card-subsection-title">
                             Graduation Project:
                         </h5>
-                        <ul className="education-list">
+                        <ul className="card-list">
                             <li>
                                 <strong>Title: </strong>Gamification of Virtual
                                 Reality Kitchen Scenarios
@@ -141,8 +142,8 @@ const About = () => {
                                 combination for this project.
                             </li>
                         </ul>
-                        <h5 className="education-subsection-title">Courses</h5>
-                        <ul className="education-list">
+                        <h5 className="card-subsection-title">Courses</h5>
+                        <ul className="card-list">
                             <li>
                                 Calculus I, Calculus II, Circuit Analysis I,
                                 Circuit Analysis Lab, Computer Architecture,
@@ -172,32 +173,32 @@ const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="education-item">
-                        <h3 className="education-title">
+                    <div className="card-item">
+                        <h3 className="card-title">
                             French & Lebanese Baccalaureates, General Sciences
                         </h3>
-                        <h4 className="education-subtitle">
+                        <h4 className="card-subtitle">
                             Collège de la Sainte Famille Française Fanar |
                             09/2005 - 06/2020
                         </h4>
-                        <p className="education-description">
+                        <p className="card-description">
                             Graduated High School with both the French and the
                             Lebanese Baccalaureates with High Distinction.
                         </p>
-                        <p className="education-description">GPA: 17/20</p>
-                        <p className="education-description">
+                        <p className="card-description">GPA: 17/20</p>
+                        <p className="card-description">
                             Activities: Volleyball Team Captain and Opposite
                             Hitter, Ping-Pong Team, Gymnastics Team, Guides du
                             Liban.
                         </p>
                     </div>
-                    <div className="education-item">
-                        <h3 className="education-title">Violin</h3>
-                        <h4 className="education-subtitle">
+                    <div className="card-item">
+                        <h3 className="card-title">Violin</h3>
+                        <h4 className="card-subtitle">
                             Lebanese National Higher Conservatory of Music |
                             09/2011 - 06/2016
                         </h4>
-                        <p className="education-description">
+                        <p className="card-description">
                             Learned the art of playing the violin for 5 years
                             (reached the 5th grade) by playing classical music
                             from famous European artists, as well as taking
@@ -211,94 +212,104 @@ const About = () => {
             id: "certifications",
             title: "Licenses and Certifications",
             content: (
-                <div>
-                    <ul>
-                        <li>
-                            <strong>ZAKA AI Bootcamp</strong> | ZAKA | Issued
-                            Sep 2023
-                            <ul>
-                                <li style={{ margin: 0 }}>
-                                    Artificial Intelligence
-                                </li>
-                                <li style={{ margin: 0 }}>Computer Vision</li>
-                                <li style={{ margin: 0 }}>Machine Learning</li>
-                                <li style={{ margin: 0 }}>
-                                    Natural Language Processing
-                                </li>
-                                <li style={{ margin: 0 }}>Deep Learning</li>
-                                <li style={{ margin: 0 }}>Data Science</li>
-                                <li style={{ margin: 0 }}>
-                                    Time Series Analysis
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>
-                                IEEE Grand Tech 2023 Certification of Attendance
-                            </strong>{" "}
-                            | IEEE Computer Society | Issued Jun 2023
-                            <ul>
-                                <li style={{ margin: 0 }}>Virtual Reality</li>
-                                <li style={{ margin: 0 }}>Metaverse</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Introduction to Simulink</strong> | ASME
-                            University of Balamand Student Section | Issued May
-                            2022
-                        </li>
-                        <li>
-                            <strong>
-                                First Place Winner in the Lebanon IoT & AI
-                                Challenge 2021
-                            </strong>{" "}
-                            | Arab IoT & AI Challenge | Issued Nov 2021
-                        </li>
-                        <li>
-                            <strong>Simulink Onramp</strong> | Mathworks |
-                            Issued Apr 2021
-                        </li>
-                        <li>
-                            <strong>MATLAB Onramp</strong> | Mathworks | Issued
-                            Feb 2021
-                        </li>
-                        <li>
-                            <strong>Dean's Honor List</strong> | Faculty of
-                            Engineering at the University of Balamand, Al-Kurah
-                            <ul>
-                                <li style={{ margin: 0 }}>Spring 2023</li>
-                                <li style={{ margin: 0 }}>Fall 2022</li>
-                                <li style={{ margin: 0 }}>Spring 2022</li>
-                                <li style={{ margin: 0 }}>Fall 2021</li>
-                                <li style={{ margin: 0 }}>Spring 2021</li>
-                                <li style={{ margin: 0 }}>Fall 2020</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>IELTS Academic</strong> | Beirut | Issued
-                            Sep 2022 - Expired Sep 2024
-                            <ul>
-                                <li style={{ margin: 0 }}>Score: 8.0/9.0</li>
-                                <li style={{ margin: 0 }}>Listening: 9.0</li>
-                                <li style={{ margin: 0 }}>Reading: 8.0</li>
-                                <li style={{ margin: 0 }}>Writing: 6.5</li>
-                                <li style={{ margin: 0 }}>Speaking: 7.5</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>SAT</strong> | Beirut | Issued Dec 2018
-                            <ul>
-                                <li style={{ margin: 0 }}>Score: 1300/1600</li>
-                                <li style={{ margin: 0 }}>
-                                    Evidence-Based Reading and Writing Score:
-                                    610/800
-                                </li>
-                                <li style={{ margin: 0 }}>
-                                    Math Score: 690/800
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">ZAKA AI Bootcamp</h3>
+                        <h4 className="card-subtitle">
+                            ZAKA | Issued Sep 2023
+                        </h4>
+                        <ul className="card-list">
+                            <li>Artificial Intelligence</li>
+                            <li>Computer Vision</li>
+                            <li>Machine Learning</li>
+                            <li>Natural Language Processing</li>
+                            <li>Deep Learning</li>
+                            <li>Data Science</li>
+                            <li>Time Series Analysis</li>
+                        </ul>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">
+                            IEEE Grand Tech 2023 Certification of Attendance
+                        </h3>
+                        <h4 className="card-subtitle">
+                            IEEE Computer Society | Issued Jun 2023
+                        </h4>
+                        <ul className="card-list">
+                            <li>Virtual Reality</li>
+                            <li>Metaverse</li>
+                        </ul>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">Introduction to Simulink</h3>
+                        <h4 className="card-subtitle">
+                            ASME University of Balamand Student Section | Issued
+                            May 2022
+                        </h4>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">
+                            First Place Winner in the Lebanon IoT & AI Challenge
+                            2021
+                        </h3>
+                        <h4 className="card-subtitle">
+                            Arab IoT & AI Challenge | Issued Nov 2021
+                        </h4>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">Simulink Onramp</h3>
+                        <h4 className="card-subtitle">
+                            Mathworks | Issued Apr 2021
+                        </h4>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">MATLAB Onramp</h3>
+                        <h4 className="card-subtitle">
+                            Mathworks | Issued Feb 2021
+                        </h4>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">Dean's Honor List</h3>
+                        <h4 className="card-subtitle">
+                            Faculty of Engineering at the University of
+                            Balamand, Al-Kurah
+                        </h4>
+                        <ul className="card-list">
+                            <li>Spring 2023</li>
+                            <li>Fall 2022</li>
+                            <li>Spring 2022</li>
+                            <li>Fall 2021</li>
+                            <li>Spring 2021</li>
+                            <li>Fall 2020</li>
+                        </ul>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">IELTS Academic</h3>
+                        <h4 className="card-subtitle">
+                            Beirut | Issued Sep 2022 - Expired Sep 2024
+                        </h4>
+                        <ul className="card-list">
+                            <li>Score: 8.0/9.0</li>
+                            <li>Listening: 9.0</li>
+                            <li>Reading: 8.0</li>
+                            <li>Writing: 6.5</li>
+                            <li>Speaking: 7.5</li>
+                        </ul>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">SAT</h3>
+                        <h4 className="card-subtitle">
+                            Beirut | Issued Dec 2018
+                        </h4>
+                        <ul className="card-list">
+                            <li>Score: 1300/1600</li>
+                            <li>
+                                Evidence-Based Reading and Writing Score:
+                                610/800
+                            </li>
+                            <li>Math Score: 690/800</li>
+                        </ul>
+                    </div>
                 </div>
             ),
         },
@@ -306,22 +317,22 @@ const About = () => {
             id: "awards",
             title: "Awards",
             content: (
-                <div>
-                    <ul>
-                        <li>
-                            <strong>
-                                Faculty Award for Academic Excellence
-                            </strong>{" "}
-                            | Faculty of Engineering at the University of
-                            Balamand | Jun 2023
-                            <p>
-                                Recipient of the Faculty Excellent Achievement
-                                Award for obtaining the highest GPA among all
-                                graduating computer engineering undergraduate
-                                students of class 2023.
-                            </p>
-                        </li>
-                    </ul>
+                <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">
+                            Faculty Award for Academic Excellence
+                        </h3>
+                        <h4 className="card-subtitle">
+                            Faculty of Engineering at the University of Balamand
+                            | Jun 2023
+                        </h4>
+                        <p className="card-description">
+                            Recipient of the Faculty Excellent Achievement Award
+                            for obtaining the highest GPA among all graduating
+                            computer engineering undergraduate students of class
+                            2023.
+                        </p>
+                    </div>
                 </div>
             ),
         },
@@ -329,28 +340,30 @@ const About = () => {
             id: "languages",
             title: "Languages",
             content: (
-                <div>
-                    <ul>
-                        <li>
-                            <strong>Arabic</strong>
-                            <p>Native language</p>
-                        </li>
-                        <li>
-                            <strong>French</strong>
-                            <p>Native language, language of education.</p>
-                        </li>
-                        <li>
-                            <strong>English</strong>
-                            <p>
-                                Fluent in both spoken and written English, used
-                                in academic and professional contexts.
-                            </p>
-                        </li>
-                        <li>
-                            <strong>Spanish</strong>
-                            <p>Beginner in both speaking and writing.</p>
-                        </li>
-                    </ul>
+                <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">Arabic</h3>
+                        <p className="card-description">Native language</p>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">French</h3>
+                        <p className="card-description">
+                            Native language, language of education.
+                        </p>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">English</h3>
+                        <p className="card-description">
+                            Fluent in both spoken and written English, used in
+                            academic and professional contexts.
+                        </p>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">Spanish</h3>
+                        <p className="card-description">
+                            Beginner in both speaking and writing.
+                        </p>
+                    </div>
                 </div>
             ),
         },
@@ -358,28 +371,47 @@ const About = () => {
             id: "organizations",
             title: "Organizations",
             content: (
-                <div>
-                    <ul>
-                        <li>
-                            <strong>Member, IEEE</strong> | 05/2022 - Present
-                            <ul>
-                                <li style={{ margin: 0 }}>Computer Society</li>
-                                <li style={{ margin: 0 }}>
-                                    Women In Engineering
-                                </li>
-                                <li style={{ margin: 0 }}>
-                                    Controls System Society
-                                </li>
-                                <li style={{ margin: 0 }}>
-                                    Robotics and Automation Society
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Les Guides du Liban</strong> | 09/2009 -
-                            08/2015
-                        </li>
-                    </ul>
+                <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">Member, IEEE</h3>
+                        <h4 className="card-subtitle">05/2022 - Present</h4>
+                        <ul className="card-list">
+                            <li>Computer Society</li>
+                            <li>Women In Engineering</li>
+                            <li>Controls System Society</li>
+                            <li>Robotics and Automation Society</li>
+                        </ul>
+                    </div>
+                    <div className="card-item">
+                        <h3 className="card-title">Les Guides du Liban</h3>
+                        <h4 className="card-subtitle">09/2009 - 08/2015</h4>
+                    </div>
+                </div>
+            ),
+        },
+        {
+            id: "interests-and-hobbies",
+            title: "Interests and Hobbies",
+            content: (
+                <div className="card-section">
+                    <div className="card-item">
+                        <h3 className="card-title">
+                            Unordered List of Hobbies and Interests
+                        </h3>
+                        <ul className="card-list">
+                            <li>Volleyball</li>
+                            <li>Ping-Pong</li>
+                            <li>Gymnastics</li>
+                            <li>Badminton</li>
+                            <li>Swimming</li>
+                            <li>Surfing</li>
+                            <li>Hiking</li>
+                            <li>Board Games</li>
+                            <li>Reading Books</li>
+                            <li>Watching Movies</li>
+                            <li>Learning Languages</li>
+                        </ul>
+                    </div>
                 </div>
             ),
         },
@@ -387,40 +419,8 @@ const About = () => {
 
     return (
         <div className="container home-container">
-            {/* Header Section */}
             <Header />
-
-            <div className="accordion" id="accordionExample">
-                {sections.map((section, index) => (
-                    <div className="accordion-item" key={section.id}>
-                        <h1
-                            className="accordion-header"
-                            id={`heading-${section.id}`}
-                        >
-                            <button
-                                className="accordion-button collapsed"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target={`#collapse-${section.id}`}
-                                aria-expanded="false"
-                                aria-controls={`collapse-${section.id}`}
-                            >
-                                {section.title}
-                            </button>
-                        </h1>
-                        <div
-                            id={`collapse-${section.id}`}
-                            className="accordion-collapse collapse"
-                            aria-labelledby={`heading-${section.id}`}
-                            data-bs-parent="#accordionExample"
-                        >
-                            <div className="accordion-body">
-                                {section.content}
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
+            <Accordion sections={sections} />
         </div>
     );
 };

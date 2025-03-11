@@ -185,17 +185,17 @@ a {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%239b4dca' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-li {
-    margin-bottom: 0.75rem;
-}
+/* card-styles.css */
 
-.education-section {
+/* Container for the whole card section */
+.card-section {
     background-color: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
 }
 
-.education-item {
+/* Each card item */
+.card-item {
     margin-bottom: 20px;
     padding: 15px;
     border-left: 4px solid var(--accent-color);
@@ -204,31 +204,36 @@ li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.education-title {
+/* Title styling */
+.card-title {
     color: var(--accent-color);
     margin-bottom: 5px;
     font-size: 1.4em;
 }
 
-.education-subtitle {
+/* Subtitle styling */
+.card-subtitle {
     color: #bbbbbb;
     margin-bottom: 10px;
     font-size: 1.1em;
 }
 
-.education-description {
+/* Description styling for readability */
+.card-description {
     color: var(--text-color);
     line-height: 1.6;
 }
 
-.education-subsection-title {
+/* Subsection titles within a card item */
+.card-subsection-title {
     color: var(--accent-color);
     margin-top: 10px;
     margin-bottom: 5px;
     font-size: 1.2em;
 }
 
-.education-list {
+/* Lists within a card item */
+.card-list {
     margin-left: 20px;
     color: var(--text-color);
     line-height: 1.6;
