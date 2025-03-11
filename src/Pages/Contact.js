@@ -1,8 +1,12 @@
 import React from "react";
 import Header from "../Components/Header";
-import resume from "../Files/RiwaKaram_Resume.pdf";
 
 const Contact = () => {
+    let resumeURL = "";
+    if (process.env.GENERATE_SITEMAP !== "true") {
+        // Use dynamic require so Node doesn't try to process it during sitemap generation
+        resumeURL = require("../Files/RiwaKaram_Resume.pdf").default;
+    }
     return (
         <div className="container home-container">
             <Header />
@@ -22,7 +26,7 @@ const Contact = () => {
                         <div className="contact-row">
                             <strong>Resume:</strong>
                             <a
-                                href={resume}
+                                href={resumeURL}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

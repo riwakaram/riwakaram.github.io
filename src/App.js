@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
-import MyNavbar from "./Components/MyNavbar";
-import Experience from "./Pages/Experience";
-import Publications from "./Pages/Publications";
+import Home from "./Pages/Home.js";
+import About from "./Pages/About.js";
+import Contact from "./Pages/Contact.js";
+import MyNavbar from "./Components/MyNavbar.js";
+import Experience from "./Pages/Experience.js";
+import Publications from "./Pages/Publications.js";
 
 const App = () => {
     return (
