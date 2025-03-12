@@ -35,7 +35,7 @@ const About = () => {
                             Engineering
                         </h3>
                         <h4 className="card-subtitle">
-                            University of California, Irvine | 09/2023 - 03/2025
+                            University of California, Irvine | 09/2023 - 06/2025
                         </h4>
                         <p className="card-descripton">
                             Thesis and research based master's degree: courses,
