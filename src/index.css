@@ -6,7 +6,6 @@
     --border-color: #444444; /* Medium gray for borders */
 }
 
-/* Global settings */
 * {
     -webkit-user-select: none; /* Chrome, Safari, Opera */
     -moz-user-select: none; /* Firefox */
@@ -24,14 +23,9 @@ textarea {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
 }
 
 a {
@@ -41,6 +35,7 @@ a {
 
 p,
 li {
+    font-size: 1.2rem;
     text-align: justify;
 }
 
@@ -98,18 +93,17 @@ li {
 }
 
 .name {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .description {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .profile-image {
-    width: 15rem;
-    height: 15rem;
+    height: 35rem;
     max-width: 100%;
     object-fit: cover;
     border-radius: 10%;
@@ -168,6 +162,7 @@ li {
     background-color: var(--card-bg);
     color: var(--text-color);
     border: 0.1rem solid var(--border-color);
+    font-size: 1.5rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -189,16 +184,13 @@ li {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%239b4dca' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-/* card-styles.css */
-
-/* Container for the whole card section */
+/* card-styles */
 .card-section {
     background-color: var(--card-bg);
     padding: 0.5rem;
     border-radius: 1rem;
 }
 
-/* Each card item */
 .card-item {
     margin-bottom: 1.5rem;
     padding: 1rem;
@@ -208,44 +200,44 @@ li {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.7);
 }
 
-/* Title styling */
 .card-title {
     color: var(--accent-color);
     margin-bottom: 0.2rem;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
-/* Subtitle styling */
 .card-subtitle {
     color: #bbbbbb;
     margin-bottom: 0.5rem;
     font-size: 1.1em;
 }
 
-/* Description styling for readability */
 .card-description {
     color: var(--text-color);
     line-height: 1.6;
+    font-size: 1rem;
 }
 
-/* Subsection titles within a card item */
 .card-subsection-title {
     color: var(--accent-color);
     margin-top: 0rem;
     margin-bottom: 5px;
-    font-size: 1.2em;
+    font-size: 1.1rem;
 }
 
-/* Lists within a card item */
 .card-list {
     margin-left: 20px;
     color: var(--text-color);
     line-height: 1.6;
 }
 
+.card-list li {
+    font-size: 1rem;
+}
+
 .contact-wrapper {
     margin-top: 40px;
-    text-align: center; /* Centers the heading/intro, not the row content */
+    text-align: center;
 }
 
 .intro-text {
@@ -255,14 +247,12 @@ li {
     text-align: center;
 }
 
-/* Card container is centered horizontally */
 .contact-info {
     max-width: 33rem;
     margin: auto;
     padding: 1rem;
 }
 
-/* Dark card styling */
 .contact-card-item {
     padding: 1.5rem;
     border-left: 0.3rem solid var(--accent-color);
@@ -271,25 +261,20 @@ li {
     box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.7);
 }
 
-/* One row per label/link pair */
 .contact-row {
-    display: flex;
-    align-items: baseline;
-    margin: 0.2rem 0;
-    gap: 1.5rem; /* Space between columns */
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    gap: 1rem;
 }
 
-/* White label, right-aligned, fixed width */
 .contact-row strong {
     width: 10rem;
     text-align: right;
     color: #ffffff;
 }
 
-/* Purple link, left-aligned, flexible width */
 .contact-row a {
-    max-width: 14rem;
-    flex: 1;
     text-align: left;
     color: var(--accent-color);
     text-decoration: none;

@@ -17,10 +17,12 @@ const Contact = () => {
                     <div className="contact-card-item">
                         <div className="contact-row">
                             <strong>UCI Email:</strong>
+                            <br />
                             <a href="mailto:rwkaram@uci.edu">rwkaram@uci.edu</a>
                         </div>
                         <div className="contact-row">
                             <strong>Resume:</strong>
+                            <br />
                             <a
                                 href={Resume}
                                 target="_blank"
@@ -31,6 +33,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-row">
                             <strong>LinkedIn:</strong>
+                            <br />
                             <a
                                 href="https://www.linkedin.com/in/riwakaram"
                                 target="_blank"
@@ -41,6 +44,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-row">
                             <strong>Google Scholar:</strong>
+                            <br />
                             <a
                                 href="#"
                                 target="_blank"
@@ -51,6 +55,7 @@ const Contact = () => {
                         </div>
                         <div className="contact-row">
                             <strong>GitHub:</strong>
+                            <br />
                             <a
                                 href="https://github.com/riwakaram"
                                 target="_blank"

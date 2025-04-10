@@ -1,6 +1,13 @@
 import React from "react";
 
 const Accordion = ({ sections }) => {
+    const handleScrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    window.addEventListener("unhandledrejection", (event) => {
+        console.error("Unhandled promise rejection:", event.reason);
+    });
+
     return (
         <div className="accordion" id="accordionExample">
             {sections.map((section) => (
@@ -16,6 +23,7 @@ const Accordion = ({ sections }) => {
                             data-bs-target={`#collapse-${section.id}`}
                             aria-expanded="false"
                             aria-controls={`collapse-${section.id}`}
+                            onClick={handleScrollToTop}
                         >
                             {section.title}
                         </button>

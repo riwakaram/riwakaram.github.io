@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import Photo from "../Images/Photo Passeport.JPG";
+import Photo from "../Images/Profile Pic.jpg";
 
 const Home = () => {
     return (
@@ -33,29 +33,27 @@ const Home = () => {
                         >
                             University of California, Irvine (UCI)
                         </a>
-                        , affiliated with the{" "}
+                        , and a part of the{" "}
                         <a
                             href="https://faculty.sites.uci.edu/robotecology/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="lab-link"
                         >
-                            Robot Ecology Lab
+                            UCI Robot Ecology Lab
                         </a>{" "}
                         under the guidance of Professor Magnus Egerstedt. My
                         research interests span a range of topics in robotics
                         and control, including multi-agent systems,
-                        collaboration, formation control, coverage control,
-                        optimization, networked control systems, quantum
-                        computing, applied computer vision, and machine
-                        learning.
+                        collaboration, networked control systems, quantum
+                        computing, and graph neural networks.
                     </p>
                 </div>
             </div>
 
             {/* Remaining Paragraphs */}
             <div className="row">
-                <div className="col-12 bio-section text-center">
+                <div className="col-12 bio-section text-center mt-4">
                     <h2>Get to know me more!</h2>
                     <p>
                         I earned my Bachelor of Science in Computer Engineering
@@ -106,8 +104,8 @@ const Home = () => {
                     <p>
                         Outside of my academic and professional endeavors, I am
                         passionate about extracurricular activities that promote
-                        physical and mental well-being. I am an avid volleyball
-                        player and swimmer and enjoy spending time outdoors.
+                        physical and mental well-being. I am a volleyball player
+                        and swimmer and enjoy spending time outdoors.
                         Additionally, I have a deep appreciation for movies, TV
                         shows, and reading, which provide both relaxation and
                         inspiration and initially sparked my interest in
@@ -127,8 +125,8 @@ const Home = () => {
                     <p>
                         <em>
                             Multi-agent Systems, Collaboration, Human-Swarm
-                            Interaction, Networked Control Systems, Applied
-                            Computer Vision, Graph Neural Networks
+                            Interaction, Networked Control Systems, Graph Neural
+                            Networks
                         </em>
                     </p>
                     <h2>Research Interests</h2>
@@ -136,11 +134,11 @@ const Home = () => {
                         My research focuses on developing collaborative
                         algorithms and frameworks for heterogenous multi-robot
                         systems, enhancing human-robot collaboration, exploring
-                        solutions in ecological robotics, and leverage graph
-                        neural networks for learning robotic behaviors. I am
-                        particularly interested in bridging theoretical insights
-                        with practical applications in the fields of control and
-                        robotics.
+                        ecologically-inspired robotics solutions, and leveraging
+                        graph neural networks for learning robotic behaviors. I
+                        am particularly interested in bridging theoretical
+                        insights with practical applications in the fields of
+                        control and robotics.
                     </p>
                 </div>
             </div>

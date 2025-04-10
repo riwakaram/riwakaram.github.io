@@ -19,10 +19,9 @@ const About = () => {
                         </h4>
                         <p className="card-description">
                             Research in multi-agent systems, collaboration in
-                            heterogenous systems, formation control, coverage
-                            control, networked control systems, quantum
-                            computing, graph neural networks, applied computer
-                            vision and machine learning.
+                            heterogenous systems, coverage control, networked
+                            control systems, quantum computing, and graph neural
+                            networks.
                         </p>
                         <ul className="card-list">
                             <li>UCI Robot Ecology Lab</li>
@@ -37,9 +36,11 @@ const About = () => {
                         <h4 className="card-subtitle">
                             University of California, Irvine | 09/2023 - 06/2025
                         </h4>
-                        <p className="card-descripton">
+                        <p className="card-description">
                             Thesis and research based master's degree: courses,
-                            seminars, and thesis requirements.
+                            seminars, and thesis requirements. Research in
+                            formation control, human-swarm interaction, and
+                            applied computer vision.
                         </p>
                         <ul className="card-list">
                             <li>GPA: 3.95/4.0</li>

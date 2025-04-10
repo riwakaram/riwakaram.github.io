@@ -37,7 +37,7 @@ const MyNavbar = () => {
                                 Experience
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/publications">
-                                Publications
+                                Publications And Invited Talks
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/contact">
                                 Contact

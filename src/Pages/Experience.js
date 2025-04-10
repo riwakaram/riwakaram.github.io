@@ -9,7 +9,7 @@ const Experience = () => {
             title: "Industry Experience",
             content: (
                 <div className="card-section">
-                    {/* ASML Card */}
+                    {/* ASML Card 2025 */}
                     <div className="card-item">
                         <h3 className="card-title">ASML, Inc.</h3>
                         <h4 className="card-subtitle">
@@ -23,7 +23,7 @@ const Experience = () => {
                         </ul> */}
                     </div>
 
-                    {/* ASML Card */}
+                    {/* ASML Card 2024 */}
                     <div className="card-item">
                         <h3 className="card-title">ASML, Inc.</h3>
                         <h4 className="card-subtitle">
@@ -112,9 +112,9 @@ const Experience = () => {
                             </li>
                             <li>
                                 Working on multiple projects based on
-                                collaboration in multi-agent systems, coverage
-                                control, graph neural networks, and applied
-                                machine learning
+                                collaboration in multi-agent systems,
+                                collaboration, coverage control, and graph
+                                neural networks
                             </li>
                         </ul>
                     </div>
@@ -138,9 +138,8 @@ const Experience = () => {
                             <li>
                                 Working on multiple projects based on
                                 collaboration in multi-agent systems, formation
-                                control, coverage control, graph neural
-                                networks, applied computer vision and machine
-                                learning
+                                control, human-swarm interaction, and applied
+                                computer vision
                             </li>
                         </ul>
                     </div>
