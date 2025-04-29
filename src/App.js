@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home.js";
-import About from "./Pages/About.js";
-import Contact from "./Pages/Contact.js";
+import Vitae from "./Pages/Vitae.js";
 import MyNavbar from "./Components/MyNavbar.js";
-import Experience from "./Pages/Experience.js";
+import News from "./Pages/News.js";
 import Publications from "./Pages/Publications.js";
+import About from "./Pages/About.js";
 
 const App = () => {
     return (
@@ -13,10 +13,10 @@ const App = () => {
             <MyNavbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/experience" element={<Experience />} />
+                <Route path="/vitae" element={<Vitae />} />
+                <Route path="/news" element={<News />} />
                 <Route path="/publications" element={<Publications />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </div>
     );

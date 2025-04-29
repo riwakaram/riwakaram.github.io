@@ -124,9 +124,9 @@ const Home = () => {
                     <h2>Research Keywords</h2>
                     <p>
                         <em>
-                            Multi-agent Systems, Collaboration, Human-Swarm
-                            Interaction, Networked Control Systems, Graph Neural
-                            Networks
+                            Multi-agent Systems, Collaboration, Networked
+                            Control Systems, Graph Neural Networks, Human-Swarm
+                            Interaction
                         </em>
                     </p>
                     <h2>Research Interests</h2>

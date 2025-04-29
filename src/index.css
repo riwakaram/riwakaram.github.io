@@ -58,7 +58,7 @@ li {
 }
 
 .navbar-nav .nav-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: var(--accent-color);
 }
 
@@ -127,13 +127,15 @@ li {
 }
 
 .school-link,
-.company-link {
+.company-link,
+.lab-link {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
 .school-link:hover,
-.company-link:hover {
+.company-link:hover,
+.lab-link:hover {
     text-decoration: none;
 }
 
@@ -241,10 +243,13 @@ li {
 }
 
 .intro-text {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 1.2rem;
     margin-bottom: 30px;
     color: var(--text-color);
-    text-align: center;
 }
 
 .contact-info {

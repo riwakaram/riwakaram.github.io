@@ -30,17 +30,17 @@ const MyNavbar = () => {
                             <Nav.Link as={NavLink} to="/" exact>
                                 Home
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/about">
-                                About
+                            <Nav.Link as={NavLink} to="/vitae">
+                                Curriculum Vitae
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/experience">
-                                Experience
+                            <Nav.Link as={NavLink} to="/news">
+                                News
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/publications">
-                                Publications And Invited Talks
+                                Publications & Invited Talks
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/contact">
-                                Contact
+                            <Nav.Link as={NavLink} to="/about">
+                                About
                             </Nav.Link>
                         </Nav>
                     </div>
