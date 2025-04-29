@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.a163c188.css",
-    "main.js": "/static/js/main.50c89fa0.js",
+    "main.css": "/static/css/main.583587b0.css",
+    "main.js": "/static/js/main.e5cbf817.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
-    "static/media/ASMLPoster.jpeg": "/static/media/ASMLPoster.0c178fb5495d3d45308a.jpeg",
-    "static/media/ASMLPoster&Me.jpeg": "/static/media/ASMLPoster&Me.d352f3ea52dfc45299ef.jpeg",
     "static/media/ASML Goodies.jpeg": "/static/media/ASML Goodies.c9949bd67097838464e3.jpeg",
     "static/media/SSCW2025Dinner.JPG": "/static/media/SSCW2025Dinner.60dc513d814e1a2999d7.JPG",
     "static/media/ASMLCard.jpeg": "/static/media/ASMLCard.79e1957c72c1ae9c135f.jpeg",
@@ -18,12 +16,12 @@
     "static/media/RiwaKaram_Resume.pdf": "/static/media/RiwaKaram_Resume.d2f55b48703f38f21fd1.pdf",
     "static/media/favicon.ico": "/static/media/favicon.888841408681c1ee289a.ico",
     "index.html": "/index.html",
-    "main.a163c188.css.map": "/static/css/main.a163c188.css.map",
-    "main.50c89fa0.js.map": "/static/js/main.50c89fa0.js.map",
+    "main.583587b0.css.map": "/static/css/main.583587b0.css.map",
+    "main.e5cbf817.js.map": "/static/js/main.e5cbf817.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a163c188.css",
-    "static/js/main.50c89fa0.js"
+    "static/css/main.583587b0.css",
+    "static/js/main.e5cbf817.js"
   ]
 }
