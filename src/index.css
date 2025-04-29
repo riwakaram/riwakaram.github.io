@@ -326,3 +326,7 @@ li {
 .my-asml-card {
     max-width: 20rem;
 }
+
+.asml-poster {
+    max-width: 40rem;
+}

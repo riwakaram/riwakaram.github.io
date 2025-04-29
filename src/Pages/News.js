@@ -5,8 +5,6 @@ import Carousel from "../Components/Carousel";
 import PrelimPhoto from "../Images/Prelim.pdf";
 import ASMLID from "../Images/ASML ID.jpg";
 import ASMLGoodies from "../Images/ASML Goodies.jpeg";
-import ASMLPoster from "../Images/ASMLPoster.jpeg";
-import ASMLPosterMe from "../Images/ASMLPoster&Me.jpeg";
 import ASMLPosterAll from "../Images/ASMLPosterAll.jpeg";
 import ASMLCard from "../Images/ASMLCard.jpeg";
 import SSCW2025Dinner from "../Images/SSCW2025Dinner.JPG";
@@ -35,23 +33,6 @@ const News = () => {
             src: SSCW2025Dinner,
             alt: "Dinner after SSCW",
             captionTitle: "Dinner after SSCW at UCSD",
-        },
-    ];
-    const asmlPoster = [
-        {
-            src: ASMLPoster,
-            alt: "ASML Poster First Internship 2024",
-            captionTitle: "ASML Poster 2024",
-        },
-        {
-            src: ASMLPosterMe,
-            alt: "ASML Poster and Me First Internship 2024",
-            captionTitle: "Presenting my poster at my ASML 2024 internship",
-        },
-        {
-            src: ASMLPosterAll,
-            alt: "ASML Interns at the Poster Session",
-            captionTitle: "ASML Interns at the Poster Session",
         },
     ];
     const asmlFirst = [
@@ -134,7 +115,13 @@ const News = () => {
                 subtitle="ASML Intern Poster Presentation Session"
                 description="Towards the middle of my internship, I presented my poster, along with all ASML interns, which showed my internship progress so far."
             >
-                <Carousel id="asml2024poster" slides={asmlPoster} />
+                <div className="d-flex justify-content-center asml-poster m-auto">
+                    <img
+                        src={ASMLPosterAll}
+                        alt="Poster"
+                        className="img-fluid"
+                    />
+                </div>
             </CardItem>
             <CardItem
                 title="June 24, 2024"
