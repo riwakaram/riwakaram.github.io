@@ -5,9 +5,56 @@ import Carousel from "../Components/Carousel";
 import PrelimPhoto from "../Images/Prelim.pdf";
 import ASMLID from "../Images/ASML ID.jpg";
 import ASMLGoodies from "../Images/ASML Goodies.jpeg";
+import ASMLPoster from "../Images/ASMLPoster.jpeg";
+import ASMLPosterMe from "../Images/ASMLPoster&Me.jpeg";
+import ASMLPosterAll from "../Images/ASMLPosterAll.jpeg";
+import ASMLCard from "../Images/ASMLCard.jpeg";
+import SSCW2025Dinner from "../Images/SSCW2025Dinner.JPG";
+import SSCWGroup2025 from "../Images/SSCWGroup2025.jpg";
+import SSCWMe012025 from "../Images/SSCWMe_1_2025.jpg";
+import SSCWMe022025 from "../Images/SSCWMe_2_2025.jpg";
 
 const News = () => {
-    const slides = [
+    const sscwPresentations2025 = [
+        {
+            src: SSCWMe012025,
+            alt: "Me Presenting at SSCW, UCSD",
+            captionTitle: "Me Presenting at SSCW, UCSD",
+        },
+        {
+            src: SSCWMe022025,
+            alt: "Me Presenting at SSCW, UCSD",
+            captionTitle: "Me Presenting at SSCW, UCSD",
+        },
+        {
+            src: SSCWGroup2025,
+            alt: "SSCW Group Photo at UCSD",
+            captionTitle: "SSCW Group Photo at UCSD",
+        },
+        {
+            src: SSCW2025Dinner,
+            alt: "Dinner after SSCW",
+            captionTitle: "Dinner after SSCW at UCSD",
+        },
+    ];
+    const asmlPoster = [
+        {
+            src: ASMLPoster,
+            alt: "ASML Poster First Internship 2024",
+            captionTitle: "ASML Poster 2024",
+        },
+        {
+            src: ASMLPosterMe,
+            alt: "ASML Poster and Me First Internship 2024",
+            captionTitle: "Presenting my poster at my ASML 2024 internship",
+        },
+        {
+            src: ASMLPosterAll,
+            alt: "ASML Interns at the Poster Session",
+            captionTitle: "ASML Interns at the Poster Session",
+        },
+    ];
+    const asmlFirst = [
         {
             src: ASMLGoodies,
             alt: "ASML Goodies",
@@ -26,12 +73,75 @@ const News = () => {
     return (
         <div className="container home-container">
             <Header />
+
+            <CardItem
+                title="April 18, 2025"
+                subtitle="45th Southern California Control Workshop (SSCW)"
+                description="I presented my latest work at my third SSCW. This marks my first time presenting my reserach at UCI in front of an audience (other than my lab members) XD"
+                list={[
+                    <React.Fragment key="ssc-link">
+                        Check out the workshop's website{" "}
+                        <a
+                            href="http://terrano.ucsd.edu/jorge/sccw/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            here
+                        </a>
+                        .
+                    </React.Fragment>,
+                ]}
+            >
+                <Carousel
+                    id="sscwPresentation2025"
+                    slides={sscwPresentations2025}
+                />
+            </CardItem>
+            <CardItem
+                title="March 2025"
+                subtitle="Paper Deadlines"
+                description="I had back-to-back paper deadlines at the beginning and end of March; the first marks my first ever research paper submission!"
+            />
+            <CardItem
+                title="November 1, 2024"
+                subtitle="44th Southern California Control Workshop (SSCW)"
+                description="I attended my second control workshop at USC. My postdoc Dr. Brooks Butler was one of the speakers!"
+                list={[
+                    <React.Fragment key="ssc-link">
+                        Check out the workshop's website{" "}
+                        <a
+                            href="https://csc.usc.edu/socal/2024Fall/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            here
+                        </a>
+                        .
+                    </React.Fragment>,
+                ]}
+            />
+            <CardItem
+                title="September 13, 2024"
+                subtitle="Last Day at my ASML Internship"
+                description="Successfully finished my summer internship at ASML, having made new friends, learned new skills, and had a productive summer! It was time to get back on campus to the robots at the lab XD"
+            >
+                <div className="d-flex justify-content-center my-asml-card m-auto">
+                    <img src={ASMLCard} alt="Card" className="img-fluid" />
+                </div>
+            </CardItem>
+            <CardItem
+                title="August 7, 2024"
+                subtitle="ASML Intern Poster Presentation Session"
+                description="Towards the middle of my internship, I presented my poster, along with all ASML interns, which showed my internship progress so far."
+            >
+                <Carousel id="asml2024poster" slides={asmlPoster} />
+            </CardItem>
             <CardItem
                 title="June 24, 2024"
-                subtitle="First Day at my Internship at ASML, Inc."
+                subtitle="First Day at my ASML Internship"
                 description="Traveled from the West coast all the way to the East coast for my internship at ASML, Inc. as a Mechatronics and Control Systems Engineer Intern!"
             >
-                <Carousel id="asml2024Slides" slides={slides} />
+                <Carousel id="asml2024first" slides={asmlFirst} />
             </CardItem>
             <CardItem
                 title="April 19, 2024"

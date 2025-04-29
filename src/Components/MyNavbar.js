@@ -33,11 +33,11 @@ const MyNavbar = () => {
                             <Nav.Link as={NavLink} to="/vitae">
                                 Curriculum Vitae
                             </Nav.Link>
-                            <Nav.Link as={NavLink} to="/news">
-                                News
-                            </Nav.Link>
                             <Nav.Link as={NavLink} to="/publications">
                                 Publications & Invited Talks
+                            </Nav.Link>
+                            <Nav.Link as={NavLink} to="/news">
+                                News
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/about">
                                 About

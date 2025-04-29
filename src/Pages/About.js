@@ -9,7 +9,7 @@ const About = () => {
             <div className="contact-wrapper">
                 <h1>Contact Me</h1>
                 <p className="intro-text">
-                    Whether you have a question, would like to collaborate or
+                    Whether you have a question, would like to collaborate, or
                     just want to say hello, feel free to reach out using the
                     methods below.
                 </p>

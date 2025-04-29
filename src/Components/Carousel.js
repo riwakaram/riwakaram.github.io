@@ -4,8 +4,29 @@ const Carousel = ({ id = "myCarousel", slides = [] }) => {
     if (!slides.length) return null;
 
     return (
-        <div id={id} className={`carousel slide myCarousel`}>
-            <div className="carousel-indicators">
+        <div id={id} className="carousel slide myCarousel">
+            <div className="carousel-inner">
+                {slides.map(({ src, alt, captionTitle, captionText }, i) => (
+                    <div
+                        key={i}
+                        className={`carousel-item ${i === 0 ? "active" : ""}`}
+                    >
+                        <img src={src} className="d-block w-100" alt={alt} />
+                        {(captionTitle || captionText) && (
+                            <div className="slide-caption mt-2">
+                                {captionTitle && <h5>{captionTitle}</h5>}
+                                {captionText && (
+                                    <p className="slide-caption">
+                                        {captionText}
+                                    </p>
+                                )}
+                            </div>
+                        )}
+                    </div>
+                ))}
+            </div>
+
+            <div className="carousel-indicators static-indicators">
                 {slides.map((_, i) => (
                     <button
                         key={i}
@@ -18,24 +39,7 @@ const Carousel = ({ id = "myCarousel", slides = [] }) => {
                     />
                 ))}
             </div>
-            <div className="carousel-inner">
-                {slides.map(({ src, alt, captionTitle, captionText }, i) => (
-                    <div
-                        key={i}
-                        className={`carousel-item ${i === 0 ? "active" : ""}`}
-                    >
-                        <img src={src} className="d-block w-100" alt={alt} />
-                        {(captionTitle || captionText) && (
-                            <div className="carousel-caption d-none d-md-block">
-                                {captionTitle && <h5>{captionTitle}</h5>}
-                                {captionText && (
-                                    <p className="text-center">{captionText}</p>
-                                )}
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </div>
+
             <button
                 className="carousel-control-prev"
                 type="button"

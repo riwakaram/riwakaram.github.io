@@ -5,6 +5,31 @@ import Accordion from "../Components/Accordion";
 const Publications = () => {
     const sections = [
         {
+            id: "review",
+            title: "Under Review",
+            content: (
+                <div className="card-section">
+                    <ul className="card-list">
+                        <li>
+                            <b>R. Karam</b>, R. Lin, B.A. Butler, M. Egerstedt,
+                            "Resource Allocation for Multi-Team Collaboration
+                            based on Hamilton's Rule,"{" "}
+                            <i>2025 IEEE Conference on Decision and Control</i>
+                        </li>
+                        <li>
+                            <b>R. Karam</b>, M. Egerstedt, "A Graphical
+                            Interface for Specifying and Establishing
+                            Multi-Robot Formations,"{" "}
+                            <i>
+                                2025 IEEE/RSJ International Conference on
+                                Intelligent Robots and Systems
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
             id: "conference",
             title: "Conference Proceedings",
             content: <div className="card-section">Coming Soon!</div>,
@@ -24,11 +49,9 @@ const Publications = () => {
                             45th Southern California Control Workshop |
                             University of California, San Diego | April 18, 2025
                             <br />
-                            <b>R. Karam</b>, R.Lin, B.A. Butler, M. Egerstedt,{" "}
-                            <i>
-                                "Resource allocation with multi-team
-                                collaboration based on Hamilton’s rule"
-                            </i>
+                            <b>R. Karam</b>, R.Lin, B.A. Butler, M. Egerstedt,
+                            "Resource Allocation with Multi-Team Collaboration
+                            based on Hamilton’s Rule."
                         </li>
                     </ul>
                 </div>
@@ -37,7 +60,6 @@ const Publications = () => {
     ];
     return (
         <div className="container home-container">
-            {/* Header Section */}
             <Header />
             <Accordion sections={sections} />
         </div>

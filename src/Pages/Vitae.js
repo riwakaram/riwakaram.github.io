@@ -165,6 +165,18 @@ const Vitae = () => {
                         list={["Virtual Reality", "Metaverse"]}
                     />
                     <CardItem
+                        title="Dean's Honor List"
+                        subtitle="Faculty of Engineering at the University of Balamand, Al-Kurah"
+                        list={[
+                            "Spring 2023",
+                            "Fall 2022",
+                            "Spring 2022",
+                            "Fall 2021",
+                            "Spring 2021",
+                            "Fall 2020",
+                        ]}
+                    />
+                    <CardItem
                         title="Introduction to Simulink"
                         subtitle="ASME University of Balamand Student Section | Issued May 2022"
                     />
@@ -180,18 +192,6 @@ const Vitae = () => {
                     <CardItem
                         title="MATLAB Onramp"
                         subtitle="Mathworks | Issued Feb 2021"
-                    />
-                    <CardItem
-                        title="Dean's Honor List"
-                        subtitle="Faculty of Engineering at the University of Balamand, Al-Kurah"
-                        list={[
-                            "Spring 2023",
-                            "Fall 2022",
-                            "Spring 2022",
-                            "Fall 2021",
-                            "Spring 2021",
-                            "Fall 2020",
-                        ]}
                     />
                     <CardItem
                         title="IELTS Academic"
