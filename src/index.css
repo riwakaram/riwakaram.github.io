@@ -289,3 +289,21 @@ li {
 .contact-row a:hover {
     text-decoration: underline;
 }
+
+.myCarousel {
+    width: 60rem;
+    height: 40rem;
+    margin: 0 auto;
+}
+
+.myCarousel .carousel-inner,
+.myCarousel .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.myCarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
