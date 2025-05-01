@@ -56,6 +56,24 @@ const News = () => {
             <Header />
 
             <CardItem
+                title="April 29, 2025"
+                subtitle="LA Times Interview on the Robot Ecology Lab"
+                description="Earlier in April, two of my labmates, Alex Nguyen and Efrain Mendez, and I were interviewed by LA Timer reporter Jessica Peralta to write an article about our lab, what our reserach is about, and to know more about the UCI Robotarium and the RaccoonBot. That was my first newspaper interview experience!"
+                list={[
+                    <React.Fragment key="ssc-link">
+                        Check out the article{" "}
+                        <a
+                            href="https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            here
+                        </a>
+                        .
+                    </React.Fragment>,
+                ]}
+            />
+            <CardItem
                 title="April 18, 2025"
                 subtitle="45th Southern California Control Workshop (SSCW)"
                 description="I presented my latest work at my third SSCW. This marks my first time presenting my reserach at UCI in front of an audience (other than my lab members) XD"
@@ -78,11 +96,11 @@ const News = () => {
                     slides={sscwPresentations2025}
                 />
             </CardItem>
-            <CardItem
+            {/* <CardItem
                 title="March 2025"
                 subtitle="Paper Deadlines"
                 description="I had back-to-back paper deadlines at the beginning and end of March; the first marks my first ever research paper submission!"
-            />
+            /> */}
             <CardItem
                 title="November 1, 2024"
                 subtitle="44th Southern California Control Workshop (SSCW)"

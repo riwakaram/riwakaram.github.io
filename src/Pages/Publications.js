@@ -5,8 +5,8 @@ import Accordion from "../Components/Accordion";
 const Publications = () => {
     const sections = [
         {
-            id: "review",
-            title: "Under Review",
+            id: "conference",
+            title: "Conference Proceedings",
             content: (
                 <div className="card-section">
                     <ul className="card-list">
@@ -14,7 +14,8 @@ const Publications = () => {
                             <b>R. Karam</b>, R. Lin, B.A. Butler, M. Egerstedt,
                             "Resource Allocation for Multi-Team Collaboration
                             based on Hamilton's Rule,"{" "}
-                            <i>2025 IEEE Conference on Decision and Control</i>
+                            <i>2025 IEEE Conference on Decision and Control</i>{" "}
+                            (Under Review)
                         </li>
                         <li>
                             <b>R. Karam</b>, M. Egerstedt, "A Graphical
@@ -23,16 +24,12 @@ const Publications = () => {
                             <i>
                                 2025 IEEE/RSJ International Conference on
                                 Intelligent Robots and Systems
-                            </i>
+                            </i>{" "}
+                            (Under Review)
                         </li>
                     </ul>
                 </div>
             ),
-        },
-        {
-            id: "conference",
-            title: "Conference Proceedings",
-            content: <div className="card-section">Coming Soon!</div>,
         },
         {
             id: "journal",

@@ -23,7 +23,7 @@ const Home = () => {
                 <div className="col-12 col-lg-6 bio-section text-center text-lg-left">
                     <h2>Bio</h2>
                     <p>
-                        I am a second-year Ph.D. student in the Electrical
+                        I am a 2nd-year Ph.D. student in the Electrical
                         Engineering and Computer Science (EECS) Department at{" "}
                         <a
                             href="https://uci.edu/"
@@ -45,8 +45,8 @@ const Home = () => {
                         under the guidance of Professor Magnus Egerstedt. My
                         research interests span a range of topics in robotics
                         and control, including multi-agent systems,
-                        collaboration, networked control systems, quantum
-                        computing, and graph neural networks.
+                        collaboration, graph neural networks, coverage control,
+                        and quantum computing.
                     </p>
                 </div>
             </div>
