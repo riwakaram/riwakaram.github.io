@@ -58,7 +58,7 @@ const News = () => {
             <CardItem
                 title="April 29, 2025"
                 subtitle="LA Times Interview on the Robot Ecology Lab"
-                description="Earlier in April, two of my labmates, Alex Nguyen and Efrain Mendez, and I were interviewed by LA Timer reporter Jessica Peralta to write an article about our lab, what our reserach is about, and to know more about the UCI Robotarium and the RaccoonBot. That was my first newspaper interview experience!"
+                description="Earlier in April, two of my labmates, Alex Nguyen and Efraín Méndez, and I were interviewed by LA Times reporter Jessica Peralta to write an article about our lab, what our research is about, and to know more about the UCI Robotarium and the RaccoonBot. That was my first newspaper interview experience!"
                 list={[
                     <React.Fragment key="ssc-link">
                         Check out the article{" "}
