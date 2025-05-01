@@ -4,10 +4,10 @@ const fs = require("fs");
 
 const links = [
     { url: "/", changefreq: "daily", priority: 1.0 },
-    { url: "/about", changefreq: "monthly", priority: 0.8 },
-    { url: "/experience", changefreq: "monthly", priority: 0.8 },
-    { url: "/publications", changefreq: "monthly", priority: 0.8 },
-    { url: "/contact", changefreq: "monthly", priority: 0.8 },
+    { url: "/about", changefreq: "daily", priority: 0.9 },
+    { url: "/news", changefreq: "daily", priority: 0.9 },
+    { url: "/publications", changefreq: "daily", priority: 0.9 },
+    { url: "/vitae", changefreq: "daily", priority: 0.9 },
 ];
 
 (async () => {
