@@ -13,9 +13,7 @@ const Vitae = () => {
                     <CardItem
                         title="Doctor of Philosophy, Electrical and Computer Engineering"
                         subtitle="University of California, Irvine | 09/2023 - 06/2028"
-                        description="Research in multi-agent systems, collaboration in 
-                        heterogenous systems, graph neural networks, coverage control, 
-                        and quantum computing."
+                        description="Research in collaborative heterogeneous multi-agent systems, graph neural networks, and coverage control."
                         list={[
                             "Lab: UCI Robot Ecology Lab",
                             "PI: Professor Magnus Egerstedt",
@@ -67,13 +65,11 @@ const Vitae = () => {
             title: "Industry Experience",
             content: (
                 <div className="card-section">
-                    {/* ASML Card 2025 */}
                     <CardItem
                         title="ASML, Inc."
                         subtitle="Mechatronics Research Engineer Intern"
                         description="June 2025 - September 2025 | Wilton, CT"
                     />
-                    {/* ASML Card 2024 */}
                     <CardItem
                         title="ASML, Inc."
                         subtitle="Mechatronics and Control Systems Engineer Intern"
@@ -86,7 +82,6 @@ const Vitae = () => {
                             "Tools and Skills: Python, MATLAB, MS Excel, GPR, ML, convex optimization, electrical circuits, Sobol space-filled design of experiments, ASML machine software and software processes",
                         ]}
                     />
-                    {/* AviaPro Consulting Inc. Card */}
                     <CardItem
                         title="AviaPro Consulting Inc."
                         subtitle="Software Developer"
@@ -110,7 +105,12 @@ const Vitae = () => {
                         subtitle="Graduate Student Researcher"
                         description="April 2025 - June 2025 | Irvine, CA"
                         list={[
-                            "Conducting research in collaborative heterogenous multi-agent systems, coverage control, and graph neural networks",
+                            "Conducted research in collaborative heterogeneous multi-agent systems and graph neural networks at the Robot Ecology Lab, under the supervision of Professor Magnus Egerstedt; work resulted in a submitted research paper.",
+                            "Presented research findings in person at the 45th SoCal Control Workshop that took place at the University of California, San Diego",
+                            "Presented master thesis at the 2025 UCI GEECS Annual Technology Showcase",
+                            "Helped maintain the UCI Robot Ecology Lab Robotarium testbed, which consists of testing, debugging, and fixing the robots, as well as other troubleshooting processes",
+                            "Co-wrote the Robot Ecology Lab manual, which consists of all in-house processes needed by graduate students in the lab",
+                            "Conducted multiple lab tours with other lab members, which included live demonstrations of multiple homogenous robots in the Robotarium performing collaborative algorithms to more than 100+ visitors",
                         ]}
                     />
                     <CardItem
@@ -118,7 +118,9 @@ const Vitae = () => {
                         subtitle="Graduate Student Researcher"
                         description="January 2024 - June 2024 | Irvine, CA"
                         list={[
-                            "Conducting research in human-swarm interaction, formation control in multi-agent systems, optimization, and applied computer vision",
+                            "Conducted research in multi-agent systems, formation control, human-swarm interaction, and applied computer vision; work resulted in a submitted research paper",
+                            "Built and programmed the robots in the UCI Robot Ecology Lab Robotarium with other lab members during multiple robot building sessions",
+                            "Conducted multiple lab tours with other lab members, which included live demonstrations of multiple homogenous robots in the Robotarium performing collaborative algorithms to more than 100+ visitors",
                         ]}
                     />
                 </div>

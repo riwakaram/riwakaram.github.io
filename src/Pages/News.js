@@ -11,8 +11,30 @@ import SSCW2025Dinner from "../Images/SSCW2025Dinner.JPG";
 import SSCWGroup2025 from "../Images/SSCWGroup2025.jpg";
 import SSCWMe012025 from "../Images/SSCWMe_1_2025.jpg";
 import SSCWMe022025 from "../Images/SSCWMe_2_2025.jpg";
+import CPSIOTWeekBadge from "../Images/CPS-IOT Week Badge.jpeg";
+import CPSIOTWeekTalk from "../Images/CPS-IOT Week Talk.jpeg";
+import GEECSANTSPoster2025 from "../Images/Me Next to GEECSANTS Poster 2025.jpeg";
 
 const News = () => {
+    const geecsantsposter2025 = [
+        {
+            src: GEECSANTSPoster2025,
+            alt: "Me Next to GEECSANTS Poster 2025",
+            captionTitle: "Me next to my poster at the 2025GEECSANTS",
+        },
+    ];
+    const cpsiotweekvolunteering2025 = [
+        {
+            src: CPSIOTWeekBadge,
+            alt: "CPS-IoT Week 2025 badge",
+            captionTitle: "My CPS-IoT Week Badge and Volunteer Tag",
+        },
+        {
+            src: CPSIOTWeekTalk,
+            alt: "One of the CPS-IoT Week 2025 Talks",
+            captionTitle: "One of the CPS-IoT Week 2025 Talks",
+        },
+    ];
     const sscwPresentations2025 = [
         {
             src: SSCWMe012025,
@@ -55,6 +77,59 @@ const News = () => {
         <div className="container home-container">
             <Header />
 
+            <CardItem
+                title="June 6, 2025"
+                subtitle="GEECSANTS Poster Presentation 2025"
+                description="I presented my master thesis in a poster for the 2025 GEECS Annual Technology Showcase. It was a great opportunity to conect with faculty, meet new students, and know more about the research they conduct!"
+                list={[
+                    <React.Fragment key="cps-iot-link">
+                        Check the 2025 GEECSANTS website{" "}
+                        <a
+                            href="https://geecs.eng.uci.edu/geecsants2025/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            here
+                        </a>
+                        .
+                    </React.Fragment>,
+                ]}
+            >
+                <div
+                    className="d-flex justify-content-center"
+                    style={{ maxWidth: "40rem", margin: "auto" }}
+                >
+                    <img
+                        src={GEECSANTSPoster2025}
+                        alt="Me and my GEECSANTS Poster"
+                        className="bg-white img-fluid"
+                    />
+                </div>
+            </CardItem>
+            <CardItem
+                title="May 5 to May 9, 2025"
+                subtitle="Student Volunteer at the CPS-IoT Week 2025"
+                description="I participated in the 2025 CPS-IoT Week as a Student Volunteer, taking shifts at the registration desk, helping attendees to find where they need to go, helping organize poster sessions, and cleaning up at the end of each conference day. This event took place on campus at UCI, taking the record of biggest event ever to be hosted by the Student Center!"
+                list={[
+                    <React.Fragment key="cps-iot-link">
+                        Check the CPS-IoT 2025 website for more info about the
+                        conference{" "}
+                        <a
+                            href="https://cps-iot-week2025.ics.uci.edu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            here
+                        </a>
+                        .
+                    </React.Fragment>,
+                ]}
+            >
+                <Carousel
+                    id="cpsiotweekvolunteering2025"
+                    slides={cpsiotweekvolunteering2025}
+                />
+            </CardItem>
             <CardItem
                 title="April 29, 2025"
                 subtitle="LA Times Interview on the Robot Ecology Lab"

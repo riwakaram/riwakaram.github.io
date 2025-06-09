@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Accordion from "../Components/Accordion";
+import GEECSANTSPoster from "../Files/GEECSANTS Poster 2025.pdf";
 
 const Publications = () => {
     const sections = [
@@ -49,6 +50,34 @@ const Publications = () => {
                             <b>R. Karam</b>, R.Lin, B.A. Butler, M. Egerstedt,
                             "Resource Allocation with Multi-Team Collaboration
                             based on Hamilton’s Rule."
+                        </li>
+                    </ul>
+                </div>
+            ),
+        },
+        {
+            id: "posters",
+            title: "Poster Presentations",
+            content: (
+                <div className="card-section">
+                    <ul className="card-list">
+                        <li>
+                            GEECS Annual Technology Showcase (GEECSANTS) 2025 |
+                            University of California, Irvine | June 6, 2025
+                            <br />
+                            <b>R. Karam</b> and Magnus Egerstedt, "A Graphical
+                            Interface for Specifying and Establishing
+                            Multi-Robot Formations"
+                            <br />
+                            Check out the poster{" "}
+                            <a
+                                href={GEECSANTSPoster}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                here
+                            </a>
+                            .
                         </li>
                     </ul>
                 </div>

@@ -7,9 +7,7 @@ const MyNavbar = () => {
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                {/* Left side - Name */}
                 <Navbar.Brand className="d-flex align-items-center">
-                    {/* Favicon as Image */}
                     <img
                         src={logo}
                         alt="logo"
@@ -21,8 +19,6 @@ const MyNavbar = () => {
                     />
                     Riwa Karam
                 </Navbar.Brand>
-
-                {/* Centered nav items */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <div className="centered-nav">
@@ -34,7 +30,7 @@ const MyNavbar = () => {
                                 Curriculum Vitae
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/publications">
-                                Publications & Invited Talks
+                                Publications & Talks
                             </Nav.Link>
                             <Nav.Link as={NavLink} to="/news">
                                 News
