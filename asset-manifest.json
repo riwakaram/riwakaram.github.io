@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.70da4ebc.chunk.css",
-    "main.js": "/static/js/main.823b6656.chunk.js",
-    "main.js.map": "/static/js/main.823b6656.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0b5c24bd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0b5c24bd.js.map",
+    "main.js": "/static/js/main.12201b71.chunk.js",
+    "main.js.map": "/static/js/main.12201b71.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.195ff595.js",
+    "runtime-main.js.map": "/static/js/runtime-main.195ff595.js.map",
     "static/css/2.b0aab389.chunk.css": "/static/css/2.b0aab389.chunk.css",
-    "static/js/2.ca00ff12.chunk.js": "/static/js/2.ca00ff12.chunk.js",
-    "static/js/2.ca00ff12.chunk.js.map": "/static/js/2.ca00ff12.chunk.js.map",
-    "static/js/3.f0a313fb.chunk.js": "/static/js/3.f0a313fb.chunk.js",
-    "static/js/3.f0a313fb.chunk.js.map": "/static/js/3.f0a313fb.chunk.js.map",
+    "static/js/2.6aca807f.chunk.js": "/static/js/2.6aca807f.chunk.js",
+    "static/js/2.6aca807f.chunk.js.map": "/static/js/2.6aca807f.chunk.js.map",
+    "static/js/3.acaa8d23.chunk.js": "/static/js/3.acaa8d23.chunk.js",
+    "static/js/3.acaa8d23.chunk.js.map": "/static/js/3.acaa8d23.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c9dda075319a4ce192b8efe377d5908e.js": "/precache-manifest.c9dda075319a4ce192b8efe377d5908e.js",
+    "precache-manifest.00ae17aa0aa8f6ac270007120fa6ce4c.js": "/precache-manifest.00ae17aa0aa8f6ac270007120fa6ce4c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b0aab389.chunk.css.map": "/static/css/2.b0aab389.chunk.css.map",
     "static/css/main.70da4ebc.chunk.css.map": "/static/css/main.70da4ebc.chunk.css.map",
-    "static/js/2.ca00ff12.chunk.js.LICENSE.txt": "/static/js/2.ca00ff12.chunk.js.LICENSE.txt",
+    "static/js/2.6aca807f.chunk.js.LICENSE.txt": "/static/js/2.6aca807f.chunk.js.LICENSE.txt",
     "static/media/ASML Goodies.jpeg": "/static/media/ASML Goodies.9799093f.jpeg",
     "static/media/ASML ID.jpg": "/static/media/ASML ID.09ba2126.jpg",
     "static/media/ASMLCard.jpeg": "/static/media/ASMLCard.4c244033.jpeg",
     "static/media/ASMLPosterAll.jpeg": "/static/media/ASMLPosterAll.a7c69605.jpeg",
+    "static/media/CPS-IOT Week Badge.jpeg": "/static/media/CPS-IOT Week Badge.ef7abce0.jpeg",
+    "static/media/CPS-IOT Week Talk.jpeg": "/static/media/CPS-IOT Week Talk.13eb5838.jpeg",
+    "static/media/GEECSANTS Poster 2025.pdf": "/static/media/GEECSANTS Poster 2025.a0bee234.pdf",
+    "static/media/Me Next to GEECSANTS Poster 2025.jpeg": "/static/media/Me Next to GEECSANTS Poster 2025.6183c4d9.jpeg",
     "static/media/Prelim.pdf": "/static/media/Prelim.8ce6bad0.pdf",
     "static/media/Profile Pic.jpg": "/static/media/Profile Pic.df7297dc.jpg",
     "static/media/RiwaKaram_Resume.pdf": "/static/media/RiwaKaram_Resume.f71f52a5.pdf",
@@ -30,10 +34,10 @@
     "static/media/favicon.ico": "/static/media/favicon.49bcf5d6.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b5c24bd.js",
+    "static/js/runtime-main.195ff595.js",
     "static/css/2.b0aab389.chunk.css",
-    "static/js/2.ca00ff12.chunk.js",
+    "static/js/2.6aca807f.chunk.js",
     "static/css/main.70da4ebc.chunk.css",
-    "static/js/main.823b6656.chunk.js"
+    "static/js/main.12201b71.chunk.js"
   ]
 }
