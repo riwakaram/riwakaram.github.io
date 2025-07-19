@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import CardItem from "../Components/CardItem";
 import Carousel from "../Components/Carousel";
 import PrelimPhoto from "../Images/Prelim.pdf";
-import ASMLID from "../Images/ASML ID.jpg";
 import ASMLGoodies from "../Images/ASML Goodies.jpeg";
 import ASMLPosterAll from "../Images/ASMLPosterAll.jpeg";
 import ASMLCard from "../Images/ASMLCard.jpeg";
@@ -14,15 +13,9 @@ import SSCWMe022025 from "../Images/SSCWMe_2_2025.jpg";
 import CPSIOTWeekBadge from "../Images/CPS-IOT Week Badge.jpeg";
 import CPSIOTWeekTalk from "../Images/CPS-IOT Week Talk.jpeg";
 import GEECSANTSPoster2025 from "../Images/Me Next to GEECSANTS Poster 2025.jpeg";
+import GradPic from "../Images/Graduation Pic.jpg";
 
 const News = () => {
-    const geecsantsposter2025 = [
-        {
-            src: GEECSANTSPoster2025,
-            alt: "Me Next to GEECSANTS Poster 2025",
-            captionTitle: "Me next to my poster at the 2025GEECSANTS",
-        },
-    ];
     const cpsiotweekvolunteering2025 = [
         {
             src: CPSIOTWeekBadge,
@@ -57,26 +50,32 @@ const News = () => {
             captionTitle: "Dinner after SSCW at UCSD",
         },
     ];
-    const asmlFirst = [
-        {
-            src: ASMLGoodies,
-            alt: "ASML Goodies",
-            captionTitle: "ASML Goodies",
-            captionText:
-                "I got those ASML Goodies and Merch on my first day there!",
-        },
-        {
-            src: ASMLID,
-            alt: "ASML ID",
-            captionTitle: "ASML ID",
-            captionText:
-                "That was my ASML ID during my internship - so professional XD!",
-        },
-    ];
     return (
         <div className="container home-container">
             <Header />
 
+            <CardItem
+                title="July 15, 2025"
+                subtitle="First Paper Acceptance"
+                description="My paper got accepted as a regular paper at the 64th IEEE Conference on Decision and Control (CDC). This acceptance marks my first paper publication!"
+            ></CardItem>
+            <CardItem
+                title="June 23, 2025"
+                subtitle="Second First Day at my ASML Internship"
+                description="I started my second internship at ASML as a Mechatronics Research Engineer; so exciting to be back and meet a new team and learn about their research!"
+            ></CardItem>
+            <CardItem
+                title="June 14, 2025"
+                subtitle="Graduating with my Master of Science in Electrical and Computer Engineering"
+                description="I walked at the commencement ceremony for my graduation, earning my Master of Science in Electrical and Computer Engineering from the University of California, Irvine!"
+            >
+                <div
+                    className="d-flex justify-content-center"
+                    style={{ maxWidth: "25rem", margin: "auto" }}
+                >
+                    <img src={GradPic} alt="Grad" className="img-fluid" />
+                </div>
+            </CardItem>
             <CardItem
                 title="June 6, 2025"
                 subtitle="GEECSANTS Poster Presentation 2025"
@@ -221,7 +220,13 @@ const News = () => {
                 subtitle="First Day at my ASML Internship"
                 description="Traveled from the West coast all the way to the East coast for my internship at ASML, Inc. as a Mechatronics and Control Systems Engineer Intern!"
             >
-                <Carousel id="asml2024first" slides={asmlFirst} />
+                <div className="d-flex justify-content-center asml-goodies m-auto">
+                    <img
+                        src={ASMLGoodies}
+                        alt="Goodies"
+                        className="img-fluid"
+                    />
+                </div>
             </CardItem>
             <CardItem
                 title="April 19, 2024"

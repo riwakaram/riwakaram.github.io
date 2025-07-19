@@ -46,7 +46,7 @@ const About = () => {
                             <strong>Google Scholar:</strong>
                             <br />
                             <a
-                                href="#"
+                                href="https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

@@ -16,9 +16,8 @@ const Publications = () => {
                             "Resource Allocation with Multi-Team Collaboration
                             based on Hamilton's Rule,"{" "}
                             <i>2025 IEEE Conference on Decision and Control</i>{" "}
-                            (Under Review)
                         </li>
-                        <li>
+                        {/* <li>
                             <b>R. Karam</b>, M. Egerstedt, "A Graphical
                             Interface for Specifying and Establishing
                             Multi-Robot Formations,"{" "}
@@ -27,7 +26,7 @@ const Publications = () => {
                                 Intelligent Robots and Systems
                             </i>{" "}
                             (Under Review)
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             ),

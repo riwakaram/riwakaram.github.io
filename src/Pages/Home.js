@@ -24,7 +24,8 @@ const Home = () => {
                     <h2>Bio</h2>
                     <p>
                         I am a 2nd-year Ph.D. student in the Electrical
-                        Engineering and Computer Science (EECS) Department at{" "}
+                        Engineering and Computer Science (EECS) Department at
+                        the{" "}
                         <a
                             href="https://uci.edu/"
                             target="_blank"
@@ -45,8 +46,8 @@ const Home = () => {
                         under the guidance of Professor Magnus Egerstedt. My
                         research interests span a range of topics in robotics
                         and control, including multi-agent systems,
-                        collaboration, graph neural networks, coverage control,
-                        and quantum computing.
+                        heterogeneous collaboration, graph neural networks,
+                        coverage control, and quantum computing.
                     </p>
                 </div>
             </div>
@@ -72,7 +73,10 @@ const Home = () => {
                         and academic projects that honed my problem-solving and
                         technical skills. These experiences reinforced my
                         commitment to pursuing advanced research in engineering
-                        and robotics.
+                        and robotics. Following that, I got my Master of Science
+                        in Electrical and Computer Engineering from the
+                        University of California, Irvine while studying for my
+                        PhD.
                     </p>
                     <p>
                         In addition to my academic background, I have practical
@@ -96,24 +100,29 @@ const Home = () => {
                         >
                             ASML
                         </a>
-                        , focusing on high-precision systems, where I gained
-                        expertise in modeling, control design, and force
-                        estimation using techniques such as Gaussian Process
-                        Regression. I also tutored during my undergrad years.
+                        in summer of 2024, focusing on high-precision systems,
+                        where I gained expertise in modeling, control design,
+                        and force estimation using techniques such as Gaussian
+                        Process Regression. I then returned for a second
+                        internship at ASML for the sumemr of 2025 as a
+                        Mechatronics Research Engineer, researching ways to
+                        build a machine learning model for root cause analysis
+                        in systems. I also tutored peers and classmates during
+                        my undergrad years.
                     </p>
                     <p>
                         Outside of my academic and professional endeavors, I am
                         passionate about extracurricular activities that promote
                         physical and mental well-being. I am a volleyball player
-                        and swimmer and enjoy spending time outdoors.
-                        Additionally, I have a deep appreciation for movies, TV
-                        shows, and reading, which provide both relaxation and
-                        inspiration and initially sparked my interest in
-                        robotics. I truly believe that the mind and its
-                        imagination can be expanded outside of work and by being
-                        creative. These diverse interests reflect my commitment
-                        to maintaining a well-rounded and balanced approach to
-                        life.
+                        and swimmer, enjoy spending time outdoors as well as
+                        traveling and discovering new places. Additionally, I
+                        have a deep appreciation for movies, TV shows, and
+                        reading, which provide both relaxation and inspiration
+                        and initially sparked my interest in robotics. I truly
+                        believe that the mind and its imagination can be
+                        expanded outside of work and by being creative. These
+                        diverse interests reflect my commitment to maintaining a
+                        well-rounded and balanced approach to life.
                     </p>
                 </div>
             </div>
@@ -124,9 +133,9 @@ const Home = () => {
                     <h2>Research Keywords</h2>
                     <p>
                         <em>
-                            Multi-agent Systems, Collaboration, Networked
-                            Control Systems, Graph Neural Networks, Human-Swarm
-                            Interaction
+                            Multi-agent Systems, Heterogeneous Collaboration,
+                            Networked Control Systems, Graph Neural Networks,
+                            Machine Learning, Human-Swarm Interaction
                         </em>
                     </p>
                     <h2>Research Interests</h2>
