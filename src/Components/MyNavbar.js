@@ -5,41 +5,38 @@ import logo from "../Images/favicon.ico";
 
 const MyNavbar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" variant="dark" className="site-nav">
             <Container>
-                <Navbar.Brand className="d-flex align-items-center">
+                <Navbar.Brand className="brand-lockup">
                     <img
                         src={logo}
                         alt="logo"
-                        style={{
-                            width: "30px",
-                            height: "30px",
-                            marginRight: "10px",
-                        }}
+                        className="brand-mark"
                     />
-                    Riwa Karam
+                    <span>Riwa Karam</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <div className="centered-nav">
-                        <Nav className="ml-auto">
-                            <Nav.Link as={NavLink} to="/" exact>
+                    <Nav className="site-nav-links ms-auto">
+                        <Nav.Link as={NavLink} to="/" end>
                                 Home
-                            </Nav.Link>
-                            <Nav.Link as={NavLink} to="/vitae">
-                                Curriculum Vitae
-                            </Nav.Link>
-                            <Nav.Link as={NavLink} to="/publications">
-                                Publications & Talks
-                            </Nav.Link>
-                            <Nav.Link as={NavLink} to="/news">
-                                News
-                            </Nav.Link>
-                            <Nav.Link as={NavLink} to="/about">
-                                About
-                            </Nav.Link>
-                        </Nav>
-                    </div>
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/research">
+                            Research
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/publications">
+                            Publications
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/news">
+                            News
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/vitae">
+                            CV
+                        </Nav.Link>
+                        <Nav.Link as={NavLink} to="/about">
+                            Contact
+                        </Nav.Link>
+                    </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

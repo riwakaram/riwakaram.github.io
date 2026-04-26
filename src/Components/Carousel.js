@@ -9,9 +9,9 @@ const Carousel = ({ id = "myCarousel", slides = [] }) => {
                 {slides.map(({ src, alt, captionTitle, captionText }, i) => (
                     <div
                         key={i}
-                        className={`carousel-item ${i === 0 ? "active" : ""}`}
+                        className={`carousel-item ${i === 0 ? "active" : ""} portrait-media`}
                     >
-                        <img src={src} className="d-block w-100" alt={alt} />
+                        <img src={src} alt={alt} loading="lazy" />
                         {(captionTitle || captionText) && (
                             <div className="slide-caption mt-2">
                                 {captionTitle && <h5>{captionTitle}</h5>}

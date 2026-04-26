@@ -2,72 +2,78 @@ import React from "react";
 import Header from "../Components/Header";
 import Resume from "../Files/RiwaKaram_Resume.pdf";
 
+const contactLinks = [
+    {
+        label: "UCI Email",
+        value: "rwkaram [at] uci [dot] edu",
+        href: "mailto:rwkaram@uci.edu",
+    },
+    {
+        label: "Personal Email",
+        value: "riwa [dot] karam [at] icloud [dot] com",
+        href: "mailto:riwa.karam@icloud.com",
+    },
+    {
+        label: "Resume",
+        value: "Download PDF",
+        href: Resume,
+    },
+    {
+        label: "LinkedIn",
+        value: "linkedin.com/in/riwakaram",
+        href: "https://www.linkedin.com/in/riwakaram",
+    },
+    {
+        label: "Google Scholar",
+        value: "Scholar profile",
+        href: "https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en",
+    },
+    {
+        label: "GitHub",
+        value: "github.com/riwakaram",
+        href: "https://github.com/riwakaram",
+    },
+];
+
 const About = () => {
     return (
-        <div className="container home-container">
-            <Header />
-            <div className="contact-wrapper">
-                <h1>Contact Me</h1>
-                <p className="intro-text">
-                    Whether you have a question, would like to collaborate, or
-                    just want to say hello, feel free to reach out using the
-                    methods below.
+        <main className="page-shell">
+            <Header compact />
+            <section className="section-intro">
+                <p className="section-kicker">Contact</p>
+                <h2>
+                    For research questions, collaboration, or professional
+                    inquiries.
+                </h2>
+                <p>
+                    The best way to reach me is by email. I am also available
+                    through the academic and professional profiles below.
                 </p>
-                <div className="contact-info card-section">
-                    <div className="contact-card-item">
-                        <div className="contact-row">
-                            <strong>UCI Email:</strong>
-                            <br />
-                            <a href="mailto:rwkaram@uci.edu">rwkaram@uci.edu</a>
-                        </div>
-                        <div className="contact-row">
-                            <strong>Resume:</strong>
-                            <br />
-                            <a
-                                href={Resume}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Download My Resume
-                            </a>
-                        </div>
-                        <div className="contact-row">
-                            <strong>LinkedIn:</strong>
-                            <br />
-                            <a
-                                href="https://www.linkedin.com/in/riwakaram"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View my LinkedIn Profile
-                            </a>
-                        </div>
-                        <div className="contact-row">
-                            <strong>Google Scholar:</strong>
-                            <br />
-                            <a
-                                href="https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Visit my Google Scholar Page
-                            </a>
-                        </div>
-                        <div className="contact-row">
-                            <strong>GitHub:</strong>
-                            <br />
-                            <a
-                                href="https://github.com/riwakaram"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Check out my GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </section>
+
+            <section className="contact-grid">
+                {contactLinks.map((item) => (
+                    <a
+                        className="contact-card"
+                        href={item.href}
+                        target={
+                            item.href.startsWith("mailto:")
+                                ? undefined
+                                : "_blank"
+                        }
+                        rel={
+                            item.href.startsWith("mailto:")
+                                ? undefined
+                                : "noopener noreferrer"
+                        }
+                        key={item.label}
+                    >
+                        <span>{item.label}</span>
+                        <strong>{item.value}</strong>
+                    </a>
+                ))}
+            </section>
+        </main>
     );
 };
 

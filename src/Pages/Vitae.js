@@ -12,11 +12,12 @@ const Vitae = () => {
                 <div className="card-section">
                     <CardItem
                         title="Doctor of Philosophy, Electrical and Computer Engineering"
-                        subtitle="University of California, Irvine | 09/2023 - 06/2028"
-                        description="Research in collaborative heterogeneous multi-agent systems, graph neural networks, and coverage control."
+                        subtitle="University of California, Irvine | 09/2023 - Expected 06/2028"
+                        description="Research in collaborative multi-agent systems, optimization, machine learning, ecology robotics, coverage control, formation control, and human-swarm interaction."
                         list={[
                             "Lab: UCI Robot Ecology Lab",
-                            "PI: Professor Magnus Egerstedt",
+                            "Advisors: Professor Magnus Egerstedt and Professor Yanning Shen",
+                            "Clubs: Table Tennis, GEECS",
                         ]}
                     />
                     <CardItem
@@ -26,10 +27,9 @@ const Vitae = () => {
                         seminars, and thesis requirements. Research in formation control, 
                         human-swarm interaction, and applied computer vision."
                         list={[
-                            "GPA: 3.96/4.0",
+                            "GPA: 3.975/4.0",
                             "Master Thesis Title: A Graphical Interface for Specifying and Establishing Multi-Robot Formations",
-                            "Taken Courses: Computer Architecture, Design & Analysis of Algorithms, Advanced System Software, Control ML & AI, Energy Efficiency, Linear Optimization, Quantum Computing, Network Science, Master Thesis, EECS Seminar Series.",
-                            "Audited Courses: Linear Systems, Optimization.",
+                            "Relevant Coursework: Optimization, Network Science, Control and Machine Learning, Quantum Computing.",
                         ]}
                     />
                     <CardItem
@@ -38,9 +38,10 @@ const Vitae = () => {
                         description="Completed a Bachelor's degree in Computer Engineering and graduated as valedictorian of class 2023. Worked on projects involving embedded systems, computer architecture, and complex engineering design."
                         list={[
                             "GPA: 3.9/4.0",
+                            "Computer Engineering Class of 2020 Valedictorian",
                             "Activities: Varsity Volleyball Team, IEEE UoB Student Member",
                             "Graduation Project Title: Gamification of Virtual Reality Kitchen Scenarios",
-                            "Taken Courses: Calculus I, Calculus II, Circuit Analysis I, Circuit Analysis Lab, Computer Architecture, Computer Embedded Systems, Embedded Controllers Lab, Cybersecurity, Cybersecurity Lab, Differential Equations, Electrical Simulation & Design, Electronics I, Electronics Lab, Engineering Drawing, Engineering Management & Economics, English Communication Skills III, Information Networking I, Information Skills & Search Techniques, Instrumentation Lab, Introduction to Computer Programming, Introduction to Computer Programming Lab, Introduction to Digital Logic Design, Introduction to Psychology, Introduction to the Engineering Design Fundamentals, Linear Algebra, Literature & Identity, Logic Circuits, Logic Lab, Microcontrollers Lab, Microprocessors, Modern Arab Thought, Modern Thought, Numerical Analysis I, Object Oriented Programming, Object Oriented Programming Lab, Operating Systems, PLC Lab, Probability for Engineers, Programmable Logic Controllers, Programming for Engineering Solutions, Senior Design I, Senior Design II, Signal Processing, Signal & Systems Theory, Telecommunications, Telecommunications Lab.",
+                            "Relevant Coursework: Computer Architecture, Embedded Systems, Microcontrollers, Microprocessors, Operating Systems, Object-Oriented Programming, Cybersecurity, Signal Processing, Signals and Systems, Telecommunications, Probability for Engineers, Numerical Analysis, Linear Algebra, Differential Equations, Circuit Analysis, Electronics, and Programmable Logic Controllers.",
                         ]}
                     />
                     <CardItem
@@ -48,14 +49,14 @@ const Vitae = () => {
                         subtitle="Collège de la Sainte Famille Française Fanar | 09/2005 - 06/2020"
                         description="Graduated High School with both the French and the Lebanese Baccalaureates with High Distinction."
                         list={[
-                            "GPA: 17/20",
+                            "GPA: 17.1/20",
                             "Activities: Volleyball Team Captain and Opposite Hitter, Ping-Pong Team, Gymnastics Team, Guides du Liban.",
                         ]}
                     />
                     <CardItem
                         title="Violin"
                         subtitle="Lebanese National Higher Conservatory of Music | 09/2011 - 06/2016"
-                        description="Learned the art of playing the violin for 5 years (reached the 5th grade) by playing classical music from famous European artists, as well as taking courses in Music Theory, Solfège, and Harmonies."
+                        description="Learned the art of playing the violin for 5 years by playing classical music from famous European artists, as well as taking courses in Music Theory, Solfège, and Harmonies."
                     />
                 </div>
             ),
@@ -69,27 +70,34 @@ const Vitae = () => {
                         title="ASML, Inc."
                         subtitle="Mechatronics Research Engineer Intern"
                         description="June 2025 - September 2025 | Wilton, CT"
+                        list={[
+                            "Investigated machine health monitoring using statistical modeling and Bayesian hierarchical methods for uncertainty quantification and structural modeling.",
+                            "Developed a Bayesian hierarchical model using Python and the pymc library to predict drift effects and performance degradation, enabling root-cause analysis across machine lifetimes.",
+                            "Developed decision tree, random forest, multiple regression, and other toy regression models on subsets of the data to compare results with the Bayesian model and better understand the data.",
+                            "Conducted data collection, data analysis, and data preprocessing using Python and MATLAB, including regression modeling, principal component analysis (PCA), and heatmap-based pattern recognition.",
+                            "Learned and applied Monte Carlo Markov Chains (MCMC), Bayesian statistics, statistical methods, and time-lag regression techniques.",
+                        ]}
                     />
                     <CardItem
                         title="ASML, Inc."
                         subtitle="Mechatronics and Control Systems Engineer Intern"
                         description="June 2024 - September 2024 | Wilton, CT"
                         list={[
-                            "Developed a Gaussian Process Regression (GPR) model to predict force generated by a piezo-electric actuator, which led to a pending patent",
-                            "Enhanced baseline code for model training with various dataset sizes and visualization tools",
-                            "Automated a MATLAB/Python script, reducing workflow from 40 hours to an overnight run",
-                            "Investigated optimization problems and current-control hardware issues for test stands",
-                            "Tools and Skills: Python, MATLAB, MS Excel, GPR, ML, convex optimization, electrical circuits, Sobol space-filled design of experiments, ASML machine software and software processes",
+                            "Developed a Gaussian Process Regression (GPR) model using Python and MATLAB to predict force generated by a piezo-electric actuator with up to +/-2 Newtons of accuracy, which led to an ASML invention.",
+                            "Conducted data analysis and multiple toy regressions and machine learning models to understand correlations and co-dependencies in the data.",
+                            "Automated and merged MATLAB and Python scripts that run testing workflows for mechatronics and software teams, reducing runtime from 40 hours to an overnight run.",
+                            "Investigated feasibility of optimization problems and current-control hardware issues for test stands by analyzing electrical circuitry and alternative hardware.",
                         ]}
                     />
                     <CardItem
                         title="AviaPro Consulting Inc."
                         subtitle="Software Developer"
-                        developer="June 2022 - July 2023 | Remote"
+                        description="June 2022 - July 2023 | Remote"
                         list={[
-                            "Developed web applications and applied software DevOps practices",
-                            "Contributed to multiple full stack webdevelopment projects as well as a solo full stack web dev project",
-                            "Tools and Skills: HTML, JS, CSS, React.js, Node.js, Databases, Microsoft Tools",
+                            "Developed several web applications using React.js and Node.js, migrating the company from Excel-based repositories to a streamlined interface with multiple interconnected databases and internal tools.",
+                            "Applied software DevOps practices such as CI/CD, Infrastructure as Code, and Git.",
+                            "Contributed to multiple full-stack web development projects as well as a solo full-stack web development project.",
+                            "Started as a summer co-op and then transitioned to part-time work in September 2022.",
                         ]}
                     />
                 </div>
@@ -103,24 +111,16 @@ const Vitae = () => {
                     <CardItem
                         title="University of California, Irvine"
                         subtitle="Graduate Student Researcher"
-                        description="April 2025 - June 2025 | Irvine, CA"
+                        description="September 2023 - Present | Irvine, CA"
                         list={[
-                            "Conducted research in collaborative heterogeneous multi-agent systems and graph neural networks at the Robot Ecology Lab, under the supervision of Professor Magnus Egerstedt; work resulted in a submitted research paper.",
-                            "Presented research findings in person at the 45th SoCal Control Workshop that took place at the University of California, San Diego",
-                            "Presented master thesis at the 2025 UCI GEECS Annual Technology Showcase",
-                            "Helped maintain the UCI Robot Ecology Lab Robotarium testbed, which consists of testing, debugging, and fixing the robots, as well as other troubleshooting processes",
-                            "Co-wrote the Robot Ecology Lab manual, which consists of all in-house processes needed by graduate students in the lab",
-                            "Conducted multiple lab tours with other lab members, which included live demonstrations of multiple homogenous robots in the Robotarium performing collaborative algorithms to more than 100+ visitors",
-                        ]}
-                    />
-                    <CardItem
-                        title="University of California, Irvine"
-                        subtitle="Graduate Student Researcher"
-                        description="January 2024 - June 2024 | Irvine, CA"
-                        list={[
-                            "Conducted research in multi-agent systems, formation control, human-swarm interaction, and applied computer vision; work resulted in a submitted research paper",
-                            "Built and programmed the robots in the UCI Robot Ecology Lab Robotarium with other lab members during multiple robot building sessions",
-                            "Conducted multiple lab tours with other lab members, which included live demonstrations of multiple homogenous robots in the Robotarium performing collaborative algorithms to more than 100+ visitors",
+                            "Conducting research in collaborative multi-agent systems, optimization, machine learning, ecology robotics, coverage control, formation control, and human-swarm interaction under the supervision of Professors Magnus Egerstedt and Yanning Shen.",
+                            "Actively helping maintain the Robot Ecology Lab Robotarium testbed through testing, debugging, robot repair, and troubleshooting.",
+                            "Presented my first-author accepted regular paper at the 64th IEEE Conference on Decision and Control (CDC) in Rio de Janeiro, Brazil.",
+                            "Presented research findings at the 45th SoCal Control Workshop at the University of California, San Diego.",
+                            "Presented a poster on my master's thesis at the 2025 UCI GEECS Annual Technology Showcase.",
+                            "Mentored undergraduate student lab members and worked together on related projects.",
+                            "Co-wrote the Robot Ecology Lab manual, including debugging processes, experiment tutorials, and Vicon system maintenance.",
+                            "Conducted multiple lab tours with other lab members to more than 100 visitors, including live demonstrations of homogeneous robots in the Robotarium performing collaborative algorithms.",
                         ]}
                     />
                 </div>
@@ -139,6 +139,53 @@ const Vitae = () => {
                             "Privately tutored peers at the University of Balamand, Al-Kurah in courses such as Programming (Python, MATLAB, C), Signals and Systems, Microcontrollers, Embedded Systems, and Computer Architecture.",
                             "Received greatly positive feedback from tutored peers on my teaching skills.",
                         ]}
+                    />
+                </div>
+            ),
+        },
+        {
+            id: "publications",
+            title: "Publications",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration"
+                        subtitle="arXiv preprint | Submitted"
+                        description="Riwa Karam, Alexander A. Nguyen, Ruoyu Lin, David R. Martin, Diana Morales, Brooks A. Butler, and Magnus Egerstedt"
+                    />
+                    <CardItem
+                        title="Resource Allocation for Multi-Team Collaboration Based on Hamilton's Rule"
+                        subtitle="IEEE 64th Conference on Decision and Control | 2025"
+                        description="Riwa Karam, Ruoyu Lin, Brooks A. Butler, and Magnus Egerstedt. Rio de Janeiro, Brazil, pp. 6891-6898."
+                    />
+                    <CardItem
+                        title="A Graphical Interface for Specifying and Establishing Multi-Robot Formations"
+                        subtitle="M.S. Thesis, University of California, Irvine | 2025"
+                        description="Riwa Karam"
+                    />
+                </div>
+            ),
+        },
+        {
+            id: "skills",
+            title: "Skills",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="Programming Languages and Libraries"
+                        description="MATLAB, Python, Scikit-learn, PyTorch, Keras, NumPy, Pandas, Matplotlib, Shell Scripting, pymc, C, Java, C#."
+                    />
+                    <CardItem
+                        title="Hardware Technologies"
+                        description="Vicon Motion Capture (MoCap) System, Robotarium, robot building and debugging."
+                    />
+                    <CardItem
+                        title="Other Tools and Technologies"
+                        description="Git and GitHub, LaTeX, Simulink, VS Code, Unity, Microsoft Tools, Google Tools."
+                    />
+                    <CardItem
+                        title="Soft Skills"
+                        description="Research, time management, written and verbal communication, critical thinking."
                     />
                 </div>
             ),
@@ -165,18 +212,6 @@ const Vitae = () => {
                         title="IEEE Grand Tech 2023 Certification of Attendance"
                         subtitle="IEEE Computer Society | Issued Jun 2023"
                         list={["Virtual Reality", "Metaverse"]}
-                    />
-                    <CardItem
-                        title="Dean's Honor List"
-                        subtitle="Faculty of Engineering at the University of Balamand, Al-Kurah"
-                        list={[
-                            "Spring 2023",
-                            "Fall 2022",
-                            "Spring 2022",
-                            "Fall 2021",
-                            "Spring 2021",
-                            "Fall 2020",
-                        ]}
                     />
                     <CardItem
                         title="Introduction to Simulink"
@@ -234,6 +269,10 @@ const Vitae = () => {
                         subtitle="Faculty of Engineering at the University of Balamand | Jun 2023"
                         description="Recipient of the Faculty Excellent Achievement Award for obtaining the highest GPA among all graduating computer engineering undergraduate students of class 2023."
                     />
+                    <CardItem
+                        title="Dean's Honor List"
+                        subtitle="University of Balamand, Faculty of Engineering | August 2020 - June 2023"
+                    />
                 </div>
             ),
         },
@@ -245,15 +284,15 @@ const Vitae = () => {
                     <CardItem title="Arabic" description="Native language" />
                     <CardItem
                         title="French"
-                        description="Native language, language of education."
+                        description="High proficiency, language of education in school."
                     />
                     <CardItem
                         title="English"
-                        description="Fluent in both spoken and written English, used in academic and professional contexts."
+                        description="High proficiency, language of education in college."
                     />
                     <CardItem
                         title="Spanish"
-                        description="Beginner in both speaking and writing."
+                        description="Beginner, Duolingo score of 38 (A2 level of CEFR)."
                     />
                 </div>
             ),
@@ -293,14 +332,13 @@ const Vitae = () => {
                             "Volleyball",
                             "Ping-Pong",
                             "Gymnastics",
-                            "Badminton",
-                            "Swimming",
+                            "Music",
+                            "Biking",
                             "Surfing",
-                            "Hiking",
+                            "Swimming",
                             "Board Games",
                             "Reading Books",
                             "Watching Movies",
-                            "Learning Languages",
                         ]}
                     />
                 </div>
@@ -309,10 +347,10 @@ const Vitae = () => {
     ];
 
     return (
-        <div className="container home-container">
-            <Header />
+        <main className="page-shell">
+            <Header compact />
             <Accordion sections={sections} />
-        </div>
+        </main>
     );
 };
 
