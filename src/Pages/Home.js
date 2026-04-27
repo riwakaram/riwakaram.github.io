@@ -13,17 +13,22 @@ const Home = () => {
     const news = [
         {
             date: "May 21, 2026",
-            title: "Passed my PhD Qualifying Exam",
+            title: "Passed My PhD Qualifying Exam",
+            text: "I passed my PhD Qualifying Exam, a major milestone where I presented my current research and future research plans to my committee. Officially a PhD Candidate at UC Irvine!",
         },
         {
             date: "December 8-12, 2025",
-            title: "Presented my first-author paper at IEEE CDC 2025",
+            title: "First Conference: IEEE CDC 2025",
+            text: "I attended my first major research conference, the 64th IEEE Conference on Decision and Control in Rio de Janeiro, Brazil, where I presented my first-author paper on resource allocation for multi-team collaboration.",
         },
         {
             date: "September 10, 2025",
-            title: "Completed my second ASML internship",
+            title: "Completed My Second ASML Internship",
+            text: "I completed my second summer internship at ASML as a Mechatronics Research Engineer Intern, and headed back to campus to focus on research for my PhD",
         },
     ];
+
+    const [latestUpdate, ...recentUpdates] = news;
 
     return (
         <main className="page-shell">
@@ -120,13 +125,21 @@ const Home = () => {
                         View all news
                     </Link>
                 </div>
-                <div className="timeline compact-timeline">
-                    {news.map((item) => (
-                        <article className="timeline-item" key={item.title}>
-                            <time>{item.date}</time>
-                            <h3>{item.title}</h3>
-                        </article>
-                    ))}
+                <div className="home-news-grid">
+                    <article className="home-news-feature">
+                        <time>{latestUpdate.date}</time>
+                        <h3>{latestUpdate.title}</h3>
+                        <p>{latestUpdate.text}</p>
+                    </article>
+                    <div className="home-news-list">
+                        {recentUpdates.map((item) => (
+                            <article className="home-news-card" key={item.title}>
+                                <time>{item.date}</time>
+                                <h3>{item.title}</h3>
+                                <p>{item.text}</p>
+                            </article>
+                        ))}
+                    </div>
                 </div>
             </section>
         </main>

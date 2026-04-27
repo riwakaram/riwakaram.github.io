@@ -95,6 +95,10 @@ const presentations = [
         date: "December 12, 2025",
         links: [
             {
+                href: "https://cdc2025.ieeecss.org/",
+                text: "Conference Website",
+            },
+            {
                 href: CDC2025Presentation,
                 text: "Slides",
             },
@@ -113,6 +117,10 @@ const presentations = [
         linkText: "Poster PDF",
         links: [
             {
+                href: "https://geecs.eng.uci.edu/geecsants2025/",
+                text: "Showcase Website",
+            },
+            {
                 href: GEECSANTSPoster,
                 text: "Poster PDF",
             },
@@ -125,6 +133,10 @@ const presentations = [
         location: "University of California, San Diego",
         date: "April 18, 2025",
         links: [
+            {
+                href: "http://terrano.ucsd.edu/jorge/sccw/index.html",
+                text: "Workshop Website",
+            },
             {
                 href: SCCW2025Presentation,
                 text: "Slides",

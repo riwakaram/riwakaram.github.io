@@ -2,14 +2,64 @@ import React from "react";
 import Header from "../Components/Header";
 import Accordion from "../Components/Accordion";
 import CardItem from "../Components/CardItem";
+import HonorListFall2020 from "../Images/01_Fall2020_Honor's_List_Diploma.png";
+import HonorListSpring2021 from "../Images/02_Spring2021_Honor's_List_Diploma.png";
+import HonorListFall2021 from "../Images/03_Fall2021_Honor's_List_Diploma.jpg";
+import HonorListSpring2022 from "../Images/04_Spring2022_Honor's_List_Diploma.png";
+import HonorListFall2022 from "../Images/05_Fall2022_Honor's_List_Diploma.png";
+import HonorListSpring2023 from "../Images/06_Spring2023_Honor's_List_Diploma.png";
+import SimulinkIntroCertificate from "../Images/ASME Certificate of Participation - Introduction to Simulink.jpg";
+import FacultyAwardCertificate from "../Images/Faculty Award for Academic Excellence.jpeg";
+import GrandTechCertificate from "../Files/Grand Tech 2023 - Certificate of Attendance.pdf";
+import IEEEXtremeCertificate from "../Files/IEEE Xtreme 2022 Certificate of Participation.pdf";
+import LebanonAIChallengeCertificate from "../Files/Lebanon AI & IoT Challenge - First Place Winner.pdf";
+import MATLABOnrampCertificate from "../Files/MATLAB Onramp Course Completion Certificate.pdf";
+import MentorCollectiveCertificate from "../Files/Mentor Collective Mentorship.pdf";
+import Resume from "../Files/RiwaKaram_Resume.pdf";
+import AdditionalCertificate from "../Files/Riwa Karam - 2026-03-26.pdf";
+import SimulinkOnrampCertificate from "../Files/Simulink Onramp Course Completion Certificate.pdf";
+import ZAKACertificate from "../Files/ZAKA AI Bootcamp.pdf";
+
+const ResourceLinks = ({ links }) => (
+    <div className="publication-links vitae-resource-links">
+        {links.map((link) => (
+            <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={link.text}
+            >
+                {link.text}
+            </a>
+        ))}
+    </div>
+);
 
 const Vitae = () => {
+    const highlights = [
+        {
+            label: "Current Role",
+            value: "Graduate Student Researcher",
+            detail: "Electrical and Computer Engineering, UC Irvine",
+        },
+        {
+            label: "Research Home",
+            value: "Robot Ecology Lab",
+            detail: "Multi-agent systems, machine learning, and robotics",
+        },
+        {
+            label: "Industry Experience",
+            value: "ASML Internships",
+            detail: "Mechatronics research, modeling, and machine learning",
+        },
+    ];
+
     const sections = [
         {
             id: "education",
             title: "Education",
             content: (
-                <div className="card-section">
+                <div className="card-section plain-card-lists">
                     <CardItem
                         title="Doctor of Philosophy, Electrical and Computer Engineering"
                         subtitle="University of California, Irvine | 09/2023 - Expected 06/2028"
@@ -65,7 +115,7 @@ const Vitae = () => {
             id: "industry",
             title: "Industry Experience",
             content: (
-                <div className="card-section">
+                <div className="card-section plain-card-lists">
                     <CardItem
                         title="ASML, Inc."
                         subtitle="Mechatronics Research Engineer Intern"
@@ -107,7 +157,7 @@ const Vitae = () => {
             id: "academic",
             title: "Academic Experience",
             content: (
-                <div className="card-section">
+                <div className="card-section plain-card-lists">
                     <CardItem
                         title="University of California, Irvine"
                         subtitle="Graduate Student Researcher"
@@ -130,7 +180,7 @@ const Vitae = () => {
             id: "teaching",
             title: "Teaching Experience",
             content: (
-                <div className="card-section">
+                <div className="card-section plain-card-lists">
                     <CardItem
                         title="Self-Employed"
                         subtitle="Private Tutor"
@@ -149,8 +199,13 @@ const Vitae = () => {
             content: (
                 <div className="card-section">
                     <CardItem
+                        title="Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems"
+                        subtitle="arXiv preprint, submitted | 2026"
+                        description="Riwa Karam, Ruoyu Lin, Brooks A. Butler, and Magnus Egerstedt"
+                    />
+                    <CardItem
                         title="Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration"
-                        subtitle="arXiv preprint | Submitted"
+                        subtitle="arXiv preprint, submitted | 2026"
                         description="Riwa Karam, Alexander A. Nguyen, Ruoyu Lin, David R. Martin, Diana Morales, Brooks A. Butler, and Magnus Egerstedt"
                     />
                     <CardItem
@@ -167,25 +222,94 @@ const Vitae = () => {
             ),
         },
         {
+            id: "volunteering",
+            title: "Volunteering",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="IEEE CSS NextCom"
+                        subtitle="General Activities Committee Member | March 2026 - Present"
+                        description="Contributing to activities that support students, early career researchers, and young professionals in the IEEE Control Systems Society community."
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: "https://sites.google.com/view/css-nextcom",
+                                    text: "Website",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="CPS-IoT Week 2025"
+                        subtitle="Student Volunteer | May 5-9, 2025 | University of California, Irvine"
+                        description="Supported registration, poster sessions, attendee logistics, and event operations."
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: "https://cps-iot-week2025.ics.uci.edu",
+                                    text: "Website",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                </div>
+            ),
+        },
+        {
             id: "skills",
             title: "Skills",
             content: (
                 <div className="card-section">
                     <CardItem
                         title="Programming Languages and Libraries"
-                        description="MATLAB, Python, Scikit-learn, PyTorch, Keras, NumPy, Pandas, Matplotlib, Shell Scripting, pymc, C, Java, C#."
+                        list={[
+                            "MATLAB",
+                            "Python",
+                            "Scikit-learn",
+                            "PyTorch",
+                            "Keras",
+                            "NumPy",
+                            "Pandas",
+                            "Matplotlib",
+                            "Shell Scripting",
+                            "pymc",
+                            "C",
+                            "Java",
+                            "C#",
+                        ]}
                     />
                     <CardItem
                         title="Hardware Technologies"
-                        description="Vicon Motion Capture (MoCap) System, Robotarium, robot building and debugging."
+                        list={[
+                            "Vicon Motion Capture (MoCap) System",
+                            "Robotarium",
+                            "Robot building and debugging",
+                        ]}
                     />
                     <CardItem
                         title="Other Tools and Technologies"
-                        description="Git and GitHub, LaTeX, Simulink, VS Code, Unity, Microsoft Tools, Google Tools."
+                        list={[
+                            "Git",
+                            "GitHub",
+                            "LaTeX",
+                            "Simulink",
+                            "VS Code",
+                            "Unity",
+                            "Microsoft Tools",
+                            "Google Tools",
+                        ]}
                     />
                     <CardItem
                         title="Soft Skills"
-                        description="Research, time management, written and verbal communication, critical thinking."
+                        list={[
+                            "Research",
+                            "Time management",
+                            "Written communication",
+                            "Verbal communication",
+                            "Critical thinking",
+                        ]}
                     />
                 </div>
             ),
@@ -195,6 +319,32 @@ const Vitae = () => {
             title: "Licenses and Certifications",
             content: (
                 <div className="card-section">
+                    <CardItem
+                        title="Mentor Collective DE&I"
+                        subtitle="Mentor Collective | Issued Mar 2026"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: AdditionalCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="Mentor Collective Mentorship"
+                        subtitle="Mentor Collective | Issued Jun 2025"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: MentorCollectiveCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="ZAKA AI Bootcamp"
                         subtitle="ZAKA | Issued Sep 2023"
@@ -207,29 +357,43 @@ const Vitae = () => {
                             "Data Science",
                             "Time Series Analysis",
                         ]}
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: ZAKACertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="IEEE Grand Tech 2023 Certification of Attendance"
                         subtitle="IEEE Computer Society | Issued Jun 2023"
                         list={["Virtual Reality", "Metaverse"]}
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: GrandTechCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
-                        title="Introduction to Simulink"
-                        subtitle="ASME University of Balamand Student Section | Issued May 2022"
-                    />
-                    <CardItem
-                        title="First Place Winner in the Lebanon IoT & AI Challenge 2021"
-                        subtitle="Arab IoT & AI Challenge | Issued Nov 2021"
-                        description="1st out of 12 teams"
-                    />
-                    <CardItem
-                        title="Simulink Onramp"
-                        subtitle="Mathworks | Issued Apr 2021"
-                    />
-                    <CardItem
-                        title="MATLAB Onramp"
-                        subtitle="Mathworks | Issued Feb 2021"
-                    />
+                        title="IEEE Xtreme 2022 Certificate of Participation"
+                        subtitle="IEEE | Issued Oct 2022"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: IEEEXtremeCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="IELTS Academic"
                         subtitle="Beirut | Issued Sep 2022 - Expired Sep 2024"
@@ -241,6 +405,59 @@ const Vitae = () => {
                             "Speaking: 7.5",
                         ]}
                     />
+                    <CardItem
+                        title="Introduction to Simulink"
+                        subtitle="ASME University of Balamand Student Section | Issued May 2022"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: SimulinkIntroCertificate,
+                                    text: "Certificate Image",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="First Place Winner in the Lebanon IoT & AI Challenge 2021"
+                        subtitle="Arab IoT & AI Challenge | Issued Nov 2021"
+                        description="1st out of 12 teams"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: LebanonAIChallengeCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="Simulink Onramp"
+                        subtitle="Mathworks | Issued Apr 2021"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: SimulinkOnrampCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="MATLAB Onramp"
+                        subtitle="Mathworks | Issued Feb 2021"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: MATLABOnrampCertificate,
+                                    text: "Certificate PDF",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="SAT"
                         subtitle="Beirut | Issued Dec 2018"
@@ -268,11 +485,49 @@ const Vitae = () => {
                         title="Faculty Award for Academic Excellence"
                         subtitle="Faculty of Engineering at the University of Balamand | Jun 2023"
                         description="Recipient of the Faculty Excellent Achievement Award for obtaining the highest GPA among all graduating computer engineering undergraduate students of class 2023."
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: FacultyAwardCertificate,
+                                    text: "Award Image",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="Dean's Honor List"
                         subtitle="University of Balamand, Faculty of Engineering | August 2020 - June 2023"
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: HonorListFall2020,
+                                    text: "Fall 2020",
+                                },
+                                {
+                                    href: HonorListSpring2021,
+                                    text: "Spring 2021",
+                                },
+                                {
+                                    href: HonorListFall2021,
+                                    text: "Fall 2021",
+                                },
+                                {
+                                    href: HonorListSpring2022,
+                                    text: "Spring 2022",
+                                },
+                                {
+                                    href: HonorListFall2022,
+                                    text: "Fall 2022",
+                                },
+                                {
+                                    href: HonorListSpring2023,
+                                    text: "Spring 2023",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                 </div>
             ),
         },
@@ -327,18 +582,19 @@ const Vitae = () => {
             content: (
                 <div className="card-section">
                     <CardItem
-                        title="Unordered List of Hobbies and Interests"
                         list={[
                             "Volleyball",
                             "Ping-Pong",
+                            "Running",
                             "Gymnastics",
-                            "Music",
                             "Biking",
                             "Surfing",
                             "Swimming",
+                            "Music",
                             "Board Games",
                             "Reading Books",
                             "Watching Movies",
+                            "Learning Languages",
                         ]}
                     />
                 </div>
@@ -349,7 +605,44 @@ const Vitae = () => {
     return (
         <main className="page-shell">
             <Header compact />
-            <Accordion sections={sections} />
+            <section className="section-intro vitae-intro">
+                <div>
+                    <p className="section-kicker">Curriculum Vitae</p>
+                    <h2>Academic training, research, and professional work.</h2>
+                    <p>
+                        A structured overview of my education, research,
+                        industry experience, publications, awards, and skills.
+                    </p>
+                </div>
+                <a
+                    className="button-secondary"
+                    href={Resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Download PDF
+                </a>
+            </section>
+
+            <section className="vitae-highlight-grid">
+                {highlights.map((item) => (
+                    <article className="vitae-highlight-card" key={item.label}>
+                        <span>{item.label}</span>
+                        <strong>{item.value}</strong>
+                        <p>{item.detail}</p>
+                    </article>
+                ))}
+            </section>
+
+            <section className="vitae-content">
+                <div className="section-heading-row">
+                    <div>
+                        <p className="section-kicker">Details</p>
+                        <h2>Full CV</h2>
+                    </div>
+                </div>
+                <Accordion sections={sections} />
+            </section>
         </main>
     );
 };

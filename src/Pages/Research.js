@@ -10,7 +10,7 @@ const researchAreas = [
     {
         title: "Learning for Robotic Behavior",
         text: "Exploring machine learning methods for robotic systems and collaborative behavior.",
-        tags: ["robot learning", "NP-Hardness", "ecology-inspired robotics"],
+        tags: ["robot learning", "NP-hardness", "ecology-inspired robotics"],
     },
     {
         title: "Robotarium and Hardware Systems",

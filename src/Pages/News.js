@@ -2,11 +2,13 @@ import React from "react";
 import Header from "../Components/Header";
 import Carousel from "../Components/Carousel";
 import PrelimPDF from "../Images/Prelim.pdf";
+import CDC2025Presentation from "../Files/CDC2025Pres.pdf";
+import GEECSANTSPosterPDF from "../Files/GEECSANTS Poster 2025.pdf";
+import SCCW2025Presentation from "../Files/SCCW2025.pdf";
 import ASMLGoodies from "../Images/ASML Goodies.jpeg";
 import ASML2025 from "../Images/ASML2025.jpeg";
 import ASMLPosterAll from "../Images/ASMLPosterAll.jpeg";
 import ASMLPosterAll2025 from "../Images/ASMLPosterAll2025.jpeg";
-import ASMLCard from "../Images/ASMLCard.jpeg";
 import CDC2025AcceptanceLetter from "../Images/CDC2025AcceptanceLetter.png";
 import CDCMerch from "../Images/CDCMerch.jpeg";
 import SSCW2025Dinner from "../Images/SSCW2025Dinner.JPG";
@@ -15,6 +17,7 @@ import SSCWMe012025 from "../Images/SSCWMe_1_2025.jpg";
 import SSCWMe022025 from "../Images/SSCWMe_2_2025.jpg";
 import CPSIOTWeekBadge from "../Images/CPS-IOT Week Badge.jpeg";
 import CPSIOTWeekTalk from "../Images/CPS-IOT Week Talk.jpeg";
+import FacultyAward from "../Images/Faculty Award for Academic Excellence.jpeg";
 import GEECSANTSPoster2025 from "../Images/Me Next to GEECSANTS Poster 2025.jpeg";
 import MeInCDC from "../Images/MeinCDC.jpeg";
 import GradPic from "../Images/Graduation Pic.jpg";
@@ -98,8 +101,20 @@ const News = () => {
             date: "December 8-12, 2025",
             title: "First Conference: IEEE CDC 2025",
             text: "I attended my first major research conference, the 64th IEEE Conference on Decision and Control in Rio de Janeiro, Brazil, where I presented my first-author paper on resource allocation for multi-team collaboration.",
-            link: "https://youtu.be/BP2W7RUw0c4",
-            linkText: "Presentation Recording",
+            links: [
+                {
+                    href: "https://cdc2025.ieeecss.org/",
+                    text: "Conference website",
+                },
+                {
+                    href: CDC2025Presentation,
+                    text: "Slides",
+                },
+                {
+                    href: "https://youtu.be/BP2W7RUw0c4",
+                    text: "Presentation recording",
+                },
+            ],
             media: (
                 <Carousel id="cdcConference2025" slides={cdcConference2025} />
             ),
@@ -145,8 +160,16 @@ const News = () => {
             date: "June 6, 2025",
             title: "GEECSANTS Poster Presentation",
             text: "I presented my master's thesis poster at the 2025 GEECS Annual Technology Showcase.",
-            link: "https://geecs.eng.uci.edu/geecsants2025/",
-            linkText: "Showcase Website",
+            links: [
+                {
+                    href: "https://geecs.eng.uci.edu/geecsants2025/",
+                    text: "Showcase website",
+                },
+                {
+                    href: GEECSANTSPosterPDF,
+                    text: "Poster PDF",
+                },
+            ],
             media: (
                 <NewsImage
                     src={GEECSANTSPoster2025}
@@ -179,8 +202,16 @@ const News = () => {
             date: "April 18, 2025",
             title: "45th Southern California Control Workshop",
             text: "I presented recent research at SSCW at the University of California, San Diego.",
-            link: "http://terrano.ucsd.edu/jorge/sccw/index.html",
-            linkText: "Workshop website",
+            links: [
+                {
+                    href: "http://terrano.ucsd.edu/jorge/sccw/index.html",
+                    text: "Workshop website",
+                },
+                {
+                    href: SCCW2025Presentation,
+                    text: "Slides",
+                },
+            ],
             media: (
                 <Carousel
                     id="sscwPresentation2025"
@@ -197,15 +228,8 @@ const News = () => {
         },
         {
             date: "September 13, 2024",
-            title: "Completed ASML Internship",
+            title: "Completed My First ASML Internship",
             text: "I finished my summer internship at ASML and returned to campus for research in the Robot Ecology Lab.",
-            media: (
-                <NewsImage
-                    src={ASMLCard}
-                    alt="ASML card"
-                    className="portrait-media"
-                />
-            ),
         },
         {
             date: "August 7, 2024",
@@ -236,7 +260,7 @@ const News = () => {
             title: "43rd Southern California Control Workshop",
             text: "I attended my first control workshop at UCLA.",
             link: "https://samueli.ucla.edu/upcoming-events/43rd-southern-california-control-workshop/",
-            linkText: "Workshop website",
+            linkText: "Workshop Website",
         },
         {
             date: "April 8, 2024",
@@ -245,40 +269,139 @@ const News = () => {
             link: PrelimPDF,
             linkText: "View letter",
         },
+        {
+            date: "September 25, 2023",
+            title: "First Day at UCI",
+            text: "I started at UC Irvine and attended M.S. and PhD orientations.",
+        },
+        {
+            date: "July 27, 2023",
+            title: "Faculty Award for Academic Excellence",
+            text: "I received the Faculty Award for Academic Excellence during the award ceremony.",
+            media: (
+                <NewsImage
+                    src={FacultyAward}
+                    alt="Riwa Karam receiving the Faculty Award for Academic Excellence"
+                    className="portrait-media"
+                />
+            ),
+        },
+        {
+            date: "July 8, 2023",
+            title: "B.S. Graduation, Valedictorian",
+            text: "I graduated with a Bachelor of Science in Computer Engineering as valedictorian.",
+        },
+        {
+            date: "May 16, 2023",
+            title: "B.S. Graduation Project Presentation",
+            text: "I presented my B.S. graduation project.",
+        },
+        {
+            date: "February 7, 2023",
+            title: "UCI Acceptance Letter",
+            text: "I received my acceptance letter from UC Irvine.",
+        },
     ];
+
+    const [featuredEntry, ...timelineEntries] = entries;
+
+    const renderEntryLinks = (entry) => {
+        const links =
+            entry.links ||
+            (entry.link
+                ? [
+                      {
+                          href: entry.link,
+                          text: entry.linkText,
+                      },
+                  ]
+                : []);
+
+        if (!links.length) return null;
+
+        return (
+            <div className="news-links">
+                {links.map((link) => (
+                    <a
+                        className="news-link"
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        key={link.text}
+                    >
+                        {link.text}
+                    </a>
+                ))}
+            </div>
+        );
+    };
 
     return (
         <main className="page-shell">
             <Header compact />
-            <section className="section-intro">
-                <p className="section-kicker">News</p>
-                <h2>Milestones from research, conferences, and internships.</h2>
-                <p>
-                    A chronological record of academic, research, and
-                    professional updates.
-                </p>
+            <section className="section-intro news-intro">
+                <div>
+                    <p className="section-kicker">News</p>
+                    <h2>
+                        Milestones from research, conferences, and internships.
+                    </h2>
+                    <p>
+                        A chronological record of academic, research, and
+                        professional updates.
+                    </p>
+                </div>
+                <div className="news-stats" aria-label="News summary">
+                    <span>
+                        <strong>{entries.length}</strong>
+                        Updates
+                    </span>
+                    <span>
+                        <strong>2023-2026</strong>
+                        Timeline
+                    </span>
+                </div>
             </section>
 
-            <section className="timeline">
-                {entries.map((entry) => (
+            <section className="news-feature">
+                <div>
+                    <p className="section-kicker">Latest Update</p>
+                    <time>{featuredEntry.date}</time>
+                    <h3>{featuredEntry.title}</h3>
+                    <p>{featuredEntry.text}</p>
+                    {renderEntryLinks(featuredEntry)}
+                </div>
+                {featuredEntry.media && (
+                    <aside className="news-feature-media">
+                        {featuredEntry.media}
+                    </aside>
+                )}
+            </section>
+
+            <section
+                className="timeline news-timeline"
+                aria-label="News archive"
+            >
+                {timelineEntries.map((entry) => (
                     <article
                         className="timeline-item"
                         key={`${entry.date}-${entry.title}`}
                     >
                         <time>{entry.date}</time>
-                        <div className="timeline-card">
-                            <h3>{entry.title}</h3>
-                            <p>{entry.text}</p>
-                            {entry.link && (
-                                <a
-                                    href={entry.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {entry.linkText}
-                                </a>
+                        <div
+                            className={`timeline-card news-entry-card ${
+                                entry.media ? "has-media" : ""
+                            }`}
+                        >
+                            <div className="news-entry-content">
+                                <h3>{entry.title}</h3>
+                                <p>{entry.text}</p>
+                                {renderEntryLinks(entry)}
+                            </div>
+                            {entry.media && (
+                                <aside className="news-entry-media">
+                                    {entry.media}
+                                </aside>
                             )}
-                            {entry.media}
                         </div>
                     </article>
                 ))}
