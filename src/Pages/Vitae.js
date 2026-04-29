@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import Accordion from "../Components/Accordion";
 import CardItem from "../Components/CardItem";
+import CDC2025Paper from "../Files/CDC2025.pdf";
 import HonorListFall2020 from "../Images/01_Fall2020_Honor's_List_Diploma.png";
 import HonorListSpring2021 from "../Images/02_Spring2021_Honor's_List_Diploma.png";
 import HonorListFall2021 from "../Images/03_Fall2021_Honor's_List_Diploma.jpg";
@@ -15,9 +16,11 @@ import IEEEXtremeCertificate from "../Files/IEEE Xtreme 2022 Certificate of Part
 import LebanonAIChallengeCertificate from "../Files/Lebanon AI & IoT Challenge - First Place Winner.pdf";
 import MATLABOnrampCertificate from "../Files/MATLAB Onramp Course Completion Certificate.pdf";
 import MentorCollectiveCertificate from "../Files/Mentor Collective Mentorship.pdf";
+import MSThesis from "../Files/MS-Thesis.pdf";
 import Resume from "../Files/RiwaKaram_Resume.pdf";
 import AdditionalCertificate from "../Files/Riwa Karam - 2026-03-26.pdf";
 import SimulinkOnrampCertificate from "../Files/Simulink Onramp Course Completion Certificate.pdf";
+import SurveyPaper from "../Files/Survey.pdf";
 import ZAKACertificate from "../Files/ZAKA AI Bootcamp.pdf";
 
 const ResourceLinks = ({ links }) => (
@@ -142,12 +145,18 @@ const Vitae = () => {
                     <CardItem
                         title="AviaPro Consulting Inc."
                         subtitle="Software Developer"
-                        description="June 2022 - July 2023 | Remote"
+                        description={
+                            <>
+                                Co-op: June 2022 - August 2022 | Hybrid
+                                <br />
+                                Part-time: September 2022 - July 2023 | Remote
+                            </>
+                        }
                         list={[
                             "Developed several web applications using React.js and Node.js, migrating the company from Excel-based repositories to a streamlined interface with multiple interconnected databases and internal tools.",
                             "Applied software DevOps practices such as CI/CD, Infrastructure as Code, and Git.",
                             "Contributed to multiple full-stack web development projects as well as a solo full-stack web development project.",
-                            "Started as a summer co-op and then transitioned to part-time work in September 2022.",
+                            "Started as a summer co-op and transitioned to part-time work in September 2022.",
                         ]}
                     />
                 </div>
@@ -161,7 +170,7 @@ const Vitae = () => {
                     <CardItem
                         title="University of California, Irvine"
                         subtitle="Graduate Student Researcher"
-                        description="September 2023 - Present | Irvine, CA"
+                        description="October 2023 - Present | Irvine, CA"
                         list={[
                             "Conducting research in collaborative multi-agent systems, optimization, machine learning, ecology robotics, coverage control, formation control, and human-swarm interaction under the supervision of Professors Magnus Egerstedt and Yanning Shen.",
                             "Actively helping maintain the Robot Ecology Lab Robotarium testbed through testing, debugging, robot repair, and troubleshooting.",
@@ -181,6 +190,11 @@ const Vitae = () => {
             title: "Teaching Experience",
             content: (
                 <div className="card-section plain-card-lists">
+                    <CardItem
+                        title="University of California, Irvine"
+                        subtitle="Teaching Assistant"
+                        description="Starting September 2026 | Irvine, CA"
+                    />
                     <CardItem
                         title="Self-Employed"
                         subtitle="Private Tutor"
@@ -207,17 +221,56 @@ const Vitae = () => {
                         title="Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration"
                         subtitle="arXiv preprint, submitted | 2026"
                         description="Riwa Karam, Alexander A. Nguyen, Ruoyu Lin, David R. Martin, Diana Morales, Brooks A. Butler, and Magnus Egerstedt"
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: SurveyPaper,
+                                    text: "PDF",
+                                },
+                                {
+                                    href: "https://doi.org/10.48550/arXiv.2603.23898",
+                                    text: "DOI",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="Resource Allocation for Multi-Team Collaboration Based on Hamilton's Rule"
                         subtitle="IEEE 64th Conference on Decision and Control | 2025"
                         description="Riwa Karam, Ruoyu Lin, Brooks A. Butler, and Magnus Egerstedt. Rio de Janeiro, Brazil, pp. 6891-6898."
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: CDC2025Paper,
+                                    text: "PDF",
+                                },
+                                {
+                                    href: "https://doi.org/10.1109/CDC57313.2025.11312845",
+                                    text: "DOI",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="A Graphical Interface for Specifying and Establishing Multi-Robot Formations"
                         subtitle="M.S. Thesis, University of California, Irvine | 2025"
                         description="Riwa Karam"
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: MSThesis,
+                                    text: "PDF",
+                                },
+                                {
+                                    href: "https://escholarship.org/uc/item/25p8p0kq",
+                                    text: "Official Record",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                 </div>
             ),
         },
@@ -326,6 +379,10 @@ const Vitae = () => {
                         <ResourceLinks
                             links={[
                                 {
+                                    href: "https://learning.mentorcollective.org/certificates/6emjmh672f",
+                                    text: "Credential",
+                                },
+                                {
                                     href: AdditionalCertificate,
                                     text: "Certificate PDF",
                                 },
@@ -338,6 +395,10 @@ const Vitae = () => {
                     >
                         <ResourceLinks
                             links={[
+                                {
+                                    href: "https://learning.mentorcollective.org/certificates/vadblhvymk",
+                                    text: "Credential",
+                                },
                                 {
                                     href: MentorCollectiveCertificate,
                                     text: "Certificate PDF",
@@ -360,6 +421,10 @@ const Vitae = () => {
                     >
                         <ResourceLinks
                             links={[
+                                {
+                                    href: "https://academy.zaka.ai/certificates/e1l4bhnvmt",
+                                    text: "Credential",
+                                },
                                 {
                                     href: ZAKACertificate,
                                     text: "Certificate PDF",
@@ -395,17 +460,6 @@ const Vitae = () => {
                         />
                     </CardItem>
                     <CardItem
-                        title="IELTS Academic"
-                        subtitle="Beirut | Issued Sep 2022 - Expired Sep 2024"
-                        list={[
-                            "Score: 8.0/9.0",
-                            "Listening: 9.0",
-                            "Reading: 8.0",
-                            "Writing: 6.5",
-                            "Speaking: 7.5",
-                        ]}
-                    />
-                    <CardItem
                         title="Introduction to Simulink"
                         subtitle="ASME University of Balamand Student Section | Issued May 2022"
                     >
@@ -439,6 +493,10 @@ const Vitae = () => {
                         <ResourceLinks
                             links={[
                                 {
+                                    href: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=283c4d72-976f-4871-82d9-7db96fbd10b8&",
+                                    text: "Credential",
+                                },
+                                {
                                     href: SimulinkOnrampCertificate,
                                     text: "Certificate PDF",
                                 },
@@ -452,12 +510,35 @@ const Vitae = () => {
                         <ResourceLinks
                             links={[
                                 {
+                                    href: "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=925bb2c8-0edd-40c8-a553-c820856b3b0f&",
+                                    text: "Credential",
+                                },
+                                {
                                     href: MATLABOnrampCertificate,
                                     text: "Certificate PDF",
                                 },
                             ]}
                         />
                     </CardItem>
+                </div>
+            ),
+        },
+        {
+            id: "standardized-tests",
+            title: "Standardized Tests",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="IELTS Academic"
+                        subtitle="Beirut | Issued Sep 2022 - Expired Sep 2024"
+                        list={[
+                            "Score: 8.0/9.0",
+                            "Listening: 9.0",
+                            "Reading: 8.0",
+                            "Writing: 6.5",
+                            "Speaking: 7.5",
+                        ]}
+                    />
                     <CardItem
                         title="SAT"
                         subtitle="Beirut | Issued Dec 2018"
@@ -472,7 +553,7 @@ const Vitae = () => {
         },
         {
             id: "awards",
-            title: "Awards and Fellowships",
+            title: "Fellowships and Awards",
             content: (
                 <div className="card-section">
                     <CardItem
@@ -558,7 +639,7 @@ const Vitae = () => {
             content: (
                 <div className="card-section">
                     <CardItem
-                        title="Member, IEEE"
+                        title="Graduate Student Member, IEEE"
                         subtitle="05/2022 - Present"
                         list={[
                             "Computer Society",
