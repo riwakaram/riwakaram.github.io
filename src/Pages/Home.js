@@ -5,9 +5,9 @@ import Resume from "../Files/RiwaKaram_Resume.pdf";
 
 const Home = () => {
     const highlights = [
-        "PhD candidate in Electrical Engineering and Computer Science at UC Irvine",
+        "PhD Candidate in Electrical Engineering and Computer Science at UC Irvine",
         "Member of the UCI Robot Ecology Lab advised by Professors Magnus Egerstedt and Yanning Shen",
-        "Researching multi-agent systems, optimization, machine learning, ecology robotics, coverage control, formation control, and human-swarm interaction",
+        "Researching multi-agent systems, machine learning, ecology robotics, and human-swarm interaction",
     ];
 
     const news = [
@@ -24,7 +24,7 @@ const Home = () => {
         {
             date: "September 10, 2025",
             title: "Completed My Second ASML Internship",
-            text: "I completed my second summer internship at ASML as a Mechatronics Research Engineer Intern, and headed back to campus to focus on research for my PhD",
+            text: "I completed my second summer internship at ASML as a Mechatronics Research Engineer Intern, and headed back to campus to focus on research for my PhD.",
         },
     ];
 
@@ -93,24 +93,84 @@ const Home = () => {
                 </div>
                 <div>
                     <p>
-                        I am a third-year PhD candidate in the Electrical
-                        Engineering and Computer Science Department at the
-                        University of California, Irvine, and a member of the
-                        UCI Robot Ecology Lab, advised by Professors Magnus
-                        Egerstedt and Yanning Shen. My research spans
-                        collaborative multi-agent systems, optimization, machine
-                        learning, ecology robotics, coverage control, formation
-                        control, and human-swarm interaction.
+                        I am a third-year PhD candidate in the{" "}
+                        <a
+                            href="https://engineering.uci.edu/dept/eecs"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Electrical Engineering and Computer Science
+                            Department
+                        </a>{" "}
+                        at the{" "}
+                        <a
+                            href="https://www.uci.edu/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            University of California, Irvine
+                        </a>
+                        , and a member of the{" "}
+                        <a
+                            href="https://faculty.sites.uci.edu/robotecology/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            UCI Robot Ecology Lab
+                        </a>
+                        , advised by Professors{" "}
+                        <a
+                            href="https://www.linkedin.com/in/magnus-egerstedt-26a46795/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Magnus Egerstedt
+                        </a>{" "}
+                        and{" "}
+                        <a
+                            href="https://engineering.uci.edu/users/yanning-shen"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Yanning Shen
+                        </a>
+                        . My research spans collaborative multi-agent systems,
+                        optimization, machine learning, ecology robotics,
+                        coverage control, formation control, and human-swarm
+                        interaction.
                     </p>
+
                     <p>
                         Before my PhD, I earned a B.S. in Computer Engineering
-                        from the University of Balamand, graduating as
-                        valedictorian, and completed an M.S. in Electrical and
-                        Computer Engineering at UC Irvine. I have also worked in
-                        software engineering and mechatronics research roles,
-                        including two internships at ASML focused on
-                        high-precision systems, statistical modeling, and
-                        Bayesian machine learning.
+                        from the{" "}
+                        <a
+                            href="https://www.balamand.edu.lb/home/Pages/default.aspx"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            University of Balamand
+                        </a>
+                        , graduating as valedictorian, and completed an M.S. in
+                        Electrical and Computer Engineering at{" "}
+                        <a
+                            href="https://www.uci.edu/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            UC Irvine
+                        </a>
+                        . I have also worked in software engineering and
+                        mechatronics research roles, including two internships
+                        at{" "}
+                        <a
+                            href="https://www.asml.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            ASML
+                        </a>{" "}
+                        focused on high-precision systems, statistical modeling,
+                        and Bayesian machine learning.
                     </p>
                 </div>
             </section>
@@ -133,7 +193,10 @@ const Home = () => {
                     </article>
                     <div className="home-news-list">
                         {recentUpdates.map((item) => (
-                            <article className="home-news-card" key={item.title}>
+                            <article
+                                className="home-news-card"
+                                key={item.title}
+                            >
                                 <time>{item.date}</time>
                                 <h3>{item.title}</h3>
                                 <p>{item.text}</p>

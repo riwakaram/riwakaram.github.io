@@ -191,11 +191,6 @@ const Vitae = () => {
             content: (
                 <div className="card-section plain-card-lists">
                     <CardItem
-                        title="University of California, Irvine"
-                        subtitle="Teaching Assistant"
-                        description="Starting September 2026 | Irvine, CA"
-                    />
-                    <CardItem
                         title="Self-Employed"
                         subtitle="Private Tutor"
                         description="May 2022 – August 2023 | Lebanon"
@@ -336,9 +331,10 @@ const Vitae = () => {
                     <CardItem
                         title="Hardware Technologies"
                         list={[
-                            "Vicon Motion Capture (MoCap) System",
-                            "Robotarium",
-                            "Robot building and debugging",
+                            "Motion Capture Systems",
+                            "Robotic Testbeds",
+                            "Robot building",
+                            "Robot debugging",
                         ]}
                     />
                     <CardItem
@@ -348,7 +344,7 @@ const Vitae = () => {
                             "GitHub",
                             "LaTeX",
                             "Simulink",
-                            "VS Code",
+                            "Visual Studio Code",
                             "Unity",
                             "Microsoft Tools",
                             "Google Tools",
@@ -358,10 +354,10 @@ const Vitae = () => {
                         title="Soft Skills"
                         list={[
                             "Research",
-                            "Time management",
-                            "Written communication",
-                            "Verbal communication",
                             "Critical thinking",
+                            "Time management",
+                            "Verbal communication",
+                            "Written communication",
                         ]}
                     />
                 </div>

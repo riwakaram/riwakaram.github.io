@@ -120,9 +120,16 @@ const News = () => {
             ),
         },
         {
+            date: "October 24, 2025",
+            title: "46th Southern California Control Workshop",
+            text: "I attended my third control workshop at UCI.",
+            link: "https://sites.uci.edu/controlworkshop/",
+            linkText: "Workshop website",
+        },
+        {
             date: "September 10, 2025",
             title: "Completed My Second ASML Internship",
-            text: "I completed my second summer internship at ASML as a Mechatronics Research Engineer Intern, and headed back to campus to focus on research for my PhD",
+            text: "I completed my second summer internship at ASML as a Mechatronics Research Engineer Intern, and headed back to campus to focus on research for my PhD.",
         },
         {
             date: "July 15, 2025",
