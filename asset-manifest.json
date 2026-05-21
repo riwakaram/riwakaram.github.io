@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.589b93c0.chunk.css",
-    "main.js": "/static/js/main.82202d83.chunk.js",
-    "main.js.map": "/static/js/main.82202d83.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.59ff33cd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.59ff33cd.js.map",
+    "main.js": "/static/js/main.ce0e1d39.chunk.js",
+    "main.js.map": "/static/js/main.ce0e1d39.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7dbea7e0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7dbea7e0.js.map",
     "static/css/2.d49569c5.chunk.css": "/static/css/2.d49569c5.chunk.css",
-    "static/js/2.fc63dbba.chunk.js": "/static/js/2.fc63dbba.chunk.js",
-    "static/js/2.fc63dbba.chunk.js.map": "/static/js/2.fc63dbba.chunk.js.map",
-    "static/js/3.58b486af.chunk.js": "/static/js/3.58b486af.chunk.js",
-    "static/js/3.58b486af.chunk.js.map": "/static/js/3.58b486af.chunk.js.map",
+    "static/js/2.7e7f61fb.chunk.js": "/static/js/2.7e7f61fb.chunk.js",
+    "static/js/2.7e7f61fb.chunk.js.map": "/static/js/2.7e7f61fb.chunk.js.map",
+    "static/js/3.17e99662.chunk.js": "/static/js/3.17e99662.chunk.js",
+    "static/js/3.17e99662.chunk.js.map": "/static/js/3.17e99662.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9cd96fc63c6e2340b1d97c735f85faf0.js": "/precache-manifest.9cd96fc63c6e2340b1d97c735f85faf0.js",
+    "precache-manifest.81fea4a346c731e2ba28af13da0e18f5.js": "/precache-manifest.81fea4a346c731e2ba28af13da0e18f5.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d49569c5.chunk.css.map": "/static/css/2.d49569c5.chunk.css.map",
     "static/css/main.589b93c0.chunk.css.map": "/static/css/main.589b93c0.chunk.css.map",
-    "static/js/2.fc63dbba.chunk.js.LICENSE.txt": "/static/js/2.fc63dbba.chunk.js.LICENSE.txt",
+    "static/js/2.7e7f61fb.chunk.js.LICENSE.txt": "/static/js/2.7e7f61fb.chunk.js.LICENSE.txt",
     "static/media/01_Fall2020_Honor's_List_Diploma.png": "/static/media/01_Fall2020_Honor's_List_Diploma.70b2b184.png",
     "static/media/02_Spring2021_Honor's_List_Diploma.png": "/static/media/02_Spring2021_Honor's_List_Diploma.7c0d1aab.png",
     "static/media/03_Fall2021_Honor's_List_Diploma.jpg": "/static/media/03_Fall2021_Honor's_List_Diploma.cdb04c0d.jpg",
@@ -46,6 +46,7 @@
     "static/media/Mentor Collective Mentorship.pdf": "/static/media/Mentor Collective Mentorship.517caa82.pdf",
     "static/media/Prelim.pdf": "/static/media/Prelim.8ce6bad0.pdf",
     "static/media/Profile Pic.jpg": "/static/media/Profile Pic.df7297dc.jpg",
+    "static/media/Qual Exam.pdf": "/static/media/Qual Exam.beaacef8.pdf",
     "static/media/Riwa Karam - 2026-03-26.pdf": "/static/media/Riwa Karam - 2026-03-26.ad97382b.pdf",
     "static/media/RiwaKaram_Resume.pdf": "/static/media/RiwaKaram_Resume.a5c0ba0a.pdf",
     "static/media/SCCW2025.pdf": "/static/media/SCCW2025.2731e76a.pdf",
@@ -55,14 +56,15 @@
     "static/media/SSCWMe_2_2025.jpg": "/static/media/SSCWMe_2_2025.0a9a514d.jpg",
     "static/media/Simulink Onramp Course Completion Certificate.pdf": "/static/media/Simulink Onramp Course Completion Certificate.d4b94afb.pdf",
     "static/media/Survey.pdf": "/static/media/Survey.a07a0f8e.pdf",
+    "static/media/TRO.pdf": "/static/media/TRO.0ed33579.pdf",
     "static/media/ZAKA AI Bootcamp.pdf": "/static/media/ZAKA AI Bootcamp.6516fd15.pdf",
     "static/media/favicon.ico": "/static/media/favicon.49bcf5d6.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.59ff33cd.js",
+    "static/js/runtime-main.7dbea7e0.js",
     "static/css/2.d49569c5.chunk.css",
-    "static/js/2.fc63dbba.chunk.js",
+    "static/js/2.7e7f61fb.chunk.js",
     "static/css/main.589b93c0.chunk.css",
-    "static/js/main.82202d83.chunk.js"
+    "static/js/main.ce0e1d39.chunk.js"
   ]
 }
