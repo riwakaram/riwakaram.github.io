@@ -6,6 +6,8 @@ import GEECSANTSPoster from "../Files/GEECSANTS Poster 2025.pdf";
 import MSThesis from "../Files/MS-Thesis.pdf";
 import SCCW2025Presentation from "../Files/SCCW2025.pdf";
 import SurveyPaper from "../Files/Survey.pdf";
+import TROPaper from "../Files/TRO.pdf";
+import QualExam from "../Files/Qual Exam.pdf";
 
 const publications = [
     {
@@ -14,16 +16,20 @@ const publications = [
         title: "Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems",
         authors: "R. Karam, R. Lin, B. A. Butler, M. Egerstedt",
         venue: "arXiv preprint",
-        // links: [
-        //     {
-        //         href: "#",
-        //         text: "PDF",
-        //     },
-        //     {
-        //         href: "#",
-        //         text: "DOI",
-        //     },
-        // ],
+        links: [
+            {
+                href: TROPaper,
+                text: "PDF",
+            },
+            {
+                href: "https://youtu.be/-2q-zy0wItk",
+                text: "Experiments Video",
+            },
+            // {
+            //     href: "#",
+            //     text: "DOI",
+            // },
+        ],
     },
     {
         type: "Preprint",
@@ -86,6 +92,12 @@ const presentations = [
         venue: "PhD Qualifying Examination",
         location: "University of California, Irvine",
         date: "May 21, 2026",
+        links: [
+            {
+                href: QualExam,
+                text: "Slides",
+            },
+        ],
     },
     {
         type: "Conference Presentation",
