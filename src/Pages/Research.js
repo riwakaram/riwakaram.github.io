@@ -4,7 +4,7 @@ import Header from "../Components/Header";
 const researchAreas = [
     {
         title: "Collaborative Multi-Agent Systems",
-        text: "Designing algorithms for teams of robots and agents that collaborate across different capabilities, objectives, and operating conditions.",
+        text: "Designing algorithms for teams of robots and agents that collaborate across different capabilities, objectives, and system conditions.",
         tags: ["cooperation", "coordination", "capability complementarity"],
     },
     {
@@ -67,10 +67,10 @@ const Research = () => {
                     </h2>
                 </div>
                 <p>
-                    Recent research explores different ways of achieving
+                    My research explores different ways of achieving
                     collaborative behavior in complex multi-agent systems. In
                     particular, collaboration arises when interaction expands
-                    the agents' effective action sets, enabling collective
+                    the agents' feasible action sets, enabling collective
                     outcomes that would be unattainable through isolated
                     individual actions. My current research explores this
                     concept in applications such as resource allocation with

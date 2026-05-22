@@ -22,6 +22,7 @@ import AdditionalCertificate from "../Files/Riwa Karam - 2026-03-26.pdf";
 import SimulinkOnrampCertificate from "../Files/Simulink Onramp Course Completion Certificate.pdf";
 import SurveyPaper from "../Files/Survey.pdf";
 import ZAKACertificate from "../Files/ZAKA AI Bootcamp.pdf";
+import TROPaper from "../Files/TRO.pdf";
 
 const ResourceLinks = ({ links }) => (
     <div className="publication-links vitae-resource-links">
@@ -65,8 +66,8 @@ const Vitae = () => {
                 <div className="card-section plain-card-lists">
                     <CardItem
                         title="Doctor of Philosophy, Electrical and Computer Engineering"
-                        subtitle="University of California, Irvine | 09/2023 - Expected 06/2028"
-                        description="Research in collaborative multi-agent systems, optimization, machine learning, ecology robotics, coverage control, formation control, and human-swarm interaction."
+                        subtitle="University of California, Irvine | 09/2023 - Expected 12/2027"
+                        description="Research in collaborative multi-agent systems, optimization, machine learning, ecology-inspired robotics, coverage control, formation control, and human-swarm interaction."
                         list={[
                             "Lab: UCI Robot Ecology Lab",
                             "Advisors: Professor Magnus Egerstedt and Professor Yanning Shen",
@@ -211,7 +212,24 @@ const Vitae = () => {
                         title="Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems"
                         subtitle="arXiv preprint, submitted | 2026"
                         description="Riwa Karam, Ruoyu Lin, Brooks A. Butler, and Magnus Egerstedt"
-                    />
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: TROPaper,
+                                    text: "PDF",
+                                },
+                                {
+                                    href: "https://doi.org/10.48550/arXiv.2605.21723",
+                                    text: "DOI",
+                                },
+                                {
+                                    href: "https://youtu.be/-2q-zy0wItk",
+                                    text: "Experiments Video",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration"
                         subtitle="arXiv preprint, submitted | 2026"

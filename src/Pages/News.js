@@ -17,7 +17,8 @@ import SSCWMe012025 from "../Images/SSCWMe_1_2025.jpg";
 import SSCWMe022025 from "../Images/SSCWMe_2_2025.jpg";
 import CPSIOTWeekBadge from "../Images/CPS-IOT Week Badge.jpeg";
 import CPSIOTWeekTalk from "../Images/CPS-IOT Week Talk.jpeg";
-import FacultyAward from "../Images/Faculty Award for Academic Excellence.jpeg";
+import FacultyAwardCertificate from "../Images/Faculty Award for Academic Excellence.jpeg";
+import UoBDegree from "../Files/UoB Degree Certificate.pdf";
 import GEECSANTSPoster2025 from "../Images/Me Next to GEECSANTS Poster 2025.jpeg";
 import MeInCDC from "../Images/MeinCDC.jpeg";
 import GradPic from "../Images/Graduation Pic.jpg";
@@ -285,18 +286,15 @@ const News = () => {
             date: "July 27, 2023",
             title: "Faculty Award for Academic Excellence",
             text: "I received the Faculty Award for Academic Excellence during the award ceremony.",
-            media: (
-                <NewsImage
-                    src={FacultyAward}
-                    alt="Riwa Karam receiving the Faculty Award for Academic Excellence"
-                    className="portrait-media"
-                />
-            ),
+            linkText: "Award Image",
+            link: FacultyAwardCertificate,
         },
         {
             date: "July 8, 2023",
             title: "B.S. Graduation, Valedictorian",
             text: "I graduated with a Bachelor of Science in Computer Engineering as valedictorian.",
+            linkText: "Diploma PDF",
+            link: UoBDegree,
         },
         {
             date: "May 16, 2023",

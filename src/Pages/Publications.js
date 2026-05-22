@@ -22,13 +22,13 @@ const publications = [
                 text: "PDF",
             },
             {
+                href: "https://doi.org/10.48550/arXiv.2605.21723",
+                text: "DOI",
+            },
+            {
                 href: "https://youtu.be/-2q-zy0wItk",
                 text: "Experiments Video",
             },
-            // {
-            //     href: "#",
-            //     text: "DOI",
-            // },
         ],
     },
     {

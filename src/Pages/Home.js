@@ -35,7 +35,7 @@ const Home = () => {
             <section className="hero-section">
                 <div className="hero-copy">
                     <p className="eyebrow">
-                        Robotics, Machine Learning, and Multi-Agent Systems
+                        Multi-agent systems, robotics and machine learning
                     </p>
                     <h1>Riwa Karam</h1>
                     <p className="hero-lede">
@@ -91,7 +91,7 @@ const Home = () => {
                         systems experience
                     </h2>
                 </div>
-                <div>
+                <div className="about-inline-links">
                     <p>
                         I am a third-year PhD candidate in the{" "}
                         <a
@@ -110,7 +110,7 @@ const Home = () => {
                         >
                             University of California, Irvine
                         </a>
-                        , and a member of the{" "}
+                        . I am a member of the{" "}
                         <a
                             href="https://faculty.sites.uci.edu/robotecology/"
                             target="_blank"
@@ -118,7 +118,15 @@ const Home = () => {
                         >
                             UCI Robot Ecology Lab
                         </a>
-                        , advised by Professors{" "}
+                        {" "}and part of the{" "}
+                        <a
+                            href="https://robotics.eng.uci.edu"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Center for Resilient Autonomous Systems
+                        </a>{" "}
+                        at UCI, advised by Professors{" "}
                         <a
                             href="https://www.linkedin.com/in/magnus-egerstedt-26a46795/"
                             target="_blank"

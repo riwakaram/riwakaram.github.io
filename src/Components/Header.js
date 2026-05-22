@@ -4,7 +4,7 @@ const Header = ({ compact = false }) => {
     return (
         <header className={`site-header ${compact ? "site-header-compact" : ""}`}>
             <p className="eyebrow">
-                Robotics, Machine Learning, and Multi-Agent Systems
+                Multi-agent systems, robotics and machine learning
             </p>
             <h1 className="name">Riwa Karam</h1>
             <p className="description">

@@ -292,6 +292,22 @@ h4 {
     margin-bottom: 0;
 }
 
+.about-inline-links a {
+    border-bottom: 1px solid rgba(247, 241, 255, 0.34);
+    color: var(--text-color);
+    text-decoration: none;
+    transition:
+        border-color 160ms ease,
+        color 160ms ease;
+}
+
+.about-inline-links a:hover,
+.about-inline-links a:focus {
+    border-color: var(--accent-color);
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .section-intro {
     max-width: 48rem;
     padding-bottom: 2.5rem;
