@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.589b93c0.chunk.css",
-    "main.js": "/static/js/main.ce0e1d39.chunk.js",
-    "main.js.map": "/static/js/main.ce0e1d39.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7dbea7e0.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7dbea7e0.js.map",
+    "main.css": "/static/css/main.e6f97fbb.chunk.css",
+    "main.js": "/static/js/main.cbf56953.chunk.js",
+    "main.js.map": "/static/js/main.cbf56953.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e23064ee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e23064ee.js.map",
     "static/css/2.d49569c5.chunk.css": "/static/css/2.d49569c5.chunk.css",
-    "static/js/2.7e7f61fb.chunk.js": "/static/js/2.7e7f61fb.chunk.js",
-    "static/js/2.7e7f61fb.chunk.js.map": "/static/js/2.7e7f61fb.chunk.js.map",
-    "static/js/3.17e99662.chunk.js": "/static/js/3.17e99662.chunk.js",
-    "static/js/3.17e99662.chunk.js.map": "/static/js/3.17e99662.chunk.js.map",
+    "static/js/2.5fdf54bd.chunk.js": "/static/js/2.5fdf54bd.chunk.js",
+    "static/js/2.5fdf54bd.chunk.js.map": "/static/js/2.5fdf54bd.chunk.js.map",
+    "static/js/3.8b9e27d1.chunk.js": "/static/js/3.8b9e27d1.chunk.js",
+    "static/js/3.8b9e27d1.chunk.js.map": "/static/js/3.8b9e27d1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.81fea4a346c731e2ba28af13da0e18f5.js": "/precache-manifest.81fea4a346c731e2ba28af13da0e18f5.js",
+    "precache-manifest.d021ff19646a04d47ada03a74f9707d8.js": "/precache-manifest.d021ff19646a04d47ada03a74f9707d8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d49569c5.chunk.css.map": "/static/css/2.d49569c5.chunk.css.map",
-    "static/css/main.589b93c0.chunk.css.map": "/static/css/main.589b93c0.chunk.css.map",
-    "static/js/2.7e7f61fb.chunk.js.LICENSE.txt": "/static/js/2.7e7f61fb.chunk.js.LICENSE.txt",
+    "static/css/main.e6f97fbb.chunk.css.map": "/static/css/main.e6f97fbb.chunk.css.map",
+    "static/js/2.5fdf54bd.chunk.js.LICENSE.txt": "/static/js/2.5fdf54bd.chunk.js.LICENSE.txt",
     "static/media/01_Fall2020_Honor's_List_Diploma.png": "/static/media/01_Fall2020_Honor's_List_Diploma.70b2b184.png",
     "static/media/02_Spring2021_Honor's_List_Diploma.png": "/static/media/02_Spring2021_Honor's_List_Diploma.7c0d1aab.png",
     "static/media/03_Fall2021_Honor's_List_Diploma.jpg": "/static/media/03_Fall2021_Honor's_List_Diploma.cdb04c0d.jpg",
@@ -57,14 +57,15 @@
     "static/media/Simulink Onramp Course Completion Certificate.pdf": "/static/media/Simulink Onramp Course Completion Certificate.d4b94afb.pdf",
     "static/media/Survey.pdf": "/static/media/Survey.a07a0f8e.pdf",
     "static/media/TRO.pdf": "/static/media/TRO.0ed33579.pdf",
+    "static/media/UoB Degree Certificate.pdf": "/static/media/UoB Degree Certificate.762a8046.pdf",
     "static/media/ZAKA AI Bootcamp.pdf": "/static/media/ZAKA AI Bootcamp.6516fd15.pdf",
     "static/media/favicon.ico": "/static/media/favicon.49bcf5d6.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.7dbea7e0.js",
+    "static/js/runtime-main.e23064ee.js",
     "static/css/2.d49569c5.chunk.css",
-    "static/js/2.7e7f61fb.chunk.js",
-    "static/css/main.589b93c0.chunk.css",
-    "static/js/main.ce0e1d39.chunk.js"
+    "static/js/2.5fdf54bd.chunk.js",
+    "static/css/main.e6f97fbb.chunk.css",
+    "static/js/main.cbf56953.chunk.js"
   ]
 }
