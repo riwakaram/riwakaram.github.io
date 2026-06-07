@@ -12,6 +12,11 @@ const Home = () => {
 
     const news = [
         {
+            date: "June 5, 2026",
+            title: "GEECSANTS 2026 Software & Algorithms Winner",
+            text: "I presented my research at the 2026 GEECS Annual Technology Showcase and won the Software & Algorithms track.",
+        },
+        {
             date: "May 21, 2026",
             title: "Passed My PhD Qualifying Exam",
             text: "I passed my PhD Qualifying Exam, a major milestone where I presented my current research and future research plans to my committee. Officially a PhD Candidate at UC Irvine!",
@@ -20,11 +25,6 @@ const Home = () => {
             date: "December 8-12, 2025",
             title: "First Conference: IEEE CDC 2025",
             text: "I attended my first major research conference, the 64th IEEE Conference on Decision and Control in Rio de Janeiro, Brazil, where I presented my first-author paper on resource allocation for multi-team collaboration.",
-        },
-        {
-            date: "September 10, 2025",
-            title: "Completed My Second ASML Internship",
-            text: "I completed my second summer internship at ASML as a Mechatronics Research Engineer Intern, and headed back to campus to focus on research for my PhD.",
         },
     ];
 
