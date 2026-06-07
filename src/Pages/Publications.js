@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import CDC2025Paper from "../Files/CDC2025.pdf";
 import CDC2025Presentation from "../Files/CDC2025Pres.pdf";
+import GEECSANTS2026Poster from "../Files/GEECS 2026 Poster.pdf";
 import GEECSANTSPoster from "../Files/GEECSANTS Poster 2025.pdf";
 import MSThesis from "../Files/MS-Thesis.pdf";
 import SCCW2025Presentation from "../Files/SCCW2025.pdf";
@@ -86,6 +87,23 @@ const publications = [
 ];
 
 const presentations = [
+    {
+        type: "Poster",
+        title: "Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems",
+        venue: "GEECS Annual Technology Showcase",
+        location: "University of California, Irvine",
+        date: "June 5, 2026",
+        links: [
+            {
+                href: "https://geecs.eng.uci.edu/geecsants2026/",
+                text: "Showcase Website",
+            },
+            {
+                href: GEECSANTS2026Poster,
+                text: "Poster PDF",
+            },
+        ],
+    },
     {
         type: "PhD Requirement",
         title: "Collaboration in Multi-Agent Systems: From Assignment to Learning",

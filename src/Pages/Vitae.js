@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import Accordion from "../Components/Accordion";
 import CardItem from "../Components/CardItem";
 import CDC2025Paper from "../Files/CDC2025.pdf";
+import GEECSANTS2026Poster from "../Files/GEECS 2026 Poster.pdf";
+import GEECSANTS2026Award from "../Files/GEECSANTS 2026 Award.jpg";
 import HonorListFall2020 from "../Images/01_Fall2020_Honor's_List_Diploma.png";
 import HonorListSpring2021 from "../Images/02_Spring2021_Honor's_List_Diploma.png";
 import HonorListFall2021 from "../Images/03_Fall2021_Honor's_List_Diploma.jpg";
@@ -177,6 +179,7 @@ const Vitae = () => {
                             "Actively helping maintain the Robot Ecology Lab Robotarium testbed through testing, debugging, robot repair, and troubleshooting.",
                             "Presented my first-author accepted regular paper at the 64th IEEE Conference on Decision and Control (CDC) in Rio de Janeiro, Brazil.",
                             "Presented research findings at the 45th SoCal Control Workshop at the University of California, San Diego.",
+                            "Won the Software & Algorithms track at the 2026 UCI GEECS Annual Technology Showcase.",
                             "Presented a poster on my master's thesis at the 2025 UCI GEECS Annual Technology Showcase.",
                             "Mentored undergraduate student lab members and worked together on related projects.",
                             "Co-wrote the Robot Ecology Lab manual, including debugging processes, experiment tutorials, and Vicon system maintenance.",
@@ -292,6 +295,20 @@ const Vitae = () => {
             title: "Volunteering",
             content: (
                 <div className="card-section">
+                    <CardItem
+                        title="UCI GEECS"
+                        subtitle="Web Content Manager | June 2026 - Present"
+                        description="Managing and maintaining web content for the Society of Graduate Electrical Engineers and Computer Scientists at UC Irvine."
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: "https://geecs.eng.uci.edu/",
+                                    text: "Website",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="IEEE CSS NextCom"
                         subtitle="General Activities Committee Member | March 2026 - Present"
@@ -570,6 +587,27 @@ const Vitae = () => {
             title: "Fellowships and Awards",
             content: (
                 <div className="card-section">
+                    <CardItem
+                        title="GEECS Annual Tech Showcase Winner"
+                        subtitle="Software & Algorithms Track | University of California, Irvine | Jun 2026"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: GEECSANTS2026Award,
+                                    text: "Award Image",
+                                },
+                                {
+                                    href: GEECSANTS2026Poster,
+                                    text: "Poster PDF",
+                                },
+                                {
+                                    href: "https://geecs.eng.uci.edu/geecsants2026/",
+                                    text: "Showcase Website",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="UCI EECS Department Fellowship"
                         subtitle="Electrical Engineering and Computer Science Department at the University of California, Irvine"

@@ -4,6 +4,9 @@ import Carousel from "../Components/Carousel";
 import PrelimPDF from "../Images/Prelim.pdf";
 import CDC2025Presentation from "../Files/CDC2025Pres.pdf";
 import GEECSANTSPosterPDF from "../Files/GEECSANTS Poster 2025.pdf";
+import GEECSANTS2026PosterPDF from "../Files/GEECS 2026 Poster.pdf";
+import GEECSANTS2026Award from "../Files/GEECSANTS 2026 Award.jpg";
+import QualExamPresentation from "../Files/Qual Exam.pdf";
 import SCCW2025Presentation from "../Files/SCCW2025.pdf";
 import ASMLGoodies from "../Images/ASML Goodies.jpeg";
 import ASML2025 from "../Images/ASML2025.jpeg";
@@ -94,9 +97,33 @@ const News = () => {
 
     const entries = [
         {
+            date: "June 5, 2026",
+            title: "GEECSANTS 2026 Software & Algorithms Winner",
+            text: "I presented my research at the 2026 GEECS Annual Technology Showcase and won the Software & Algorithms track.",
+            links: [
+                {
+                    href: "https://geecs.eng.uci.edu/geecsants2026/",
+                    text: "Showcase website",
+                },
+                {
+                    href: GEECSANTS2026PosterPDF,
+                    text: "Poster PDF",
+                },
+            ],
+            media: (
+                <NewsImage
+                    src={GEECSANTS2026Award}
+                    alt="GEECS Annual Tech Showcase 2026 Software and Algorithms winner award"
+                    className="portrait-media"
+                />
+            ),
+        },
+        {
             date: "May 21, 2026",
             title: "Passed My PhD Qualifying Exam",
             text: "I passed my PhD Qualifying Exam, a major milestone where I presented my current research and future research plans to my committee. Officially a PhD Candidate at UC Irvine!",
+            link: QualExamPresentation,
+            linkText: "Slides",
         },
         {
             date: "December 8-12, 2025",
