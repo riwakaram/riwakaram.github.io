@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d656127f200b2e5b402169375fdc9af5",
+    "revision": "26e7678e8dbb8f54d8e7b67761221664",
     "url": "/index.html"
   },
   {
-    "revision": "3aeb2310eb06c3aae279",
+    "revision": "e6f51b0a0cf0f434743e",
     "url": "/static/css/2.d49569c5.chunk.css"
   },
   {
-    "revision": "4a55ba7d105b7ecd6077",
+    "revision": "41a1636a059c26f6a80a",
     "url": "/static/css/main.e6f97fbb.chunk.css"
   },
   {
-    "revision": "3aeb2310eb06c3aae279",
-    "url": "/static/js/2.5fdf54bd.chunk.js"
+    "revision": "e6f51b0a0cf0f434743e",
+    "url": "/static/js/2.31504a91.chunk.js"
   },
   {
     "revision": "90455f630391e49cb4ec34b7495d1995",
-    "url": "/static/js/2.5fdf54bd.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.31504a91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d66d18967fad40eef1e5",
-    "url": "/static/js/3.8b9e27d1.chunk.js"
+    "revision": "00a9091dbb8cf6f110ca",
+    "url": "/static/js/3.144f8220.chunk.js"
   },
   {
-    "revision": "4a55ba7d105b7ecd6077",
-    "url": "/static/js/main.cbf56953.chunk.js"
+    "revision": "41a1636a059c26f6a80a",
+    "url": "/static/js/main.3c530b99.chunk.js"
   },
   {
-    "revision": "414c591fb67b2b960ef4",
-    "url": "/static/js/runtime-main.e23064ee.js"
+    "revision": "1e66f39923757b5c73a0",
+    "url": "/static/js/runtime-main.463fac86.js"
   },
   {
     "revision": "70b2b18437bfc62d44055f1d37f5d2b0",
@@ -102,6 +102,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "42f32f401fd20516b63b3eeb414a00cb",
     "url": "/static/media/Faculty Award for Academic Excellence.42f32f40.jpeg"
+  },
+  {
+    "revision": "ee67985b5b9c363a8bf8b9f975815081",
+    "url": "/static/media/GEECS 2026 Poster.ee67985b.pdf"
+  },
+  {
+    "revision": "a9d5b98bcb536c3364cb3bf98e084b3a",
+    "url": "/static/media/GEECSANTS 2026 Award.a9d5b98b.jpg"
   },
   {
     "revision": "a0bee234595f3aa26da4f1e9b91afa34",

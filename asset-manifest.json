@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.e6f97fbb.chunk.css",
-    "main.js": "/static/js/main.cbf56953.chunk.js",
-    "main.js.map": "/static/js/main.cbf56953.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e23064ee.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e23064ee.js.map",
+    "main.js": "/static/js/main.3c530b99.chunk.js",
+    "main.js.map": "/static/js/main.3c530b99.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.463fac86.js",
+    "runtime-main.js.map": "/static/js/runtime-main.463fac86.js.map",
     "static/css/2.d49569c5.chunk.css": "/static/css/2.d49569c5.chunk.css",
-    "static/js/2.5fdf54bd.chunk.js": "/static/js/2.5fdf54bd.chunk.js",
-    "static/js/2.5fdf54bd.chunk.js.map": "/static/js/2.5fdf54bd.chunk.js.map",
-    "static/js/3.8b9e27d1.chunk.js": "/static/js/3.8b9e27d1.chunk.js",
-    "static/js/3.8b9e27d1.chunk.js.map": "/static/js/3.8b9e27d1.chunk.js.map",
+    "static/js/2.31504a91.chunk.js": "/static/js/2.31504a91.chunk.js",
+    "static/js/2.31504a91.chunk.js.map": "/static/js/2.31504a91.chunk.js.map",
+    "static/js/3.144f8220.chunk.js": "/static/js/3.144f8220.chunk.js",
+    "static/js/3.144f8220.chunk.js.map": "/static/js/3.144f8220.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d021ff19646a04d47ada03a74f9707d8.js": "/precache-manifest.d021ff19646a04d47ada03a74f9707d8.js",
+    "precache-manifest.6e9d6c4488d9ea2e12154d363c24ffae.js": "/precache-manifest.6e9d6c4488d9ea2e12154d363c24ffae.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d49569c5.chunk.css.map": "/static/css/2.d49569c5.chunk.css.map",
     "static/css/main.e6f97fbb.chunk.css.map": "/static/css/main.e6f97fbb.chunk.css.map",
-    "static/js/2.5fdf54bd.chunk.js.LICENSE.txt": "/static/js/2.5fdf54bd.chunk.js.LICENSE.txt",
+    "static/js/2.31504a91.chunk.js.LICENSE.txt": "/static/js/2.31504a91.chunk.js.LICENSE.txt",
     "static/media/01_Fall2020_Honor's_List_Diploma.png": "/static/media/01_Fall2020_Honor's_List_Diploma.70b2b184.png",
     "static/media/02_Spring2021_Honor's_List_Diploma.png": "/static/media/02_Spring2021_Honor's_List_Diploma.7c0d1aab.png",
     "static/media/03_Fall2021_Honor's_List_Diploma.jpg": "/static/media/03_Fall2021_Honor's_List_Diploma.cdb04c0d.jpg",
@@ -34,6 +34,8 @@
     "static/media/CPS-IOT Week Badge.jpeg": "/static/media/CPS-IOT Week Badge.ef7abce0.jpeg",
     "static/media/CPS-IOT Week Talk.jpeg": "/static/media/CPS-IOT Week Talk.13eb5838.jpeg",
     "static/media/Faculty Award for Academic Excellence.jpeg": "/static/media/Faculty Award for Academic Excellence.42f32f40.jpeg",
+    "static/media/GEECS 2026 Poster.pdf": "/static/media/GEECS 2026 Poster.ee67985b.pdf",
+    "static/media/GEECSANTS 2026 Award.jpg": "/static/media/GEECSANTS 2026 Award.a9d5b98b.jpg",
     "static/media/GEECSANTS Poster 2025.pdf": "/static/media/GEECSANTS Poster 2025.a0bee234.pdf",
     "static/media/Graduation Pic.jpg": "/static/media/Graduation Pic.58b24080.jpg",
     "static/media/Grand Tech 2023 - Certificate of Attendance.pdf": "/static/media/Grand Tech 2023 - Certificate of Attendance.288bc616.pdf",
@@ -62,10 +64,10 @@
     "static/media/favicon.ico": "/static/media/favicon.49bcf5d6.ico"
   },
   "entrypoints": [
-    "static/js/runtime-main.e23064ee.js",
+    "static/js/runtime-main.463fac86.js",
     "static/css/2.d49569c5.chunk.css",
-    "static/js/2.5fdf54bd.chunk.js",
+    "static/js/2.31504a91.chunk.js",
     "static/css/main.e6f97fbb.chunk.css",
-    "static/js/main.cbf56953.chunk.js"
+    "static/js/main.3c530b99.chunk.js"
   ]
 }
