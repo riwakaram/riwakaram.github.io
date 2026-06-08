@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efd69b6b2982cf1f177c90a70f1a3aa7",
+    "revision": "a19d04f80178da2b8758662f6f59ed10",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.d49569c5.chunk.css"
   },
   {
-    "revision": "b47f9f42513c1d237f9b",
+    "revision": "99b997f079832a612ae3",
     "url": "/static/css/main.e6f97fbb.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.144f8220.chunk.js"
   },
   {
-    "revision": "b47f9f42513c1d237f9b",
-    "url": "/static/js/main.7cc9a854.chunk.js"
+    "revision": "99b997f079832a612ae3",
+    "url": "/static/js/main.c65b7fc2.chunk.js"
   },
   {
     "revision": "1e66f39923757b5c73a0",
@@ -57,11 +57,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "7d4aa73d0ce62f937c4fa008ac90b441",
-    "url": "/static/media/ASME Certificate of Participation - Introduction to Simulink.7d4aa73d.jpg"
-  },
-  {
-    "revision": "9799093fee62d4c7b300107e9256c88d",
-    "url": "/static/media/ASML Goodies.9799093f.jpeg"
+    "url": "/static/media/ASME_Certificate_of_Participation_Introduction_to_Simulink.7d4aa73d.jpg"
   },
   {
     "revision": "69ebf71eeeda8f5fee0e7739816a2dbb",
@@ -74,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "be2840ccf1c8684cc8f0596f2c03d030",
     "url": "/static/media/ASMLPosterAll2025.be2840cc.jpeg"
+  },
+  {
+    "revision": "9799093fee62d4c7b300107e9256c88d",
+    "url": "/static/media/ASML_Goodies.9799093f.jpeg"
   },
   {
     "revision": "489af9520b50154543d28a23f10426b2",
@@ -93,55 +93,55 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "ef7abce0e5155240ed69379e29e07bd5",
-    "url": "/static/media/CPS-IOT Week Badge.ef7abce0.jpeg"
+    "url": "/static/media/CPS_IOT_Week_Badge.ef7abce0.jpeg"
   },
   {
     "revision": "13eb5838acf21fbbf0cad492c27b1720",
-    "url": "/static/media/CPS-IOT Week Talk.13eb5838.jpeg"
+    "url": "/static/media/CPS_IOT_Week_Talk.13eb5838.jpeg"
   },
   {
     "revision": "42f32f401fd20516b63b3eeb414a00cb",
-    "url": "/static/media/Faculty Award for Academic Excellence.42f32f40.jpeg"
-  },
-  {
-    "revision": "ee67985b5b9c363a8bf8b9f975815081",
-    "url": "/static/media/GEECS 2026 Poster.ee67985b.pdf"
+    "url": "/static/media/Faculty_Award_for_Academic_Excellence.42f32f40.jpeg"
   },
   {
     "revision": "a9d5b98bcb536c3364cb3bf98e084b3a",
-    "url": "/static/media/GEECSANTS 2026 Award.a9d5b98b.jpg"
+    "url": "/static/media/GEECSANTS_2026_Award.a9d5b98b.jpg"
   },
   {
     "revision": "a0bee234595f3aa26da4f1e9b91afa34",
-    "url": "/static/media/GEECSANTS Poster 2025.a0bee234.pdf"
+    "url": "/static/media/GEECSANTS_Poster_2025.a0bee234.pdf"
+  },
+  {
+    "revision": "ee67985b5b9c363a8bf8b9f975815081",
+    "url": "/static/media/GEECS_2026_Poster.ee67985b.pdf"
   },
   {
     "revision": "58b24080e2f029a70f8a29999d405355",
-    "url": "/static/media/Graduation Pic.58b24080.jpg"
+    "url": "/static/media/Graduation_Pic.58b24080.jpg"
   },
   {
     "revision": "288bc616083c98b47179c2c786d75748",
-    "url": "/static/media/Grand Tech 2023 - Certificate of Attendance.288bc616.pdf"
+    "url": "/static/media/Grand_Tech_2023_Certificate_of_Attendance.288bc616.pdf"
   },
   {
     "revision": "203be072a37b8b143b51926c8e3be511",
-    "url": "/static/media/IEEE Xtreme 2022 Certificate of Participation.203be072.pdf"
+    "url": "/static/media/IEEE_Xtreme_2022_Certificate_of_Participation.203be072.pdf"
   },
   {
     "revision": "83b6e5ef6c6a83da43d9ff827806d9a4",
-    "url": "/static/media/Lebanon AI & IoT Challenge - First Place Winner.83b6e5ef.pdf"
+    "url": "/static/media/Lebanon_AI_&_IoT_Challenge_First_Place_Winner.83b6e5ef.pdf"
   },
   {
     "revision": "ed917bccbe93e9f4e36032c59df358a7",
-    "url": "/static/media/MATLAB Onramp Course Completion Certificate.ed917bcc.pdf"
+    "url": "/static/media/MATLAB_Onramp_Course_Completion_Certificate.ed917bcc.pdf"
   },
   {
     "revision": "be343bad288aa1e56162064243cbb674",
-    "url": "/static/media/MS-Thesis.be343bad.pdf"
+    "url": "/static/media/MS_Thesis.be343bad.pdf"
   },
   {
     "revision": "6183c4d9b7251e65c5214843df79cc27",
-    "url": "/static/media/Me Next to GEECSANTS Poster 2025.6183c4d9.jpeg"
+    "url": "/static/media/Me_Next_to_GEECSANTS_Poster_2025.6183c4d9.jpeg"
   },
   {
     "revision": "7dceb6bf76f5f22f9f8063fdc614a0fb",
@@ -149,7 +149,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "517caa825a036e1a7af68df1bed97bc8",
-    "url": "/static/media/Mentor Collective Mentorship.517caa82.pdf"
+    "url": "/static/media/Mentor_Collective_Mentorship.517caa82.pdf"
   },
   {
     "revision": "8ce6bad055e4d52f1a0a818b11c76548",
@@ -157,19 +157,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "df7297dc49171bd233ed73615ab39848",
-    "url": "/static/media/Profile Pic.df7297dc.jpg"
+    "url": "/static/media/Profile_Pic.df7297dc.jpg"
   },
   {
     "revision": "beaacef86e35418e69f2aae85ddfd097",
-    "url": "/static/media/Qual Exam.beaacef8.pdf"
+    "url": "/static/media/Qual_Exam.beaacef8.pdf"
   },
   {
     "revision": "ad97382bab56f5500439ad240f43e70d",
-    "url": "/static/media/Riwa Karam - 2026-03-26.ad97382b.pdf"
+    "url": "/static/media/Riwa_Karam_2026_03_26.ad97382b.pdf"
   },
   {
-    "revision": "a5c0ba0ab3c555efaa2e642f352efba8",
-    "url": "/static/media/RiwaKaram_Resume.a5c0ba0a.pdf"
+    "revision": "f82d4e91604c6eb87ce1edf4ee0e493f",
+    "url": "/static/media/Riwa_Karam_Resume.f82d4e91.pdf"
   },
   {
     "revision": "2731e76a9d8614bcefb4cd9153bf7610",
@@ -193,7 +193,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "d4b94afb4bc581a1429dfc7528840378",
-    "url": "/static/media/Simulink Onramp Course Completion Certificate.d4b94afb.pdf"
+    "url": "/static/media/Simulink_Onramp_Course_Completion_Certificate.d4b94afb.pdf"
   },
   {
     "revision": "a07a0f8effab34f82278d7ff8790a246",
@@ -205,11 +205,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "762a8046159ece1e23479b8e246cf176",
-    "url": "/static/media/UoB Degree Certificate.762a8046.pdf"
+    "url": "/static/media/UoB_Degree_Certificate.762a8046.pdf"
   },
   {
     "revision": "6516fd15faecb69159aeb276dbf4eae6",
-    "url": "/static/media/ZAKA AI Bootcamp.6516fd15.pdf"
+    "url": "/static/media/ZAKA_AI_Bootcamp.6516fd15.pdf"
   },
   {
     "revision": "49bcf5d663ec3791bd2e9af750f7832b",
