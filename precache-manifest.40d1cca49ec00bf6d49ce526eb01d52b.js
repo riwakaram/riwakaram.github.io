@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a19d04f80178da2b8758662f6f59ed10",
+    "revision": "26d683cc3eaf9ca634e0e39dd6107003",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.d49569c5.chunk.css"
   },
   {
-    "revision": "99b997f079832a612ae3",
+    "revision": "5821769d23d6f950b957",
     "url": "/static/css/main.e6f97fbb.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/3.144f8220.chunk.js"
   },
   {
-    "revision": "99b997f079832a612ae3",
-    "url": "/static/js/main.c65b7fc2.chunk.js"
+    "revision": "5821769d23d6f950b957",
+    "url": "/static/js/main.0d832892.chunk.js"
   },
   {
     "revision": "1e66f39923757b5c73a0",
@@ -168,8 +168,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Riwa_Karam_2026_03_26.ad97382b.pdf"
   },
   {
-    "revision": "f82d4e91604c6eb87ce1edf4ee0e493f",
-    "url": "/static/media/Riwa_Karam_Resume.f82d4e91.pdf"
+    "revision": "fb0bf826c98b556780ed44e5761f8f59",
+    "url": "/static/media/Riwa_Karam_Resume.fb0bf826.pdf"
   },
   {
     "revision": "2731e76a9d8614bcefb4cd9153bf7610",
