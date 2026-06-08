@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import Resume from "../Files/RiwaKaram_Resume.pdf";
+import Resume from "../Files/Riwa_Karam_Resume.pdf";
 
 const contactLinks = [
     {

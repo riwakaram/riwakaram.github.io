@@ -3,12 +3,12 @@ import Header from "../Components/Header";
 import Carousel from "../Components/Carousel";
 import PrelimPDF from "../Images/Prelim.pdf";
 import CDC2025Presentation from "../Files/CDC2025Pres.pdf";
-import GEECSANTSPosterPDF from "../Files/GEECSANTS Poster 2025.pdf";
-import GEECSANTS2026PosterPDF from "../Files/GEECS 2026 Poster.pdf";
-import GEECSANTS2026Award from "../Files/GEECSANTS 2026 Award.jpg";
-import QualExamPresentation from "../Files/Qual Exam.pdf";
+import GEECSANTSPosterPDF from "../Files/GEECSANTS_Poster_2025.pdf";
+import GEECSANTS2026PosterPDF from "../Files/GEECS_2026_Poster.pdf";
+import GEECSANTS2026Award from "../Files/GEECSANTS_2026_Award.jpg";
+import QualExamPresentation from "../Files/Qual_Exam.pdf";
 import SCCW2025Presentation from "../Files/SCCW2025.pdf";
-import ASMLGoodies from "../Images/ASML Goodies.jpeg";
+import ASMLGoodies from "../Images/ASML_Goodies.jpeg";
 import ASML2025 from "../Images/ASML2025.jpeg";
 import ASMLPosterAll from "../Images/ASMLPosterAll.jpeg";
 import ASMLPosterAll2025 from "../Images/ASMLPosterAll2025.jpeg";
@@ -18,13 +18,13 @@ import SSCW2025Dinner from "../Images/SSCW2025Dinner.JPG";
 import SSCWGroup2025 from "../Images/SSCWGroup2025.jpg";
 import SSCWMe012025 from "../Images/SSCWMe_1_2025.jpg";
 import SSCWMe022025 from "../Images/SSCWMe_2_2025.jpg";
-import CPSIOTWeekBadge from "../Images/CPS-IOT Week Badge.jpeg";
-import CPSIOTWeekTalk from "../Images/CPS-IOT Week Talk.jpeg";
-import FacultyAwardCertificate from "../Images/Faculty Award for Academic Excellence.jpeg";
-import UoBDegree from "../Files/UoB Degree Certificate.pdf";
-import GEECSANTSPoster2025 from "../Images/Me Next to GEECSANTS Poster 2025.jpeg";
+import CPSIOTWeekBadge from "../Images/CPS_IOT_Week_Badge.jpeg";
+import CPSIOTWeekTalk from "../Images/CPS_IOT_Week_Talk.jpeg";
+import FacultyAwardCertificate from "../Images/Faculty_Award_for_Academic_Excellence.jpeg";
+import UoBDegree from "../Files/UoB_Degree_Certificate.pdf";
+import GEECSANTSPoster2025 from "../Images/Me_Next_to_GEECSANTS_Poster_2025.jpeg";
 import MeInCDC from "../Images/MeinCDC.jpeg";
-import GradPic from "../Images/Graduation Pic.jpg";
+import GradPic from "../Images/Graduation_Pic.jpg";
 
 const NewsImage = ({ src, alt, className = "" }) => (
     <div className={`news-media ${className}`}>

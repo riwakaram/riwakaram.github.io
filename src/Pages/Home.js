@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Photo from "../Images/Profile Pic.jpg";
-import Resume from "../Files/RiwaKaram_Resume.pdf";
+import Photo from "../Images/Profile_Pic.jpg";
+import Resume from "../Files/Riwa_Karam_Resume.pdf";
 
 const Home = () => {
     const highlights = [

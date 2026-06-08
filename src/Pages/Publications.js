@@ -2,13 +2,13 @@ import React from "react";
 import Header from "../Components/Header";
 import CDC2025Paper from "../Files/CDC2025.pdf";
 import CDC2025Presentation from "../Files/CDC2025Pres.pdf";
-import GEECSANTS2026Poster from "../Files/GEECS 2026 Poster.pdf";
-import GEECSANTSPoster from "../Files/GEECSANTS Poster 2025.pdf";
-import MSThesis from "../Files/MS-Thesis.pdf";
+import GEECSANTS2026Poster from "../Files/GEECS_2026_Poster.pdf";
+import GEECSANTSPoster from "../Files/GEECSANTS_Poster_2025.pdf";
+import MSThesis from "../Files/MS_Thesis.pdf";
 import SCCW2025Presentation from "../Files/SCCW2025.pdf";
 import SurveyPaper from "../Files/Survey.pdf";
 import TROPaper from "../Files/TRO.pdf";
-import QualExam from "../Files/Qual Exam.pdf";
+import QualExam from "../Files/Qual_Exam.pdf";
 
 const publications = [
     {
