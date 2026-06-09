@@ -29,6 +29,11 @@ const contactLinks = [
         href: "https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en",
     },
     {
+        label: "ORCID",
+        value: "0009-0009-4042-4530",
+        href: "https://orcid.org/0009-0009-4042-4530",
+    },
+    {
         label: "GitHub",
         value: "github.com/riwakaram",
         href: "https://github.com/riwakaram",

@@ -17,6 +17,13 @@ const Footer = () => (
                 Google Scholar
             </a>
             <a
+                href="https://orcid.org/0009-0009-4042-4530"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ORCID
+            </a>
+            <a
                 href="https://www.linkedin.com/in/riwakaram"
                 target="_blank"
                 rel="noopener noreferrer"

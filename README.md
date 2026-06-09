@@ -158,6 +158,7 @@ optimized production build before deployment.
 - **LinkedIn:** [linkedin.com/in/riwakaram](https://www.linkedin.com/in/riwakaram/)
 - **GitHub:** [github.com/riwakaram](https://github.com/riwakaram)
 - **Google Scholar:** [Riwa Karam](https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en)
+- **ORCID:** [0009-0009-4042-4530](https://orcid.org/0009-0009-4042-4530)
 
 ---
 
