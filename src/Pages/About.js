@@ -25,7 +25,7 @@ const contactLinks = [
     },
     {
         label: "Google Scholar",
-        value: "Scholar profile",
+        value: "tinyurl.com/riwakaram",
         href: "https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en",
     },
     {
