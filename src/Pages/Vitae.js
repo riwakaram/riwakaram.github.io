@@ -68,7 +68,7 @@ const Vitae = () => {
                 <div className="card-section plain-card-lists">
                     <CardItem
                         title="Doctor of Philosophy, Electrical and Computer Engineering"
-                        subtitle="University of California, Irvine | 09/2023 - Expected 12/2027"
+                        subtitle="University of California, Irvine | 09/2023 - Expected 06/2027"
                         description="Research in collaborative multi-agent systems, optimization, machine learning, ecology-inspired robotics, coverage control, formation control, and human-swarm interaction."
                         list={[
                             "Lab: UCI Robot Ecology Lab",
@@ -171,7 +171,7 @@ const Vitae = () => {
             content: (
                 <div className="card-section plain-card-lists">
                     <CardItem
-                        title="University of California, Irvine"
+                        title="UCI Robot Ecology Lab"
                         subtitle="Graduate Student Researcher"
                         description="October 2023 - Present | Irvine, CA"
                         list={[
@@ -213,7 +213,7 @@ const Vitae = () => {
                 <div className="card-section">
                     <CardItem
                         title="Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems"
-                        subtitle="arXiv preprint, submitted | 2026"
+                        subtitle="arXiv preprint, under review in IEEE Transactions on Robotics (T-RO) | 2026"
                         description="Riwa Karam, Ruoyu Lin, Brooks A. Butler, and Magnus Egerstedt"
                     >
                         <ResourceLinks
@@ -235,7 +235,7 @@ const Vitae = () => {
                     </CardItem>
                     <CardItem
                         title="Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration"
-                        subtitle="arXiv preprint, submitted | 2026"
+                        subtitle="arXiv preprint, under review in IEEE Control Systems Magazine (CSM) | 2026"
                         description="Riwa Karam, Alexander A. Nguyen, Ruoyu Lin, David R. Martin, Diana Morales, Brooks A. Butler, and Magnus Egerstedt"
                     >
                         <ResourceLinks
@@ -253,7 +253,7 @@ const Vitae = () => {
                     </CardItem>
                     <CardItem
                         title="Resource Allocation for Multi-Team Collaboration Based on Hamilton's Rule"
-                        subtitle="IEEE 64th Conference on Decision and Control | 2025"
+                        subtitle="IEEE 64th Conference on Decision and Control (CDC) | 2025"
                         description="Riwa Karam, Ruoyu Lin, Brooks A. Butler, and Magnus Egerstedt. Rio de Janeiro, Brazil, pp. 6891-6898."
                     >
                         <ResourceLinks
@@ -348,8 +348,8 @@ const Vitae = () => {
                     <CardItem
                         title="Programming Languages and Libraries"
                         list={[
-                            "MATLAB",
                             "Python",
+                            "MATLAB",
                             "Scikit-learn",
                             "PyTorch",
                             "Keras",
@@ -366,8 +366,8 @@ const Vitae = () => {
                     <CardItem
                         title="Hardware Technologies"
                         list={[
-                            "Motion Capture Systems",
                             "Robotic Testbeds",
+                            "Motion Capture Systems",
                             "Robot building",
                             "Robot debugging",
                         ]}

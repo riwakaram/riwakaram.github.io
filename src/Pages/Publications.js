@@ -13,7 +13,7 @@ import QualExam from "../Files/Qual_Exam.pdf";
 const publications = [
     {
         type: "Preprint",
-        status: "Submitted",
+        status: "Under Review in IEEE T-RO",
         title: "Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems",
         authors: "R. Karam, R. Lin, B. A. Butler, M. Egerstedt",
         venue: "arXiv preprint",
@@ -34,7 +34,7 @@ const publications = [
     },
     {
         type: "Preprint",
-        status: "Submitted",
+        status: "Under Review in IEEE CSM",
         title: "Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration",
         authors:
             "R. Karam, A. A. Nguyen, R. Lin, D. R. Martin, D. Morales, B. A. Butler, M. Egerstedt",
@@ -52,7 +52,7 @@ const publications = [
     },
     {
         type: "Conference Paper",
-        status: "Accepted",
+        status: "Published in IEEE CDC 2025",
         title: "Resource Allocation for Multi-Team Collaboration Based on Hamilton's Rule",
         authors: "R. Karam, R. Lin, B. A. Butler, M. Egerstedt",
         venue: "IEEE 64th Conference on Decision and Control, Rio de Janeiro, Brazil, 2025, pp. 6891-6898",
@@ -69,7 +69,7 @@ const publications = [
     },
     {
         type: "Thesis",
-        status: "Completed",
+        status: "",
         title: "A Graphical Interface for Specifying and Establishing Multi-Robot Formations",
         authors: "R. Karam",
         venue: "M.S. Thesis, University of California, Irvine, 2025",

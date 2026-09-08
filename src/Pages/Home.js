@@ -13,7 +13,7 @@ const Home = () => {
     const news = [
         {
             date: "June 5, 2026",
-            title: "GEECSANTS 2026 Software & Algorithms Winner",
+            title: "GEECSANTS 2026 Software & Algorithms First Place Winner",
             text: "I presented my research at the 2026 GEECS Annual Technology Showcase and won the Software & Algorithms track.",
         },
         {
@@ -117,8 +117,8 @@ const Home = () => {
                             rel="noopener noreferrer"
                         >
                             UCI Robot Ecology Lab
-                        </a>
-                        {" "}and part of the{" "}
+                        </a>{" "}
+                        and part of the{" "}
                         <a
                             href="https://robotics.eng.uci.edu"
                             target="_blank"

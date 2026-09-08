@@ -98,7 +98,7 @@ const News = () => {
     const entries = [
         {
             date: "June 5, 2026",
-            title: "GEECSANTS 2026 Software & Algorithms Winner",
+            title: "GEECSANTS 2026 Software & Algorithms First Place Winner",
             text: "I presented my research at the 2026 GEECS Annual Technology Showcase and won the Software & Algorithms track.",
             links: [
                 {
