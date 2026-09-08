@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e6f97fbb.chunk.css",
-    "main.js": "/static/js/main.5040dac1.chunk.js",
-    "main.js.map": "/static/js/main.5040dac1.chunk.js.map",
+    "main.js": "/static/js/main.4203974d.chunk.js",
+    "main.js.map": "/static/js/main.4203974d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.463fac86.js",
     "runtime-main.js.map": "/static/js/runtime-main.463fac86.js.map",
     "static/css/2.d49569c5.chunk.css": "/static/css/2.d49569c5.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.144f8220.chunk.js": "/static/js/3.144f8220.chunk.js",
     "static/js/3.144f8220.chunk.js.map": "/static/js/3.144f8220.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0981dd662e9c4acd6538e1d999296d17.js": "/precache-manifest.0981dd662e9c4acd6538e1d999296d17.js",
+    "precache-manifest.c1385e9f0d1f36916eea22688118f0ed.js": "/precache-manifest.c1385e9f0d1f36916eea22688118f0ed.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.d49569c5.chunk.css.map": "/static/css/2.d49569c5.chunk.css.map",
     "static/css/main.e6f97fbb.chunk.css.map": "/static/css/main.e6f97fbb.chunk.css.map",
@@ -50,7 +50,7 @@
     "static/media/Profile_Pic.jpg": "/static/media/Profile_Pic.df7297dc.jpg",
     "static/media/Qual_Exam.pdf": "/static/media/Qual_Exam.beaacef8.pdf",
     "static/media/Riwa_Karam_2026_03_26.pdf": "/static/media/Riwa_Karam_2026_03_26.ad97382b.pdf",
-    "static/media/Riwa_Karam_Resume.pdf": "/static/media/Riwa_Karam_Resume.fb0bf826.pdf",
+    "static/media/Riwa_Karam_Resume.pdf": "/static/media/Riwa_Karam_Resume.963b3a4e.pdf",
     "static/media/SCCW2025.pdf": "/static/media/SCCW2025.2731e76a.pdf",
     "static/media/SSCW2025Dinner.JPG": "/static/media/SSCW2025Dinner.140ef811.JPG",
     "static/media/SSCWGroup2025.jpg": "/static/media/SSCWGroup2025.973c9136.jpg",
@@ -68,6 +68,6 @@
     "static/css/2.d49569c5.chunk.css",
     "static/js/2.31504a91.chunk.js",
     "static/css/main.e6f97fbb.chunk.css",
-    "static/js/main.5040dac1.chunk.js"
+    "static/js/main.4203974d.chunk.js"
   ]
 }
