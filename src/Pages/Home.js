@@ -93,7 +93,7 @@ const Home = () => {
                 </div>
                 <div className="about-inline-links">
                     <p>
-                        I am a third-year PhD candidate in the{" "}
+                        I am a fourth-year PhD candidate in the{" "}
                         <a
                             href="https://engineering.uci.edu/dept/eecs"
                             target="_blank"
