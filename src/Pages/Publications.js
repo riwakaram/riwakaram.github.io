@@ -9,8 +9,26 @@ import SCCW2025Presentation from "../Files/SCCW2025.pdf";
 import SurveyPaper from "../Files/Survey.pdf";
 import TROPaper from "../Files/TRO.pdf";
 import QualExam from "../Files/Qual_Exam.pdf";
+import ICRAPaper from "../Files/ICRA2026.pdf";
 
 const publications = [
+    {
+        type: "Preprint",
+        status: "Submitted",
+        title: "Freehand Sketching for End-User Programming of Robot Swarms",
+        authors: "R. Karam, I. Kuo, M. Egerstedt",
+        venue: "arXiv preprint",
+        links: [
+            {
+                href: ICRAPaper,
+                text: "PDF",
+            },
+            {
+                href: "https://doi.org/10.48550/arXiv.2609.11078",
+                text: "DOI",
+            },
+        ],
+    },
     {
         type: "Preprint",
         status: "Under Review in IEEE T-RO",
