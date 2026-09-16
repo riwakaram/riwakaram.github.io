@@ -10,6 +10,7 @@ import SurveyPaper from "../Files/Survey.pdf";
 import TROPaper from "../Files/TRO.pdf";
 import QualExam from "../Files/Qual_Exam.pdf";
 import ICRAPaper from "../Files/ICRA2026.pdf";
+import ARMTalkSlidesPDF from "../Files/External Talk - Collaboration in Multi-Agent Systems - Riwa Karam.pdf";
 
 const publications = [
     {
@@ -105,6 +106,23 @@ const publications = [
 ];
 
 const presentations = [
+    {
+        type: "Invited Talk",
+        title: "Collaboration in Multi-Agent Systems",
+        venue: "ARM Robotalk - External Talk",
+        location: "Austin, TX",
+        date: "September 15, 2026",
+        links: [
+            {
+                href: "https://www.arm.com",
+                text: "ARM Inc. Website",
+            },
+            {
+                href: ARMTalkSlidesPDF,
+                text: "Slides",
+            },
+        ],
+    },
     {
         type: "Poster",
         title: "Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems",
