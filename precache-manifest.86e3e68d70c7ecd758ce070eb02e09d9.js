@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "97f2ea091f1de11d89f378ff5f8501e6",
+    "revision": "275e55832eb7ca5073f9613a77dae990",
     "url": "/index.html"
   },
   {
-    "revision": "51dba4300a5921d25b3b",
+    "revision": "a947685600f1cca5db65",
     "url": "/static/css/2.d49569c5.chunk.css"
   },
   {
-    "revision": "be0bedea306cdfb799ab",
+    "revision": "00a2bfd0d8576a036051",
     "url": "/static/css/main.e6f97fbb.chunk.css"
   },
   {
-    "revision": "51dba4300a5921d25b3b",
-    "url": "/static/js/2.40571c8a.chunk.js"
+    "revision": "a947685600f1cca5db65",
+    "url": "/static/js/2.5457f873.chunk.js"
   },
   {
     "revision": "90455f630391e49cb4ec34b7495d1995",
-    "url": "/static/js/2.40571c8a.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5457f873.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "567274c82bbe31d56f6b",
-    "url": "/static/js/3.a0ce0b60.chunk.js"
+    "revision": "11e77538cdff2ea14052",
+    "url": "/static/js/3.4c85631f.chunk.js"
   },
   {
-    "revision": "be0bedea306cdfb799ab",
-    "url": "/static/js/main.fd2e134e.chunk.js"
+    "revision": "00a2bfd0d8576a036051",
+    "url": "/static/js/main.b1159aff.chunk.js"
   },
   {
-    "revision": "6abcb181faa6055bee0f",
-    "url": "/static/js/runtime-main.feec3a55.js"
+    "revision": "78d957c6b2ec04a82a99",
+    "url": "/static/js/runtime-main.6d5cbf2b.js"
   },
   {
     "revision": "70b2b18437bfc62d44055f1d37f5d2b0",
@@ -98,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "13eb5838acf21fbbf0cad492c27b1720",
     "url": "/static/media/CPS_IOT_Week_Talk.13eb5838.jpeg"
+  },
+  {
+    "revision": "380d4c6d0338c5bff8d52cf39ce447eb",
+    "url": "/static/media/External Talk - Collaboration in Multi-Agent Systems - Riwa Karam.380d4c6d.pdf"
   },
   {
     "revision": "42f32f401fd20516b63b3eeb414a00cb",
