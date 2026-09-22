@@ -28,6 +28,10 @@ const publications = [
                 href: "https://doi.org/10.48550/arXiv.2609.11078",
                 text: "DOI",
             },
+            {
+                href: "https://www.youtube.com/watch?v=iVbwI8mktBI",
+                text: "Experiments Video",
+            },
         ],
     },
     {

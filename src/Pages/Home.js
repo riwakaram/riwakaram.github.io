@@ -12,19 +12,19 @@ const Home = () => {
 
     const news = [
         {
-            date: "June 5, 2026",
-            title: "GEECSANTS 2026 Software & Algorithms First Place Winner",
-            text: "I presented my research at the 2026 GEECS Annual Technology Showcase and won the Software & Algorithms track.",
+            date: "December 14-18, 2026",
+            title: "Second Conference: IEEE CDC 2026",
+            text: "I will be attending the IEEE Conference on Decision and Control (CDC) 2026 in Hawaï. Excited to attend this conference this year and reconnect with peers and fellow researchers as well as attending interesting talks.",
         },
         {
-            date: "May 21, 2026",
-            title: "Passed My PhD Qualifying Exam",
-            text: "I passed my PhD Qualifying Exam, a major milestone where I presented my current research and future research plans to my committee. Officially a PhD Candidate at UC Irvine!",
+            date: "September 15, 2026",
+            title: "Invited ARM RoboTalk",
+            text: 'I gave an invited ARM RoboTalk in Austin, TX, titled "Collaboration in Multi-Agent Systems," sharing my research on collaboration across multi-agent systems.',
         },
         {
-            date: "December 8-12, 2025",
-            title: "First Conference: IEEE CDC 2025",
-            text: "I attended my first major research conference, the 64th IEEE Conference on Decision and Control in Rio de Janeiro, Brazil, where I presented my first-author paper on resource allocation for multi-team collaboration.",
+            date: "September 10, 2026",
+            title: "New arXiv Preprint: Freehand Sketching for Robot Swarms",
+            text: 'Our paper, "Freehand Sketching for End-User Programming of Robot Swarms," is now available on arXiv. We explore how users can specify robot swarm formations through freehand drawings.',
         },
     ];
 

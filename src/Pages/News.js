@@ -25,6 +25,7 @@ import UoBDegree from "../Files/UoB_Degree_Certificate.pdf";
 import GEECSANTSPoster2025 from "../Images/Me_Next_to_GEECSANTS_Poster_2025.jpeg";
 import MeInCDC from "../Images/MeinCDC.jpeg";
 import GradPic from "../Images/Graduation_Pic.jpg";
+import ARMTalkSlidesPDF from "../Files/External Talk - Collaboration in Multi-Agent Systems - Riwa Karam.pdf";
 
 const NewsImage = ({ src, alt, className = "" }) => (
     <div className={`news-media ${className}`}>
@@ -97,6 +98,33 @@ const News = () => {
 
     const entries = [
         {
+            date: "December 14-18, 2026",
+            title: "Second Conference: IEEE CDC 2026",
+            text: "I will be attending the IEEE Conference on Decision and Control (CDC) 2026 in Hawaï. Excited to attend this conference this year and reconnect with peers and fellow researchers as well as attending interesting talks.",
+        },
+        {
+            date: "September 15, 2026",
+            title: "Invited ARM RoboTalk",
+            text: 'I gave an invited ARM RoboTalk in Austin, TX, titled "Collaboration in Multi-Agent Systems," sharing my research on collaboration across multi-agent systems.',
+            link: ARMTalkSlidesPDF,
+            linkText: "Slides",
+        },
+        {
+            date: "September 10, 2026",
+            title: "New arXiv Preprint: Freehand Sketching for Robot Swarms",
+            text: 'Our paper, "Freehand Sketching for End-User Programming of Robot Swarms," is now available on arXiv. We explore how users can specify robot swarm formations through freehand drawings.',
+            links: [
+                {
+                    href: "https://arxiv.org/abs/2609.11078",
+                    text: "Read on arXiv",
+                },
+                {
+                    href: "https://www.youtube.com/watch?v=iVbwI8mktBI",
+                    text: "Experiments video",
+                },
+            ],
+        },
+        {
             date: "June 5, 2026",
             title: "GEECSANTS 2026 Software & Algorithms First Place Winner",
             text: "I presented my research at the 2026 GEECS Annual Technology Showcase and won the Software & Algorithms track.",
@@ -124,6 +152,28 @@ const News = () => {
             text: "I passed my PhD Qualifying Exam, a major milestone where I presented my current research and future research plans to my committee. Officially a PhD Candidate at UC Irvine!",
             link: QualExamPresentation,
             linkText: "Slides",
+        },
+        {
+            date: "May 20, 2026",
+            title: "New arXiv Preprint: Learning Altruistic Collaboration",
+            text: 'Our paper, "Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems," is now available on arXiv. We combine Hamilton\'s rule with graph neural networks to learn how robot teams can share resources.',
+            links: [
+                {
+                    href: "https://arxiv.org/abs/2605.21723",
+                    text: "Read on arXiv",
+                },
+                {
+                    href: "https://youtu.be/-2q-zy0wItk",
+                    text: "Experiments video",
+                },
+            ],
+        },
+        {
+            date: "March 25, 2026",
+            title: "New arXiv Preprint: Multi-Robot Collaboration Survey",
+            text: 'Our paper, "Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration," is now available on arXiv. We clarify the relationships between cooperation, coordination, and collaboration, and survey frameworks for multi-robot collaboration.',
+            link: "https://arxiv.org/abs/2603.23898",
+            linkText: "Read on arXiv",
         },
         {
             date: "December 8-12, 2025",
@@ -205,13 +255,6 @@ const News = () => {
                     text: "Poster PDF",
                 },
             ],
-            media: (
-                <NewsImage
-                    src={GEECSANTSPoster2025}
-                    alt="Riwa Karam next to GEECSANTS poster"
-                    className="portrait-media"
-                />
-            ),
         },
         {
             date: "May 5-9, 2025",
@@ -229,7 +272,7 @@ const News = () => {
         {
             date: "April 29, 2025",
             title: "LA Times Interview",
-            text: "I was interviewed with labmates for an LA Times article about the UCI Robot Ecology Lab and our research.",
+            text: "I was interviewed with my labmates Dr. Alexander A. Nguyen and Dr. Efrain Mendez Flores for an LA Times article about the UCI Robot Ecology Lab and our research.",
             link: "https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature",
             linkText: "Read the article",
         },
@@ -312,7 +355,7 @@ const News = () => {
         {
             date: "July 27, 2023",
             title: "Faculty Award for Academic Excellence",
-            text: "I received the Faculty Award for Academic Excellence during the award ceremony.",
+            text: "I received the Faculty Award for Academic Excellence at the award ceremony.",
             linkText: "Award Image",
             link: FacultyAwardCertificate,
         },
@@ -326,12 +369,12 @@ const News = () => {
         {
             date: "May 16, 2023",
             title: "B.S. Graduation Project Presentation",
-            text: "I presented my B.S. graduation project.",
+            text: "I presented my B.S. graduation project with my teammate Fady Gebran.",
         },
         {
             date: "February 7, 2023",
             title: "UCI Acceptance Letter",
-            text: "I received my acceptance letter from UC Irvine.",
+            text: "I received my acceptance letter from UC Irvine!",
         },
     ];
 

@@ -25,6 +25,7 @@ import SimulinkOnrampCertificate from "../Files/Simulink_Onramp_Course_Completio
 import SurveyPaper from "../Files/Survey.pdf";
 import ZAKACertificate from "../Files/ZAKA_AI_Bootcamp.pdf";
 import TROPaper from "../Files/TRO.pdf";
+import ICRAPaper from "../Files/ICRA2026.pdf";
 
 const ResourceLinks = ({ links }) => (
     <div className="publication-links vitae-resource-links">
@@ -211,6 +212,28 @@ const Vitae = () => {
             title: "Publications",
             content: (
                 <div className="card-section">
+                    <CardItem
+                        title="Freehand Sketching for End-User Programming of Robot Swarms"
+                        subtitle="arXiv preprint, submitted | 2026"
+                        description="Riwa Karam, Ian Kuo, and Magnus Egerstedt"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: ICRAPaper,
+                                    text: "PDF",
+                                },
+                                {
+                                    href: "https://doi.org/10.48550/arXiv.2609.11078",
+                                    text: "DOI",
+                                },
+                                {
+                                    href: "https://www.youtube.com/watch?v=iVbwI8mktBI",
+                                    text: "Experiments Video",
+                                },
+                            ]}
+                        />
+                    </CardItem>
                     <CardItem
                         title="Learning Altruistic Collaboration in Heterogeneous Multi-Team Systems"
                         subtitle="arXiv preprint, under review in IEEE Transactions on Robotics (T-RO) | 2026"
