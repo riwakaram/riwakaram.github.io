@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af9d385c0381e2543d6a65089636cef9",
+    "revision": "085a8e906a5c89faf757deea78114f33",
     "url": "/index.html"
   },
   {
-    "revision": "bb67189b1347a40fb8f0",
+    "revision": "1a10c6f5fe9474e89cdb",
     "url": "/static/css/2.d49569c5.chunk.css"
   },
   {
-    "revision": "2e6d31e8f5e88afa7470",
-    "url": "/static/css/main.e6f97fbb.chunk.css"
+    "revision": "77e517a81d4f5323c656",
+    "url": "/static/css/main.f6e53d20.chunk.css"
   },
   {
-    "revision": "bb67189b1347a40fb8f0",
-    "url": "/static/js/2.36c2649c.chunk.js"
+    "revision": "1a10c6f5fe9474e89cdb",
+    "url": "/static/js/2.c7fa6d84.chunk.js"
   },
   {
     "revision": "90455f630391e49cb4ec34b7495d1995",
-    "url": "/static/js/2.36c2649c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c7fa6d84.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "11e77538cdff2ea14052",
-    "url": "/static/js/3.4c85631f.chunk.js"
+    "revision": "ed01740697e17a0419bd",
+    "url": "/static/js/3.33a47ead.chunk.js"
   },
   {
-    "revision": "2e6d31e8f5e88afa7470",
-    "url": "/static/js/main.910f8e92.chunk.js"
+    "revision": "77e517a81d4f5323c656",
+    "url": "/static/js/main.f9dc0ab3.chunk.js"
   },
   {
-    "revision": "78d957c6b2ec04a82a99",
-    "url": "/static/js/runtime-main.6d5cbf2b.js"
+    "revision": "87e94241b6e475516345",
+    "url": "/static/js/runtime-main.ca8c85d5.js"
   },
   {
     "revision": "70b2b18437bfc62d44055f1d37f5d2b0",
@@ -148,10 +148,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/MS_Thesis.be343bad.pdf"
   },
   {
-    "revision": "6183c4d9b7251e65c5214843df79cc27",
-    "url": "/static/media/Me_Next_to_GEECSANTS_Poster_2025.6183c4d9.jpeg"
-  },
-  {
     "revision": "7dceb6bf76f5f22f9f8063fdc614a0fb",
     "url": "/static/media/MeinCDC.7dceb6bf.jpeg"
   },
@@ -204,8 +200,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Simulink_Onramp_Course_Completion_Certificate.d4b94afb.pdf"
   },
   {
-    "revision": "a07a0f8effab34f82278d7ff8790a246",
-    "url": "/static/media/Survey.a07a0f8e.pdf"
+    "revision": "fa3ca51a2284acfaeff7dd0ede27fcb5",
+    "url": "/static/media/Survey.fa3ca51a.pdf"
   },
   {
     "revision": "0ed33579276e5da0427ef618f2d2cbf0",
@@ -220,7 +216,87 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ZAKA_AI_Bootcamp.6516fd15.pdf"
   },
   {
+    "revision": "c7f16e691c72ed127c0021b8ecbf71df",
+    "url": "/static/media/arab-iot.c7f16e69.png"
+  },
+  {
+    "revision": "1ee77c6c153e5ecb64cbe287913e796e",
+    "url": "/static/media/asme.1ee77c6c.svg"
+  },
+  {
+    "revision": "85900a059b6acba20e5ce03a326aea93",
+    "url": "/static/media/asml.85900a05.svg"
+  },
+  {
+    "revision": "95fabd33c813eb0fff3640f2263fd6a4",
+    "url": "/static/media/aviapro.95fabd33.svg"
+  },
+  {
+    "revision": "8c164e1ecaf0d6689f8d0f29da2d7c20",
+    "url": "/static/media/balamand.8c164e1e.png"
+  },
+  {
+    "revision": "d721f0f6aa15d42f79de1de7e0ccf7b3",
+    "url": "/static/media/collaboration-theme-v6.d721f0f6.jpg"
+  },
+  {
+    "revision": "88df6b77e925a51bf499c38d078fbbe8",
+    "url": "/static/media/csff.88df6b77.svg"
+  },
+  {
     "revision": "49bcf5d663ec3791bd2e9af750f7832b",
     "url": "/static/media/favicon.49bcf5d6.ico"
+  },
+  {
+    "revision": "60cbd9e912a52d3ba4865aa1542317dc",
+    "url": "/static/media/geecs.60cbd9e9.jpg"
+  },
+  {
+    "revision": "62a442285b5c9e89b7101992dfeefde1",
+    "url": "/static/media/guides.62a44228.png"
+  },
+  {
+    "revision": "b9dda0de98cc48d56594590eef882a5b",
+    "url": "/static/media/human-swarm-scene-v9.b9dda0de.jpg"
+  },
+  {
+    "revision": "77fa9429adfd1f9c62579a7279f53624",
+    "url": "/static/media/ieee-computer.77fa9429.png"
+  },
+  {
+    "revision": "c4cf9b2aa1d0f5fc40b686386fa6b628",
+    "url": "/static/media/ieee-css.c4cf9b2a.jpg"
+  },
+  {
+    "revision": "c42f30ac4ad0dadd73cb82e0958144f8",
+    "url": "/static/media/ielts.c42f30ac.png"
+  },
+  {
+    "revision": "1a987ca1e90d0a2817c7a2ee4dd4a35d",
+    "url": "/static/media/la-times.1a987ca1.svg"
+  },
+  {
+    "revision": "45cb1a7f67c325ce3572e46cccab9312",
+    "url": "/static/media/learning-theme-v6.45cb1a7f.jpg"
+  },
+  {
+    "revision": "83928a838d11a5b5fe3fa78bf2c86b0c",
+    "url": "/static/media/mathworks.83928a83.svg"
+  },
+  {
+    "revision": "5abdabb1675d0fcee46884259be444fb",
+    "url": "/static/media/mentor.5abdabb1.svg"
+  },
+  {
+    "revision": "5f718f42b49d124cdf244d357f6f9b49",
+    "url": "/static/media/testbed-balanced-v7.5f718f42.jpg"
+  },
+  {
+    "revision": "11d084c93e95ecf291a12f58f9544255",
+    "url": "/static/media/uci.11d084c9.svg"
+  },
+  {
+    "revision": "a27c6615495e3421a8284206a62d4db2",
+    "url": "/static/media/zaka.a27c6615.webp"
   }
 ]);
