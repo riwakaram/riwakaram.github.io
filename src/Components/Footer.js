@@ -1,43 +1,51 @@
 import React from "react";
+import NetworkArt from "./NetworkArt";
+
+const footerGroups = [
+    {
+        label: "Email",
+        links: [
+            { label: "UCI Email", href: "mailto:rwkaram@uci.edu" },
+            { label: "Personal Email", href: "mailto:riwa.karam@icloud.com" },
+        ],
+    },
+    {
+        label: "Profiles",
+        links: [
+            { label: "Google Scholar", href: "https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en" },
+            { label: "ORCID", href: "https://orcid.org/0009-0009-4042-4530" },
+            { label: "LinkedIn", href: "https://www.linkedin.com/in/riwakaram" },
+            { label: "GitHub", href: "https://github.com/riwakaram" },
+        ],
+    },
+];
 
 const Footer = () => (
     <footer className="site-footer">
-        <div>
+        <NetworkArt compact className="footer-network" />
+        <div className="footer-identity">
             <strong>Riwa Karam</strong>
             <span>Electrical and Computer Engineering, UC Irvine</span>
         </div>
-        <div className="footer-links">
-            <a href="mailto:rwkaram@uci.edu">UCI Email</a>
-            <a href="mailto:riwa.karam@icloud.com">Personal Email</a>
-            <a
-                href="https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Google Scholar
-            </a>
-            <a
-                href="https://orcid.org/0009-0009-4042-4530"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                ORCID
-            </a>
-            <a
-                href="https://www.linkedin.com/in/riwakaram"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
-            <a
-                href="https://github.com/riwakaram"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-        </div>
+        <nav className="footer-links" aria-label="Contact and profiles">
+            {footerGroups.map(({ label, links }) => (
+                <div className="footer-link-group" key={label}>
+                    <span className="footer-group-label">{label}</span>
+                    <div className="footer-link-row">
+                        {links.map(({ label: linkLabel, href }) => {
+                            const external = !href.startsWith("mailto:");
+                            return (
+                                <a className="footer-link" href={href} key={href}
+                                    target={external ? "_blank" : undefined}
+                                    rel={external ? "noopener noreferrer" : undefined}>
+                                    {linkLabel}
+                                </a>
+                            );
+                        })}
+                    </div>
+                </div>
+            ))}
+        </nav>
     </footer>
 );
 

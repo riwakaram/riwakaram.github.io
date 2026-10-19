@@ -1,0 +1,159 @@
+/* Shared control geometry and feedback; purple identifies primary actions. */
+:root {
+    --button-radius: var(--radius);
+    --button-height: 2.75rem;
+    --button-padding: .65rem 1.1rem;
+    --button-font-size: .9rem;
+}
+
+:is(.button-primary, .button-secondary, .publication-links a, .news-link,
+    .text-link, .cv-toolbar button, .cv-detail > h2 button, .accordion-button,
+    .site-nav .navbar-toggler, .myCarousel .carousel-control-prev,
+    .myCarousel .carousel-control-next) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .65rem;
+    min-height: var(--button-height);
+    max-width: 100%;
+    padding: var(--button-padding);
+    border: 1px solid var(--border-color);
+    border-radius: var(--button-radius);
+    background: var(--surface-color);
+    color: var(--accent-color);
+    box-shadow: var(--control-shadow);
+    font: 600 var(--button-font-size)/1.4 var(--font-family);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 160ms ease, border-color 160ms ease,
+        color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+:is(.button-primary, .button-secondary, .publication-links a, .news-link,
+    .text-link, .cv-toolbar button, .cv-detail > h2 button, .accordion-button,
+    .site-nav .navbar-toggler, .myCarousel .carousel-control-prev,
+    .myCarousel .carousel-control-next):hover {
+    background: var(--accent-color);
+    color: var(--button-ink);
+    border-color: var(--accent-color);
+    box-shadow: var(--control-shadow-hover);
+    text-decoration: none;
+}
+
+.button-primary.button-primary {
+    position: relative;
+    overflow: hidden;
+    background: var(--primary-background);
+    border-color: var(--button-fill-hover);
+    color: var(--button-ink);
+}
+.button-primary.button-primary:hover,
+.button-primary.button-primary:focus-visible {
+    background: var(--button-fill-hover);
+}
+
+:is(.button-primary, .button-secondary) > span[aria-hidden="true"] {
+    display: inline-block;
+    flex-shrink: 0;
+    transition: transform 160ms ease;
+}
+
+/* Disclosures use the same controls, with a persistent expanded-state marker. */
+.cv-detail.cv-detail > h2 button, .accordion-button.accordion-button {
+    justify-content: space-between;
+    text-align: left;
+}
+.cv-detail > h2 button .cv-number { color: inherit; }
+.cv-detail > h2 button[aria-expanded="true"], .accordion-button:not(.collapsed) {
+    border-left: 3px solid var(--button-fill);
+    padding-left: calc(1.1rem - 2px);
+    background: var(--accent-soft);
+    color: var(--accent-color);
+}
+.cv-detail > h2 button[aria-expanded="true"]:hover,
+.accordion-button:not(.collapsed):hover {
+    background: var(--accent-color);
+    color: var(--button-ink);
+}
+
+/* Icon controls retain the same border, surface, depth, and touch target. */
+.site-nav .navbar-toggler,
+.myCarousel :is(.carousel-control-prev, .carousel-control-next) {
+    width: var(--button-height);
+    height: var(--button-height);
+    padding: .65rem;
+    opacity: 1;
+}
+.myCarousel :is(.carousel-control-prev, .carousel-control-next) {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+.myCarousel .carousel-control-prev { left: .5rem; }
+.myCarousel .carousel-control-next { right: .5rem; }
+.site-nav .navbar-toggler-icon { width: 1.25rem; height: 1.25rem; }
+.myCarousel :is(.carousel-control-prev-icon, .carousel-control-next-icon) {
+    width: 1rem;
+    height: 1rem;
+    filter: brightness(0);
+}
+.site-nav .navbar-toggler:hover .navbar-toggler-icon,
+.myCarousel :is(.carousel-control-prev, .carousel-control-next):hover span,
+.accordion-button:hover::after { filter: brightness(0) invert(1); }
+
+.myCarousel .carousel-indicators button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--button-height);
+    height: var(--button-height);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: var(--button-radius);
+    background: transparent;
+    opacity: 1;
+    text-indent: 0;
+}
+.myCarousel .carousel-indicators button::after {
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: var(--muted-color);
+}
+.myCarousel .carousel-indicators button.active::after { background: var(--button-fill); }
+.myCarousel .carousel-indicators button:hover { background: var(--surface-elevated); }
+
+:is(.button-primary, .button-secondary, .publication-links a, .news-link,
+    .text-link, .cv-toolbar button, .cv-detail > h2 button, .accordion-button,
+    .site-nav .navbar-toggler, .myCarousel button):focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 3px;
+    text-decoration: none;
+    box-shadow: var(--control-shadow-hover);
+}
+:is(.button-primary, .button-secondary, .publication-links a, .news-link,
+    .text-link, .cv-toolbar button, .cv-detail > h2 button, .accordion-button):active {
+    box-shadow: inset 0 1px 3px rgba(53, 41, 59, .15);
+    transform: translateY(1px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    :is(.button-primary, .button-secondary, .publication-links a, .news-link,
+        .text-link, .cv-toolbar button):hover:not(:active) { transform: translateY(-1px); }
+    :is(.button-primary, .button-secondary):hover > span[aria-hidden="true"] {
+        transform: translateX(2px);
+    }
+}
+@media (min-width: 992px) {
+    .site-nav .navbar-toggler { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+    :is(.button-primary, .button-secondary, .publication-links a, .news-link,
+        .text-link, .cv-toolbar button, .cv-detail > h2 button, .accordion-button),
+    :is(.button-primary, .button-secondary) > span[aria-hidden="true"] {
+        transform: none !important;
+    }
+}

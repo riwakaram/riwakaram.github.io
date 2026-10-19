@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ResearchExplorer from "../Components/ResearchExplorer";
+import NetworkArt from "../Components/NetworkArt";
 import Photo from "../Images/Profile_Pic.jpg";
 import Resume from "../Files/Riwa_Karam_Resume.pdf";
 
@@ -13,33 +15,34 @@ const Home = () => {
     const news = [
         {
             date: "December 14-18, 2026",
-            title: "Second Conference: IEEE CDC 2026",
-            text: "I will be attending the IEEE Conference on Decision and Control (CDC) 2026 in Hawaï. Excited to attend this conference this year and reconnect with peers and fellow researchers as well as attending interesting talks.",
+            title: "Upcoming: IEEE CDC 2026",
+            text: "Getting ready for IEEE CDC 2026 in Hawaii! After a first CDC presentation in Rio de Janeiro in 2025, another chance to catch up with the control community and exchange ideas is ahead.",
+        },
+        {
+            date: "October 23, 2026",
+            title: "Upcoming: SoCal Control Workshop at UC Santa Barbara",
+            text: "Heading to UCSB for the Southern California Control Workshop! Looking forward to new ideas and conversations with the regional control community at Loma Pelona.",
         },
         {
             date: "September 15, 2026",
-            title: "Invited ARM RoboTalk",
-            text: 'I gave an invited ARM RoboTalk in Austin, TX, titled "Collaboration in Multi-Agent Systems," sharing my research on collaboration across multi-agent systems.',
-        },
-        {
-            date: "September 10, 2026",
-            title: "New arXiv Preprint: Freehand Sketching for Robot Swarms",
-            text: 'Our paper, "Freehand Sketching for End-User Programming of Robot Swarms," is now available on arXiv. We explore how users can specify robot swarm formations through freehand drawings.',
+            title: "Invited ARM RoboTalk: Collaboration in Multi-Agent Systems",
+            text: "Shared ideas on multi-agent collaboration at an invited ARM RoboTalk in Austin, TX—from complementary robot capabilities to ecology-inspired resource sharing and graph neural networks.",
         },
     ];
 
     const [latestUpdate, ...recentUpdates] = news;
 
     return (
-        <main className="page-shell">
+        <main className="page-shell" id="main-content" tabIndex={-1}>
             <section className="hero-section">
+                <NetworkArt className="hero-network" />
                 <div className="hero-copy">
                     <p className="eyebrow">
                         Multi-agent systems, robotics and machine learning
                     </p>
-                    <h1>Riwa Karam</h1>
+                    <h1>Riwa Karam<span className="accent-dot" aria-hidden="true">.</span></h1>
                     <p className="hero-lede">
-                        I study how robotic teams collaborate and adapt across
+                        Exploring how robotic teams collaborate and adapt across
                         complex environments.
                     </p>
                     <div className="tag-row">
@@ -50,7 +53,7 @@ const Home = () => {
                     </div>
                     <div className="hero-actions">
                         <Link className="button-primary" to="/research">
-                            Research
+                            Explore research <span aria-hidden="true">↗</span>
                         </Link>
                         <Link className="button-secondary" to="/publications">
                             Publications
@@ -61,7 +64,7 @@ const Home = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            CV
+                            Resume (PDF)
                         </a>
                     </div>
                 </div>
@@ -83,17 +86,19 @@ const Home = () => {
                 ))}
             </section>
 
+            <ResearchExplorer />
+
             <section className="content-split">
                 <div>
                     <p className="section-kicker">About</p>
                     <h2>
-                        Building rigorous robotics research with practical
-                        systems experience
+                        Robotics research grounded in
+                        practical experience
                     </h2>
                 </div>
                 <div className="about-inline-links">
                     <p>
-                        I am a fourth-year PhD candidate in the{" "}
+                        Fourth-year PhD candidate in the{" "}
                         <a
                             href="https://engineering.uci.edu/dept/eecs"
                             target="_blank"
@@ -110,7 +115,7 @@ const Home = () => {
                         >
                             University of California, Irvine
                         </a>
-                        . I am a member of the{" "}
+                        . Member of the{" "}
                         <a
                             href="https://faculty.sites.uci.edu/robotecology/"
                             target="_blank"
@@ -142,14 +147,14 @@ const Home = () => {
                         >
                             Yanning Shen
                         </a>
-                        . My research spans collaborative multi-agent systems,
+                        . Exploring collaborative multi-agent systems,
                         optimization, machine learning, ecology robotics,
                         coverage control, formation control, and human-swarm
                         interaction.
                     </p>
 
                     <p>
-                        Before my PhD, I earned a B.S. in Computer Engineering
+                        Earned a B.S. in Computer Engineering
                         from the{" "}
                         <a
                             href="https://www.balamand.edu.lb/home/Pages/default.aspx"
@@ -158,7 +163,7 @@ const Home = () => {
                         >
                             University of Balamand
                         </a>
-                        , graduating as valedictorian, and completed an M.S. in
+                        , graduating as valedictorian, followed by an M.S. in
                         Electrical and Computer Engineering at{" "}
                         <a
                             href="https://www.uci.edu/"
@@ -167,8 +172,8 @@ const Home = () => {
                         >
                             UC Irvine
                         </a>
-                        . I have also worked in software engineering and
-                        mechatronics research roles, including two internships
+                        . Bringing experience from software engineering and
+                        mechatronics research, including two internships
                         at{" "}
                         <a
                             href="https://www.asml.com/"

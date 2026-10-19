@@ -1,0 +1,32 @@
+{
+  "tool": "Built-in image_gen",
+  "intent": "Preserve the original softly shaded dimensional illustration style while removing the learning table and reducing Robotarium/HSI photorealism.",
+  "images": [
+    {
+      "key": "learning",
+      "output": "learning-refined-v5.jpg",
+      "references": [
+        "learning-concept-v2.webp"
+      ],
+      "prompt": "Use case: precise-object-edit. Landscape 3:2 research-card artwork for the same academic website. Keep the original softly shaded, dimensional, isometric editorial illustration style: matte ivory objects, subtle fine contour lines, delicate ambient shadows, warm cream background, muted purple and warm ochre/burnt-orange accents. Sophisticated technical concept art with gently rounded mechanical volumes, not a photograph and not a flat cartoon. No thick outlines, cel shading, emoji-like simplification, vivid color blocks or photorealistic material microtexture. No text, logos, labels or watermark. Preserve scientific meaning, generous framing and the existing muted palette. Input 1 is the edit target. Keep the existing robot designs, soft dimensional rendering, three task zones, flame demand symbols, upper team-interaction graph, and single left-to-right robot transfer arrow. ONLY change the setting: remove the entire table, table edge and legs, potted plants and desk furnishings. All three teams now operate on one continuous neutral ground surface that extends beyond every image edge. Colored task-zone patches are painted on the ground with absolutely no thickness or raised platform edge. Preserve the existing perspective and arrangement, robot materials and shading. Do not flatten or cartoonize the image."
+    },
+    {
+      "key": "testbed",
+      "output": "testbed-refined-v5.jpg",
+      "references": [
+        "testbed-concept-v3.jpg",
+        "learning-concept-v2.webp"
+      ],
+      "prompt": "Use case: style-transfer. Landscape 3:2 research-card artwork for the same academic website. Keep the original softly shaded, dimensional, isometric editorial illustration style: matte ivory objects, subtle fine contour lines, delicate ambient shadows, warm cream background, muted purple and warm ochre/burnt-orange accents. Sophisticated technical concept art with gently rounded mechanical volumes, not a photograph and not a flat cartoon. No thick outlines, cel shading, emoji-like simplification, vivid color blocks or photorealistic material microtexture. No text, logos, labels or watermark. Preserve scientific meaning, generous framing and the existing muted palette. Input 1 is the Robotarium edit target: preserve its dedicated freestanding rounded rectangular arena, low perimeter wall with small docks, grounded dark base, display, cameras and formation links. Input 2 is ONLY the desired illustration style reference; do not copy its tables, flames or scene. Re-render the Robotarium in that softer miniature technical illustration style while keeping the arena as a full dedicated installation, NOT a tray on a desk. Simplify the robots' exposed electronics to a few readable mechanical layers, small wheels and short motion-capture marker stems, retaining physical credibility without photographic circuitry. Replace the realistic room with a quiet cream illustrated backdrop, faint simplified wall plane and soft ambient grounding shadow. Avoid photographic wall panels, floor grain, lens effects, shiny materials or realistic interior lighting. Two small wall-mounted cameras, no light beams. Display contains only a simple graph, no tiny robot on screen. Crisp but delicate details, smooth modeled shading like input 2; no bold cartoon outlines. Keep entire arena in frame."
+    },
+    {
+      "key": "human-swarm",
+      "output": "human-swarm-refined-v5.jpg",
+      "references": [
+        "human-swarm-concept-v3.jpg",
+        "learning-concept-v2.webp"
+      ],
+      "prompt": "Use case: style-transfer. Landscape 3:2 research-card artwork for the same academic website. Keep the original softly shaded, dimensional, isometric editorial illustration style: matte ivory objects, subtle fine contour lines, delicate ambient shadows, warm cream background, muted purple and warm ochre/burnt-orange accents. Sophisticated technical concept art with gently rounded mechanical volumes, not a photograph and not a flat cartoon. No thick outlines, cel shading, emoji-like simplification, vivid color blocks or photorealistic material microtexture. No text, logos, labels or watermark. Preserve scientific meaning, generous framing and the existing muted palette. Input 1 is the HSI edit target; input 2 is ONLY the desired softly shaded dimensional illustration style, never copy its table or flames. Preserve input 1's exact six-node concave arrow geometry on both monitor and six-robot formation: rear middle robot is an inward notch, pointing right with the same handedness as the screen. Preserve the drawn hand holding stylus on a screenless tablet and orange sketch-to-formation arrow. Re-render this scene in the subtle dimensional illustrated style of input 2 with softly modeled matte objects, fine restrained contour lines, and ambient shadows. Remove photographic skin, fabric texture, hyper-detailed circuit boards and realistic room architecture. Hand and sleeve should look like a softly painted technical illustration, not a photo or flat vector. Robots should have believable small wheeled bodies, simplified stacked hardware and short silver tracking stems, not cartoon heads. Quiet continuous warm off-white background/ground, no table edges or domestic furniture. Purple graph edges and orange target rings remain restrained. Keep the image inviting and creative through the sketch-to-swarm story, with substantial dimensional shading and no heavy outlines. Fully frame all robots."
+    }
+  ]
+}

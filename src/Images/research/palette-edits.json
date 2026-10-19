@@ -1,0 +1,23 @@
+{
+  "generator": "Built-in image_gen tool",
+  "operation": "Palette edit of the original research illustrations",
+  "prompt": "Use case: precise-object-edit. Input image is the edit target: an existing 3:2 conceptual robotics research illustration. Recolor this exact image to match a dark purple-and-orange website. Replace ALL teal, forest green and sage elements with rich purple (#9B4DCA), plum and soft lavender (#C18BE5). Change terracotta accents to warm vivid orange (#F2A23A). Shift the ivory environment and background to a deep muted plum/charcoal (#211B2B) with carefully lit lavender surfaces and soft studio shadows; retain pale lavender-white robot bodies for strong legibility. Keep the same tactile paper-and-ceramic miniature aesthetic, exact camera angle, composition, robot count, geometry, positions, connecting paths, props and subject matter. Change colors and related lighting ONLY. Keep the scene clear and inviting rather than excessively dark. No text, logos, watermark, new objects or extra robots. Opaque background; preserve landscape 3:2 framing.",
+  "images": [
+    {
+      "source": "collaboration.webp",
+      "asset": "collaboration-purple-orange.webp"
+    },
+    {
+      "source": "learning.webp",
+      "asset": "learning-purple-orange.webp"
+    },
+    {
+      "source": "testbed.webp",
+      "asset": "testbed-purple-orange.webp"
+    },
+    {
+      "source": "human-swarm.webp",
+      "asset": "human-swarm-purple-orange.webp"
+    }
+  ]
+}

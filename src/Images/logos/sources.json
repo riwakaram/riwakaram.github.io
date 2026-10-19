@@ -1,0 +1,73 @@
+{
+  "retrieved": "2026-10-16",
+  "notes": "Official assets kept in their original colors. Oversize images reduced for web use. Reversed (white) logos use a dark backing. Existing UCI, ASML, and Balamand source links are in README.md. CPS-IoT Week 2025 uses its host institution UCI: the unused logo asset on the conference server depicts the older Hong Kong edition.",
+  "assets": [
+    {
+      "file": "la-times.svg",
+      "url": "https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature",
+      "note": "Official Los Angeles Times wordmark extracted from the page footer SVG.",
+      "retrieved": "2026-10-18"
+    },
+    {
+      "file": "conservatory.jpg",
+      "url": "https://www.conservatory.gov.lb/assets/images/logo.jpg"
+    },
+    {
+      "file": "aviapro.svg",
+      "url": "https://aviaproconsulting.com/avp/img/logoz.svg"
+    },
+    {
+      "file": "guides.png",
+      "url": "https://www.guidesduliban.org/wp-content/themes/agdl-draft/img/logo-agdl.png"
+    },
+    {
+      "file": "mentor.svg",
+      "url": "https://www.mentorcollective.org/hubfs/raw_assets/hxMC-react/485/js_client_assets/assets/MentorCollective-Primary-Logo-CdbaLchI.svg"
+    },
+    {
+      "file": "zaka.webp",
+      "url": "https://zaka.ai/wp-content/uploads/2025/06/ZAKA-FINAL-LOGOS-06-scaled-e1753871364260-300x72.png.webp"
+    },
+    {
+      "file": "mathworks.svg",
+      "url": "https://www.mathworks.com/etc.clientlibs/mathworks/clientlibs/customer-ui/templates/common/resources/images/mathworks-logo.20261010011201637.svg"
+    },
+    {
+      "file": "asme.svg",
+      "url": "https://www.asme.org/assets/images/asme-logo-white.svg"
+    },
+    {
+      "file": "collegeboard.png",
+      "url": "https://atlas.collegeboard.org/apricot/prod/4.12.2/assets/apple-touch-icon.png"
+    },
+    {
+      "file": "ielts.png",
+      "url": "https://ielts.org/cdn/ielts-and-partner-logos/ielts-logo-trademark.webp?fit=cover&height=630&width=1200&s=PHK59zgnMCHWDYNdgpvptRd-PCMwrKdKaqOgHhsKZbk"
+    },
+    {
+      "file": "ieee-css.jpg",
+      "url": "https://ieeecss.org/sites/ieeecss/files/IEEE%20Control%20Systems%20Society%20Logo%20RGB.jpg"
+    },
+    {
+      "file": "ieee.png",
+      "url": "https://ieeecss.org/themes/custom/confcats_barrio/templates/includes/ieee-logo.png"
+    },
+    {
+      "file": "ieee-computer.png",
+      "url": "https://cps-iot-week2025.ics.uci.edu/images/sponsors/IEEE-CS_LogoTM-orange"
+    },
+    {
+      "file": "arab-iot.png",
+      "url": "https://judge.arabiotai.org/wp-content/uploads/2022/09/AIC_Header.png"
+    },
+    {
+      "file": "geecs.jpg",
+      "url": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/1/4428/files/2022/09/main_logo_small-1.jpg"
+    },
+    {
+      "file": "csff.svg",
+      "url": "https://www.csff.edu.lb/logos-footer.png",
+      "note": "SVG viewport displays only the school mark from the official partner strip."
+    }
+  ]
+}

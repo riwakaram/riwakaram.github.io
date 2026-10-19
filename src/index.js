@@ -6,6 +6,10 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./index.css";
+import "./refresh.css";
+import "./buttons.css";
+import "./research-map.css";
+import "./publications.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

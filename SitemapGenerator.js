@@ -3,25 +3,15 @@ const { create } = require("xmlbuilder2");
 
 const baseUrl = "https://riwakaram.github.io";
 
-const routes = [
-    { path: "/", changefreq: "daily", priority: "1.0" },
-    { path: "/research", changefreq: "daily", priority: "0.9" },
-    { path: "/publications", changefreq: "daily", priority: "0.9" },
-    { path: "/news", changefreq: "daily", priority: "0.9" },
-    { path: "/vitae", changefreq: "daily", priority: "0.9" },
-    { path: "/about", changefreq: "daily", priority: "0.9" },
-];
+const routes = require("./src/data/sitePages.json");
 
 const urlset = create({ version: "1.0" }).ele("urlset", {
     xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9",
 });
 
-routes.forEach(({ path, changefreq, priority }) => {
+routes.forEach(({ path }) => {
     const url = urlset.ele("url");
-    url.ele("loc").txt(baseUrl + path);
-    url.ele("lastmod").txt(new Date().toISOString());
-    url.ele("changefreq").txt(changefreq);
-    url.ele("priority").txt(priority);
+    url.ele("loc").txt(baseUrl + (path === "/" ? "/" : path + "/"));
 });
 
 const xml = urlset.end({ prettyPrint: true });

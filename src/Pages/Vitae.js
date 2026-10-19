@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Components/Header";
-import Accordion from "../Components/Accordion";
+import CVTimeline from "../Components/CVTimeline";
 import CardItem from "../Components/CardItem";
 import CDC2025Paper from "../Files/CDC2025.pdf";
 import GEECSANTS2026Poster from "../Files/GEECS_2026_Poster.pdf";
@@ -95,7 +95,7 @@ const Vitae = () => {
                         description="Completed a Bachelor's degree in Computer Engineering and graduated as valedictorian of class 2023. Worked on projects involving embedded systems, computer architecture, and complex engineering design."
                         list={[
                             "GPA: 3.9/4.0",
-                            "Computer Engineering Class of 2020 Valedictorian",
+                            "Computer Engineering Class of 2023 Valedictorian",
                             "Activities: Varsity Volleyball Team, IEEE UoB Student Member",
                             "Graduation Project Title: Gamification of Virtual Reality Kitchen Scenarios",
                             "Relevant Coursework: Computer Architecture, Embedded Systems, Microcontrollers, Microprocessors, Operating Systems, Object-Oriented Programming, Cybersecurity, Signal Processing, Signals and Systems, Telecommunications, Probability for Engineers, Numerical Analysis, Linear Algebra, Differential Equations, Circuit Analysis, Electronics, and Programmable Logic Controllers.",
@@ -178,10 +178,10 @@ const Vitae = () => {
                         list={[
                             "Conducting research in collaborative multi-agent systems, optimization, machine learning, ecology robotics, coverage control, formation control, and human-swarm interaction under the supervision of Professors Magnus Egerstedt and Yanning Shen.",
                             "Actively helping maintain the Robot Ecology Lab Robotarium testbed through testing, debugging, robot repair, and troubleshooting.",
-                            "Presented my first-author accepted regular paper at the 64th IEEE Conference on Decision and Control (CDC) in Rio de Janeiro, Brazil.",
+                            "Presented a first-author accepted regular paper at the 64th IEEE Conference on Decision and Control (CDC) in Rio de Janeiro, Brazil.",
                             "Presented research findings at the 45th SoCal Control Workshop at the University of California, San Diego.",
                             "Won the Software & Algorithms track at the 2026 UCI GEECS Annual Technology Showcase.",
-                            "Presented a poster on my master's thesis at the 2025 UCI GEECS Annual Technology Showcase.",
+                            "Presented a poster on the master's thesis at the 2025 UCI GEECS Annual Technology Showcase.",
                             "Mentored undergraduate student lab members and worked together on related projects.",
                             "Co-wrote the Robot Ecology Lab manual, including debugging processes, experiment tutorials, and Vicon system maintenance.",
                             "Conducted multiple lab tours with other lab members to more than 100 visitors, including live demonstrations of homogeneous robots in the Robotarium performing collaborative algorithms.",
@@ -201,7 +201,7 @@ const Vitae = () => {
                         description="May 2022 – August 2023 | Lebanon"
                         list={[
                             "Privately tutored peers at the University of Balamand, Al-Kurah in courses such as Programming (Python, MATLAB, C), Signals and Systems, Microcontrollers, Embedded Systems, and Computer Architecture.",
-                            "Received greatly positive feedback from tutored peers on my teaching skills.",
+                            "Received highly positive feedback from tutored peers on teaching skills.",
                         ]}
                     />
                 </div>
@@ -257,7 +257,7 @@ const Vitae = () => {
                         />
                     </CardItem>
                     <CardItem
-                        title="Collaboration in Multi-Robot Systems: Taxonomy and Survey over Frameworks for Collaboration"
+                        title="Collaboration in Multi-Robot Systems: Taxonomy and Survey of Frameworks for Collaboration"
                         subtitle="arXiv preprint, under review in IEEE Control Systems Magazine (CSM) | 2026"
                         description="Riwa Karam, Alexander A. Nguyen, Ruoyu Lin, David R. Martin, Diana Morales, Brooks A. Butler, and Magnus Egerstedt"
                     >
@@ -309,6 +309,53 @@ const Vitae = () => {
                                 },
                             ]}
                         />
+                    </CardItem>
+                </div>
+            ),
+        },
+        {
+            id: "review-activity",
+            title: "Review Activity",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="Journal Reviews"
+                        list={["IEEE Robotics and Automation Letters (RA-L) — 2026"]}
+                    />
+                    <CardItem
+                        title="Conference Reviews"
+                        list={["IEEE Conference on Decision and Control (CDC) — 2026"]}
+                    />
+                </div>
+            ),
+        },
+        {
+            id: "media-coverage",
+            title: "Media Coverage",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="UCI Robot Ecology Lab inspired by nature"
+                        subtitle="Los Angeles Times / Daily Pilot | April 29, 2025"
+                    >
+                        <ResourceLinks links={[
+                            {
+                                href: "https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature",
+                                text: "Read the feature",
+                            },
+                        ]} />
+                    </CardItem>
+                    <CardItem
+                        title="UOB Students Win the Lebanon IoT and AI Challenge"
+                        subtitle="University of Balamand News | September 28, 2021"
+                        description="University coverage of the team win with Dana Abi Badra and Tiya Jreije, advised by Dr. Walid Karam."
+                    >
+                        <ResourceLinks links={[
+                            {
+                                href: "https://www.balamand.edu.lb/news/AllNews/Pages/Details.aspx?FilterField1=ID&FilterValue1=204",
+                                text: "Read the announcement",
+                            },
+                        ]} />
                     </CardItem>
                 </div>
             ),
@@ -462,7 +509,8 @@ const Vitae = () => {
                     </CardItem>
                     <CardItem
                         title="ZAKA AI Bootcamp"
-                        subtitle="ZAKA | Issued Sep 2023"
+                        subtitle="ZAKA | August 2023"
+                        description="Awarded admission for winning the challenge at IEEE Grand Tech on June 3, 2023. Certificate issued September 2023."
                         list={[
                             "Artificial Intelligence",
                             "Computer Vision",
@@ -488,7 +536,7 @@ const Vitae = () => {
                     </CardItem>
                     <CardItem
                         title="IEEE Grand Tech 2023 Certification of Attendance"
-                        subtitle="IEEE Computer Society | Issued Jun 2023"
+                        subtitle="IEEE Computer Society | Attended June 3, 2023"
                         list={["Virtual Reality", "Metaverse"]}
                     >
                         <ResourceLinks
@@ -759,14 +807,14 @@ const Vitae = () => {
     ];
 
     return (
-        <main className="page-shell">
+        <main className="page-shell" id="main-content" tabIndex={-1}>
             <Header compact />
             <section className="section-intro vitae-intro">
                 <div>
                     <p className="section-kicker">Curriculum Vitae</p>
                     <h2>Academic training, research, and professional work.</h2>
                     <p>
-                        A structured overview of my education, research,
+                        A structured overview of education, research,
                         industry experience, publications, awards, and skills.
                     </p>
                 </div>
@@ -797,7 +845,7 @@ const Vitae = () => {
                         <h2>Full CV</h2>
                     </div>
                 </div>
-                <Accordion sections={sections} />
+                <CVTimeline sections={sections} />
             </section>
         </main>
     );

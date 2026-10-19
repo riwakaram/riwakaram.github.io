@@ -1,0 +1,22 @@
+{
+  "generator": "Built-in image_gen tool",
+  "purpose": "Conceptual artwork; not research evidence or photographs of actual hardware",
+  "images": [
+    {
+      "asset": "collaboration.webp",
+      "prompt": "Use case: stylized-concept. Asset type: research portfolio website editorial illustration, landscape 3:2. Primary request: A team of different small wheeled robots cooperating around shared geometric resources, connected by fine teal paths; convey capability complementarity and resource allocation. Style: sophisticated tactile 3D paper-and-ceramic miniature, warm ivory background, deep forest teal and soft sage with small burnt-orange accents, soft studio shadows, generous negative space, refined academic editorial design. No text, letters, logos, watermarks, graphs claiming measured results, or people. This is conceptual artwork, not a photograph of real research hardware."
+    },
+    {
+      "asset": "learning.webp",
+      "prompt": "Use case: stylized-concept. Asset type: research portfolio website editorial illustration, landscape 3:2. Primary request: Small wheeled robots navigating an abstract terrain of layered contour lines and branching learning paths, with subtle network nodes; convey robot learning and ecology-inspired adaptation. Style: sophisticated tactile 3D paper-and-ceramic miniature, warm ivory background, deep forest teal and soft sage with small burnt-orange accents, soft studio shadows, generous negative space, refined academic editorial design. No text, letters, logos, watermarks, graphs claiming measured results, or people. This is conceptual artwork, not a photograph of real research hardware."
+    },
+    {
+      "asset": "testbed.webp",
+      "prompt": "Use case: stylized-concept. Asset type: research portfolio website editorial illustration, landscape 3:2. Primary request: An isometric miniature robotics testbed: a clean rectangular platform with small wheeled robots, overhead motion capture cameras, and elegant calibration grid; conceptual laboratory infrastructure. Style: sophisticated tactile 3D paper-and-ceramic miniature, warm ivory background, deep forest teal and soft sage with small burnt-orange accents, soft studio shadows, generous negative space, refined academic editorial design. No text, letters, logos, watermarks, graphs claiming measured results, or people. This is conceptual artwork, not a photograph of real research hardware."
+    },
+    {
+      "asset": "human-swarm.webp",
+      "prompt": "Use case: stylized-concept. Asset type: research portfolio website editorial illustration, landscape 3:2. Primary request: An isometric tablet showing a simple hand-drawn curved line, a stylus beside it, and a swarm of tiny wheeled robots arranging into the same curve on a nearby surface; convey sketch-based human-swarm interaction. Style: sophisticated tactile 3D paper-and-ceramic miniature, warm ivory background, deep forest teal and soft sage with small burnt-orange accents, soft studio shadows, generous negative space, refined academic editorial design. No text, letters, logos, watermarks, graphs claiming measured results, or people. This is conceptual artwork, not a photograph of real research hardware."
+    }
+  ]
+}

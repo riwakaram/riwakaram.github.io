@@ -1,70 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Carousel = ({ id = "myCarousel", slides = [] }) => {
+// Manual photo browsing keeps motion optional and controls clear of the image.
+const Carousel = ({ id, slides = [] }) => {
+    const [index, setIndex] = useState(0);
     if (!slides.length) return null;
+    const current = index % slides.length;
+    const { src, alt, captionTitle, captionText } = slides[current];
+    const move = (direction) => setIndex((current + direction + slides.length) % slides.length);
 
     return (
-        <div id={id} className="carousel slide myCarousel">
-            <div className="carousel-inner">
-                {slides.map(({ src, alt, captionTitle, captionText }, i) => (
-                    <div
-                        key={i}
-                        className={`carousel-item ${i === 0 ? "active" : ""} portrait-media`}
-                    >
-                        <img src={src} alt={alt} loading="lazy" />
-                        {(captionTitle || captionText) && (
-                            <div className="slide-caption mt-2">
-                                {captionTitle && <h5>{captionTitle}</h5>}
-                                {captionText && (
-                                    <p className="slide-caption">
-                                        {captionText}
-                                    </p>
-                                )}
-                            </div>
-                        )}
-                    </div>
-                ))}
-            </div>
-
-            <div className="carousel-indicators static-indicators">
-                {slides.map((_, i) => (
-                    <button
-                        key={i}
-                        type="button"
-                        data-bs-target={`#${id}`}
-                        data-bs-slide-to={i}
-                        className={i === 0 ? "active" : ""}
-                        aria-current={i === 0 ? "true" : undefined}
-                        aria-label={`Slide ${i + 1}`}
-                    />
-                ))}
-            </div>
-
-            <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target={`#${id}`}
-                data-bs-slide="prev"
-            >
-                <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                />
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target={`#${id}`}
-                data-bs-slide="next"
-            >
-                <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                />
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
+        <figure id={id} className="news-gallery" aria-label="Event photos">
+            <a className="news-photo-frame" href={src} target="_blank" rel="noopener noreferrer" aria-label={`Open full-size photo: ${alt}`} title="Open full-size photo">
+                <img src={src} alt={alt} loading="lazy" />
+                <span className="news-photo-expand" aria-hidden="true">↗</span>
+            </a>
+            <figcaption className="news-gallery-caption" aria-live="polite" aria-atomic="true">
+                <span>{captionTitle || alt}</span>
+                {captionText && <p>{captionText}</p>}
+            </figcaption>
+            {slides.length > 1 && (
+                <div className="news-gallery-controls" role="group" aria-label="Photo navigation">
+                    <button className="button-secondary" type="button" onClick={() => move(-1)} aria-label="Previous photo">←</button>
+                    <span className="news-photo-count" aria-live="polite">{current + 1} / {slides.length}</span>
+                    <button className="button-secondary" type="button" onClick={() => move(1)} aria-label="Next photo">→</button>
+                </div>
+            )}
+        </figure>
     );
 };
 

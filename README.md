@@ -27,6 +27,7 @@ of the UCI Robot Ecology Lab.
 | --- | --- |
 | **Home** | Research introduction, academic highlights, and recent updates |
 | **Research** | Current research directions in collaborative multi-agent systems, robot learning, hardware testbeds, and human-swarm interaction |
+| **Projects** | Placeholder page marked TBD |
 | **Publications** | Papers, preprints, thesis work, presentations, posters, slides, and recordings |
 | **News** | Research milestones, conferences, internships, awards, and academic activities |
 | **CV** | Education, research and industry experience, service, certifications, awards, and technical skills |
@@ -35,7 +36,12 @@ of the UCI Robot Ecology Lab.
 ## Key Features
 
 - Responsive layout for desktop, tablet, and mobile devices
-- Reusable React components for cards, accordions, navigation, and carousels
+- Timeline CV with section navigation, expandable details, and print support
+- News timeline grouped by year with an index and expand/collapse controls
+- Interactive research map with keyboard-accessible nodes and direct links to related work
+- Custom research illustrations, official organization logos, and subtle motion
+- Keyboard focus, skip navigation, and reduced-motion support
+- Reusable React components for cards, navigation, and carousels
 - Dedicated research, publication, news, CV, and contact pages
 - Direct access to papers, posters, presentations, certificates, and résumé
 - Client-side routing with React Router
@@ -102,7 +108,7 @@ Changes to source files will reload automatically.
 | --- | --- |
 | `npm start` | Run the local development server |
 | `npm test` | Run the test suite in interactive watch mode |
-| `npm run build` | Create an optimized production build |
+| `npm run build` | Generate the sitemap, build assets, and prerender each page |
 | `npm run sitemap` | Regenerate `public/sitemap.xml` |
 | `npm run predeploy` | Regenerate the sitemap and create the production build |
 | `npm run deploy` | Publish the production build to GitHub Pages |
@@ -111,11 +117,12 @@ Changes to source files will reload automatically.
 
 Most website content is maintained directly in the relevant page component:
 
-- Research topics: `src/Pages/Research.js`
+- Research topics, illustrations, and related work: `src/data/researchAreas.js`
 - Publications and presentations: `src/Pages/Publications.js`
 - News and milestones: `src/Pages/News.js`
 - CV content: `src/Pages/Vitae.js`
 - Contact and profile links: `src/Pages/About.js`
+- Projects placeholder: `src/Pages/Projects.js`
 - Homepage highlights: `src/Pages/Home.js`
 
 Supporting PDFs and images are stored in `src/Files` and `src/Images`.
@@ -125,11 +132,11 @@ React import exactly.
 
 ## Sitemap and Search Indexing
 
-The sitemap is generated from the route list in
-`SitemapGenerator.js`. When adding or removing a public route:
+The sitemap and static page metadata share the route list in
+`src/data/sitePages.json`. When adding or removing a public route:
 
 1. Update the routes in `src/App.js`.
-2. Update the route list in `SitemapGenerator.js`.
+2. Update the route metadata in `src/data/sitePages.json`.
 3. Run `npm run sitemap`.
 4. Deploy the updated website.
 
@@ -163,3 +170,52 @@ optimized production build before deployment.
 ---
 
 Built and maintained by **Riwa Karam**.
+
+## Visual assets and design
+
+The theme uses a warm neutral background, lightly tinted cards, charcoal text,
+muted plum primary actions, and small burnt-orange details. Shared tokens keep
+cards, navigation, controls, and the graph consistent. Solid fills, thin borders,
+and light shadows create a restrained finish; hover and press feedback stay subtle.
+Motion respects reduced-motion settings, and pointer effects are limited to precise
+pointing devices.
+Shared theme tokens live in `src/index.css`; layouts in `src/refresh.css`,
+actions in `src/buttons.css`, and the interactive map in `src/research-map.css`.
+
+The four current research illustrations were generated with the built-in image
+generation tool and optimized as 1200 × 800 WebP assets in `src/Images/research`:
+`collaboration-concept-v2.webp`, `learning-concept-v2.webp`,
+`testbed-concept-v2.webp`, and `human-swarm-concept-v2.webp`.
+They illustrate complementary capabilities, robot transfers between teams,
+experimental infrastructure, and sketch-to-swarm formations. They are conceptual
+artwork, not photographs or exact experimental schematics. The final prompt set
+and research sources are recorded in `src/Images/research/research-redraw-prompts.json`.
+Previous illustration variants remain available in the same directory.
+
+Additional CV logo sources and asset notes are recorded in `src/Images/logos/sources.json`. Specific society logos take precedence over parent-institution logos; reversed white marks use a dark backing.
+
+Organization logos are stored locally under `src/Images/logos` and sourced
+from the organizations' public sites:
+
+- UC Irvine: official wordmark from [uci.edu](https://uci.edu/)
+- ASML: [official SVG](https://www.asml.com/images/icons/asml-logo.svg)
+- University of Balamand: [official logo](https://www.balamand.edu.lb/Style%20Library/balamand_files_/BalamandLogo.png)
+
+The UCI and ASML SVG symbols are wrapped as standalone SVG images without
+changing their paths. No external image service is needed at runtime.
+
+## Static routes and Google Search Console
+
+`npm run build` generates real HTML files for all seven routes, including
+`build/research/index.html`, plus route-specific titles, descriptions, and canonical
+URLs. This allows GitHub Pages to serve the pages directly instead of returning
+404 and relying on a JavaScript redirect. `scripts/prerender.js` uses the existing
+React components and compiled asset manifest. Unknown paths retain a real 404 page.
+The build also contains `.nojekyll` and `sitemap.xml`.
+
+After deployment, verify `/research/`, `/publications/`, `/news/`, `/vitae/`,
+`/about/`, `/projects/`, and `/sitemap.xml` return HTTP 200. In Search Console,
+remove ordinary page paths from the submitted-sitemaps list and resubmit only
+`https://riwakaram.github.io/sitemap.xml`. Inspect the reported 404 URL: keep 404
+for truly removed pages, or confirm the intended page now works before requesting
+indexing and validating the fix. Indexing is ultimately controlled by Google.

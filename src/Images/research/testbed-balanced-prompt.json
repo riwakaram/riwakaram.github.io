@@ -1,0 +1,15 @@
+{
+  "tool": "Built-in image_gen",
+  "output": "testbed-balanced-v7.jpg",
+  "references": [
+    {
+      "file": "testbed-theme-v6.jpg",
+      "role": "Soft dimensional style and palette"
+    },
+    {
+      "file": "testbed-concept-v3.jpg",
+      "role": "Arena and hardware structure"
+    }
+  ],
+  "prompt": "Use case: compositing / stylized-concept. Produce one landscape 3:2 research-card illustration balancing recognizable Robotarium infrastructure with the broader idea of hardware experimentation. Input 1 is the CURRENT website illustration and desired soft dimensional style/palette reference. Input 2 is ONLY a structural reference for the Robotarium arena, perimeter docks and small research robots, not its photorealistic rendering. Redesign input 1: replace its scattered outdoor rovers and plants with a recognizable dedicated Robotarium installation occupying the center and right two-thirds of the composition. A wide rounded rectangular ivory arena with a low perimeter wall and repeated small dock modules along its inside edge; a substantial dark neutral base resting directly on the floor, never a tray on a desk, no table legs. Six small research robots inside, with compact stacked chassis, two wheels and short silver motion-tracking markers. Their simplified hardware should read as research robots, not camera-headed four-wheel outdoor rovers. Fine muted-purple inter-robot links and a couple of small orange position rings suggest experiments without depicting any one paper or exact formation. Two understated tracking cameras on a minimal overhead support behind the arena, no beams. At the left margin, a small purple wireframe drawing of ONE matching research robot, with a subtle orange transition arrow toward the arena, retains the design-to-hardware concept. Keep this secondary and compact, not an equal panel. Quiet seamless warm cream background, generous margin, no photorealistic room walls, no vegetation or rocks, no clutter. Style must match image 1: softly modeled matte ivory forms, delicate technical contours, subtle ambient shadows, muted purple and warm orange accents, professional isometric editorial artwork. Preserve dimensional softness; do not use flat vector/cartoon thick outlines, photographic surfaces, neon, metallic shine, fake data, logos, labels or text. Entire arena fits comfortably within frame. This is conceptual artwork grounded in the Robotarium's recognizable physical structure, not a photograph."
+}

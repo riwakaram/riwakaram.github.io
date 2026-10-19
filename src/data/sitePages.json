@@ -1,0 +1,37 @@
+[
+    {
+        "path": "/",
+        "title": "Home",
+        "description": "PhD candidate in Electrical Engineering and Computer Science at UC Irvine. Collaborative multi-agent systems, robotics, machine learning, and human-swarm interaction."
+    },
+    {
+        "path": "/research",
+        "title": "Research",
+        "description": "Multi-robot collaboration, learned resource allocation, experimental systems, and sketch-based swarm interaction."
+    },
+    {
+        "path": "/publications",
+        "title": "Publications",
+        "description": "Papers, preprints, thesis work, talks, posters, and experiment videos by Riwa Karam and collaborators."
+    },
+    {
+        "path": "/projects",
+        "title": "Projects",
+        "description": "Projects. Details are coming soon; explore the research page in the meantime."
+    },
+    {
+        "path": "/news",
+        "title": "News",
+        "description": "Research milestones, conferences, internships, awards, and academic updates, organized by year."
+    },
+    {
+        "path": "/vitae",
+        "title": "CV",
+        "description": "Education, research, professional experience, publications, teaching, service, awards, and skills."
+    },
+    {
+        "path": "/about",
+        "title": "Contact",
+        "description": "Contact information for research, collaboration, or professional inquiries. Email addresses, academic profiles, and a downloadable resume."
+    }
+]

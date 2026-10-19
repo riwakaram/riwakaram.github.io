@@ -1,85 +1,82 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Resume from "../Files/Riwa_Karam_Resume.pdf";
 
-const contactLinks = [
+const profileGroups = [
     {
-        label: "UCI Email",
-        value: "rwkaram [at] uci [dot] edu",
-        href: "mailto:rwkaram@uci.edu",
+        title: "Research profiles",
+        description: "You can find papers and publication details here.",
+        links: [
+            { label: "Google Scholar", detail: "Publications and citations", href: "https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en" },
+            { label: "ORCID", detail: "Researcher profile · 0009-0009-4042-4530", href: "https://orcid.org/0009-0009-4042-4530" },
+        ],
     },
     {
-        label: "Personal Email",
-        value: "riwa [dot] karam [at] icloud [dot] com",
-        href: "mailto:riwa.karam@icloud.com",
-    },
-    {
-        label: "Resume",
-        value: "Download PDF",
-        href: Resume,
-    },
-    {
-        label: "LinkedIn",
-        value: "linkedin.com/in/riwakaram",
-        href: "https://www.linkedin.com/in/riwakaram",
-    },
-    {
-        label: "Google Scholar",
-        value: "tinyurl.com/riwakaram",
-        href: "https://scholar.google.com/citations?user=Xt1TuawAAAAJ&hl=en",
-    },
-    {
-        label: "ORCID",
-        value: "0009-0009-4042-4530",
-        href: "https://orcid.org/0009-0009-4042-4530",
-    },
-    {
-        label: "GitHub",
-        value: "github.com/riwakaram",
-        href: "https://github.com/riwakaram",
+        title: "Stay in touch",
+        description: "More places to connect, share ideas, and explore code.",
+        links: [
+            { label: "LinkedIn", detail: "Professional background and updates", href: "https://www.linkedin.com/in/riwakaram" },
+            { label: "GitHub", detail: "Repositories and development activity", href: "https://github.com/riwakaram" },
+        ],
     },
 ];
 
-const About = () => {
+export default function About() {
     return (
-        <main className="page-shell">
+        <main className="page-shell" id="main-content" tabIndex={-1}>
             <Header compact />
-            <section className="section-intro">
-                <p className="section-kicker">Contact</p>
-                <h2>
-                    For research questions, collaboration, or professional
-                    inquiries.
-                </h2>
-                <p>
-                    The best way to reach me is by email. I am also available
-                    through the academic and professional profiles below.
-                </p>
+            <section className="contact-invitation" aria-labelledby="contact-invitation-title">
+                <div className="contact-intro">
+                    <p className="section-kicker">Get in touch</p>
+                    <h2 id="contact-invitation-title">Say Hello!</h2>
+                    <p>
+                        Curious about a paper, interested in working together, or just
+                        want to chat about robotics? Feel free to send a message.
+                        Happy to exchange ideas and see where the conversation leads.
+                    </p>
+                    <Link className="contact-inline-link" to="/research">Research interests <span aria-hidden="true">→</span></Link>
+                </div>
+                <div className="contact-email-panel">
+                    <p className="section-kicker">Send a note</p>
+                    <a className="contact-email-address" href="mailto:rwkaram@uci.edu">rwkaram@uci.edu</a>
+                    <p>Questions, ideas, or a quick hello.</p>
+                    <a className="button-primary" href="mailto:rwkaram@uci.edu">Send an email <span aria-hidden="true">↗</span></a>
+                    <div className="contact-alternative">
+                        <span>You can also reach out here:</span>
+                        <a href="mailto:riwa.karam@icloud.com">riwa.karam@icloud.com</a>
+                    </div>
+                </div>
             </section>
 
-            <section className="contact-grid">
-                {contactLinks.map((item) => (
-                    <a
-                        className="contact-card"
-                        href={item.href}
-                        target={
-                            item.href.startsWith("mailto:")
-                                ? undefined
-                                : "_blank"
-                        }
-                        rel={
-                            item.href.startsWith("mailto:")
-                                ? undefined
-                                : "noopener noreferrer"
-                        }
-                        key={item.label}
-                    >
-                        <span>{item.label}</span>
-                        <strong>{item.value}</strong>
-                    </a>
+            <div className="contact-profile-groups">
+                {profileGroups.map((group, index) => (
+                    <section className="contact-profile-group" key={group.title} aria-labelledby={`contact-group-${index}`}>
+                        <h2 id={`contact-group-${index}`}>{group.title}</h2>
+                        <p>{group.description}</p>
+                        <div className="contact-profile-links">
+                            {group.links.map((item) => (
+                                <a className="contact-card" href={item.href} target="_blank" rel="noopener noreferrer" key={item.label}>
+                                    <strong>{item.label}</strong>
+                                    <span>{item.detail}</span>
+                                    <span className="visually-hidden"> (opens in a new tab)</span>
+                                </a>
+                            ))}
+                        </div>
+                    </section>
                 ))}
+            </div>
+
+            <section className="contact-background" aria-labelledby="contact-background-title">
+                <div>
+                    <h2 id="contact-background-title">A bit more background</h2>
+                    <p>The CV brings together education, experience, and service. For a shorter introduction, take a look at the résumé.</p>
+                </div>
+                <div className="contact-background-actions">
+                    <Link className="button-secondary" to="/vitae">View the CV <span aria-hidden="true">→</span></Link>
+                    <a className="button-secondary" href={Resume} target="_blank" rel="noopener noreferrer">Résumé (PDF) <span aria-hidden="true">↗</span><span className="visually-hidden"> (opens in a new tab)</span></a>
+                </div>
             </section>
         </main>
     );
-};
-
-export default About;
+}
