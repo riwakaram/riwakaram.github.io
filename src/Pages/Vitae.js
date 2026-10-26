@@ -324,7 +324,10 @@ const Vitae = () => {
                     />
                     <CardItem
                         title="Conference Reviews"
-                        list={["IEEE Conference on Decision and Control (CDC) — 2026"]}
+                        list={[
+                            "IEEE Conference on Decision and Control (CDC) — 2026",
+                            "IEEE International Conference on Robotics and Automation (ICRA) — 2026",
+                        ]}
                     />
                 </div>
             ),

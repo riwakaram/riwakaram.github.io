@@ -20,8 +20,8 @@ const Home = () => {
         },
         {
             date: "October 23, 2026",
-            title: "Upcoming: SoCal Control Workshop at UC Santa Barbara",
-            text: "Heading to UCSB for the Southern California Control Workshop! Looking forward to new ideas and conversations with the regional control community at Loma Pelona.",
+            title: "SoCal Control Workshop at UC Santa Barbara",
+            text: "Attended the Southern California Control Workshop at UCSB’s Loma Pelona! Another chance to connect with the regional control community and explore new ideas.",
         },
         {
             date: "September 15, 2026",
