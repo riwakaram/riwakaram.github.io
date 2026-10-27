@@ -1,7 +1,20 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
-const timelineSections = ["education", "academic", "industry", "teaching", "volunteering"];
+const timelineSections = [
+    "education",
+    "academic",
+    "industry",
+    "teaching",
+    "publications",
+    "review-activity",
+    "awards",
+    "media-coverage",
+    "volunteering",
+    "certifications",
+    "standardized-tests",
+    "organizations",
+];
 
 export default function CVTimeline({ sections }) {
     const { hash } = useLocation();

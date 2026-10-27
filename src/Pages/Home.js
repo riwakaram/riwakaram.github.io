@@ -40,7 +40,12 @@ const Home = () => {
                     <p className="eyebrow">
                         Multi-agent systems, robotics and machine learning
                     </p>
-                    <h1>Riwa Karam<span className="accent-dot" aria-hidden="true">.</span></h1>
+                    <h1>
+                        Riwa Karam
+                        <span className="accent-dot" aria-hidden="true">
+                            .
+                        </span>
+                    </h1>
                     <p className="hero-lede">
                         Exploring how robotic teams collaborate and adapt across
                         complex environments.
@@ -86,21 +91,16 @@ const Home = () => {
                 ))}
             </section>
 
-            <ResearchExplorer />
-
             <section className="content-split">
                 <div>
                     <p className="section-kicker">About</p>
-                    <h2>
-                        Robotics research grounded in
-                        practical experience
-                    </h2>
+                    <h2>Robotics research grounded in practical experience</h2>
                 </div>
                 <div className="about-inline-links">
                     <p>
                         Fourth-year PhD candidate in the{" "}
                         <a
-                            href="https://engineering.uci.edu/dept/eecs"
+                            href="https://engineering.uci.edu/dept/eecs/eecs-index.php"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -141,7 +141,7 @@ const Home = () => {
                         </a>{" "}
                         and{" "}
                         <a
-                            href="https://engineering.uci.edu/users/yanning-shen"
+                            href="https://engineering.uci.edu/directory/shen_yanning.php"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -154,8 +154,7 @@ const Home = () => {
                     </p>
 
                     <p>
-                        Earned a B.S. in Computer Engineering
-                        from the{" "}
+                        Earned a B.S. in Computer Engineering from the{" "}
                         <a
                             href="https://www.balamand.edu.lb/home/Pages/default.aspx"
                             target="_blank"
@@ -173,8 +172,7 @@ const Home = () => {
                             UC Irvine
                         </a>
                         . Bringing experience from software engineering and
-                        mechatronics research, including two internships
-                        at{" "}
+                        mechatronics research, including two internships at{" "}
                         <a
                             href="https://www.asml.com/"
                             target="_blank"
@@ -187,6 +185,8 @@ const Home = () => {
                     </p>
                 </div>
             </section>
+
+            <ResearchExplorer />
 
             <section className="latest-section">
                 <div className="section-heading-row">

@@ -3,6 +3,52 @@
   "notes": "Official assets kept in their original colors. Oversize images reduced for web use. Reversed (white) logos use a dark backing. Existing UCI, ASML, and Balamand source links are in README.md. CPS-IoT Week 2025 uses its host institution UCI: the unused logo asset on the conference server depicts the older Hong Kong edition.",
   "assets": [
     {
+      "file": "ucla.svg",
+      "url": "https://www.ucla.edu/img/logo-ucla.svg",
+      "note": "Official white UCLA wordmark, displayed on a dark backing.",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "usc.svg",
+      "url": "https://www.usc.edu/",
+      "note": "Official university logo extracted from the website header SVG.",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "ucsd.png",
+      "url": "https://www.ucsd.edu/_resources/img/logo_UCSD.png",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "ucsb.svg",
+      "url": "https://www.ucsb.edu/",
+      "note": "Official UC Santa Barbara wordmark extracted from the website header SVG.",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "arxiv.svg",
+      "url": "https://static.arxiv.org/static/design-system/latest/logos/arxiv-logo.svg",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "cdc-2025.svg",
+      "url": "https://confcats-siteplex.s3.us-east-1.amazonaws.com/cdc25/Logo_CDC_2025_a4a43951ca.svg",
+      "note": "Official conference logo from https://cdc2025.ieeecss.org/.",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "cdc-2026.png",
+      "url": "https://confcats-siteplex.s3.us-east-1.amazonaws.com/cdc26/small_cdc2026logo_ankush_e3ca6c947a.png",
+      "note": "Official conference logo from https://cdc2026.ieeecss.org/, using its 500px web variant.",
+      "retrieved": "2026-10-26"
+    },
+    {
+      "file": "arm.svg",
+      "url": "https://www.arm.com/-/media/global/logos/arm-logo-white-rgb.svg",
+      "note": "Official white Arm wordmark from the website header; displayed on a dark backing.",
+      "retrieved": "2026-10-26"
+    },
+    {
       "file": "la-times.svg",
       "url": "https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature",
       "note": "Official Los Angeles Times wordmark extracted from the page footer SVG.",

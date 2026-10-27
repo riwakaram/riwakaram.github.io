@@ -214,6 +214,7 @@ const Vitae = () => {
                 <div className="card-section">
                     <CardItem
                         title="Freehand Sketching for End-User Programming of Robot Swarms"
+                        organization="arXiv"
                         subtitle="arXiv preprint, submitted | 2026"
                         description="Riwa Karam, Ian Kuo, and Magnus Egerstedt"
                     >
@@ -320,7 +321,9 @@ const Vitae = () => {
                 <div className="card-section">
                     <CardItem
                         title="Journal Reviews"
-                        list={["IEEE Robotics and Automation Letters (RA-L) — 2026"]}
+                        list={[
+                            "IEEE Robotics and Automation Letters (RA-L) — 2026",
+                        ]}
                     />
                     <CardItem
                         title="Conference Reviews"
@@ -333,6 +336,107 @@ const Vitae = () => {
             ),
         },
         {
+            id: "awards",
+            title: "Fellowships and Awards",
+            content: (
+                <div className="card-section">
+                    <CardItem
+                        title="GEECS Annual Tech Showcase Winner"
+                        subtitle="Software & Algorithms Track | University of California, Irvine | Jun 2026"
+                        description="First place, with a $1,000 travel award to support conference attendance and related academic travel."
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: GEECSANTS2026Award,
+                                    text: "Award Image",
+                                },
+                                {
+                                    href: GEECSANTS2026Poster,
+                                    text: "Poster PDF",
+                                },
+                                {
+                                    href: "https://geecs.eng.uci.edu/geecsants2026/",
+                                    text: "Showcase Website",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="UCI EECS Department Fellowship"
+                        subtitle="Electrical Engineering and Computer Science Department at the University of California, Irvine"
+                        list={["Winter 2025", "Fall 2024", "Fall 2023"]}
+                    />
+
+                    <CardItem
+                        title="Faculty Award for Academic Excellence"
+                        subtitle="Faculty of Engineering at the University of Balamand | July 26, 2023"
+                        description="Recipient of the Faculty Excellent Achievement Award for obtaining the highest GPA among all graduating computer engineering undergraduate students of class 2023."
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: FacultyAwardCertificate,
+                                    text: "Award Image",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="IEEE GrandTech Competition First Prize Winner"
+                        subtitle="IEEE Computer Society | June 3, 2023"
+                        description="Won first prize in the IEEE GrandTech competition, earning admission to the ZAKA AI Bootcamp held in August 2023."
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: GrandTechCertificate,
+                                    text: "Event Attendance Certificate",
+                                },
+                                {
+                                    href: ZAKACertificate,
+                                    text: "Bootcamp Certificate",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                    <CardItem
+                        title="Dean's Honor List"
+                        subtitle="University of Balamand, Faculty of Engineering | August 2020 - June 2023"
+                    >
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: HonorListFall2020,
+                                    text: "Fall 2020",
+                                },
+                                {
+                                    href: HonorListSpring2021,
+                                    text: "Spring 2021",
+                                },
+                                {
+                                    href: HonorListFall2021,
+                                    text: "Fall 2021",
+                                },
+                                {
+                                    href: HonorListSpring2022,
+                                    text: "Spring 2022",
+                                },
+                                {
+                                    href: HonorListFall2022,
+                                    text: "Fall 2022",
+                                },
+                                {
+                                    href: HonorListSpring2023,
+                                    text: "Spring 2023",
+                                },
+                            ]}
+                        />
+                    </CardItem>
+                </div>
+            ),
+        },
+        {
             id: "media-coverage",
             title: "Media Coverage",
             content: (
@@ -341,24 +445,28 @@ const Vitae = () => {
                         title="UCI Robot Ecology Lab inspired by nature"
                         subtitle="Los Angeles Times / Daily Pilot | April 29, 2025"
                     >
-                        <ResourceLinks links={[
-                            {
-                                href: "https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature",
-                                text: "Read the feature",
-                            },
-                        ]} />
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: "https://www.latimes.com/socal/daily-pilot/entertainment/story/2025-04-29/uci-robot-ecology-lab-inspired-by-nature",
+                                    text: "Read the feature",
+                                },
+                            ]}
+                        />
                     </CardItem>
                     <CardItem
                         title="UOB Students Win the Lebanon IoT and AI Challenge"
                         subtitle="University of Balamand News | September 28, 2021"
                         description="University coverage of the team win with Dana Abi Badra and Tiya Jreije, advised by Dr. Walid Karam."
                     >
-                        <ResourceLinks links={[
-                            {
-                                href: "https://www.balamand.edu.lb/news/AllNews/Pages/Details.aspx?FilterField1=ID&FilterValue1=204",
-                                text: "Read the announcement",
-                            },
-                        ]} />
+                        <ResourceLinks
+                            links={[
+                                {
+                                    href: "https://www.balamand.edu.lb/news/AllNews/Pages/Details.aspx?FilterField1=ID&FilterValue1=204",
+                                    text: "Read the announcement",
+                                },
+                            ]}
+                        />
                     </CardItem>
                 </div>
             ),
@@ -657,88 +765,6 @@ const Vitae = () => {
             ),
         },
         {
-            id: "awards",
-            title: "Fellowships and Awards",
-            content: (
-                <div className="card-section">
-                    <CardItem
-                        title="GEECS Annual Tech Showcase Winner"
-                        subtitle="Software & Algorithms Track | University of California, Irvine | Jun 2026"
-                    >
-                        <ResourceLinks
-                            links={[
-                                {
-                                    href: GEECSANTS2026Award,
-                                    text: "Award Image",
-                                },
-                                {
-                                    href: GEECSANTS2026Poster,
-                                    text: "Poster PDF",
-                                },
-                                {
-                                    href: "https://geecs.eng.uci.edu/geecsants2026/",
-                                    text: "Showcase Website",
-                                },
-                            ]}
-                        />
-                    </CardItem>
-                    <CardItem
-                        title="UCI EECS Department Fellowship"
-                        subtitle="Electrical Engineering and Computer Science Department at the University of California, Irvine"
-                        list={["Winter 2025", "Fall 2024", "Fall 2023"]}
-                    />
-
-                    <CardItem
-                        title="Faculty Award for Academic Excellence"
-                        subtitle="Faculty of Engineering at the University of Balamand | Jun 2023"
-                        description="Recipient of the Faculty Excellent Achievement Award for obtaining the highest GPA among all graduating computer engineering undergraduate students of class 2023."
-                    >
-                        <ResourceLinks
-                            links={[
-                                {
-                                    href: FacultyAwardCertificate,
-                                    text: "Award Image",
-                                },
-                            ]}
-                        />
-                    </CardItem>
-                    <CardItem
-                        title="Dean's Honor List"
-                        subtitle="University of Balamand, Faculty of Engineering | August 2020 - June 2023"
-                    >
-                        <ResourceLinks
-                            links={[
-                                {
-                                    href: HonorListFall2020,
-                                    text: "Fall 2020",
-                                },
-                                {
-                                    href: HonorListSpring2021,
-                                    text: "Spring 2021",
-                                },
-                                {
-                                    href: HonorListFall2021,
-                                    text: "Fall 2021",
-                                },
-                                {
-                                    href: HonorListSpring2022,
-                                    text: "Spring 2022",
-                                },
-                                {
-                                    href: HonorListFall2022,
-                                    text: "Fall 2022",
-                                },
-                                {
-                                    href: HonorListSpring2023,
-                                    text: "Spring 2023",
-                                },
-                            ]}
-                        />
-                    </CardItem>
-                </div>
-            ),
-        },
-        {
             id: "languages",
             title: "Languages",
             content: (
@@ -778,7 +804,7 @@ const Vitae = () => {
                     <CardItem
                         title="Les Guides du Liban"
                         subtitle="09/2009 - 08/2015"
-                        list={["Team Leader", "Member"]}
+                        list={["Girl Scout", "Team Leader", "Member"]}
                     />
                 </div>
             ),
@@ -817,8 +843,8 @@ const Vitae = () => {
                     <p className="section-kicker">Curriculum Vitae</p>
                     <h2>Academic training, research, and professional work.</h2>
                     <p>
-                        A structured overview of education, research,
-                        industry experience, publications, awards, and skills.
+                        A structured overview of education, research, industry
+                        experience, publications, awards, and skills.
                     </p>
                 </div>
                 <a

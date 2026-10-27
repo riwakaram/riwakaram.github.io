@@ -1,7 +1,7 @@
 import React from "react";
 import OrganizationLogo from "./OrganizationLogo";
 
-const CardItem = ({ title, subtitle, description, list, children }) => (
+const CardItem = ({ title, subtitle, description, list, children, organization }) => (
     <div className="card-item">
         {(title || subtitle) && (
             <div className="card-heading">
@@ -9,7 +9,7 @@ const CardItem = ({ title, subtitle, description, list, children }) => (
                     {title && <h3 className="card-title">{title}</h3>}
                     {subtitle && <h4 className="card-subtitle">{subtitle}</h4>}
                 </div>
-                <OrganizationLogo name={`${title || ""} ${subtitle || ""}`} />
+                <OrganizationLogo name={organization || `${title || ""} ${subtitle || ""}`} />
             </div>
         )}
         {description && <p className="card-description">{description}</p>}

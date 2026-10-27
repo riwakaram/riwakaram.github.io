@@ -315,6 +315,13 @@ p { overflow-wrap: break-word; }
 .news-year time { display: block; color: var(--accent-strong); font-size: .85rem; font-weight: 600; margin-bottom: .65rem; }
 .news-year h3 { font-size: 1.25rem; line-height: 1.4; font-weight: 600; }
 .news-year p { font-size: .95rem; }
+.news-entry-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1.25rem; }
+.news-entry-heading-text { min-width: 0; }
+.news-entry-heading .organization-logo { flex: 0 0 7rem; width: 7rem; height: 3.25rem; }
+@media (max-width: 600px) {
+    .news-entry-heading { flex-direction: column; gap: .85rem; }
+    .news-entry-heading .organization-logo { order: -1; flex: none; width: 6rem; height: 2.75rem; }
+}
 .noscript-note { max-width: 72rem; padding: 1rem; margin: auto; }
 /* Keep flexible columns and long academic titles inside narrow viewports. */
 .page-shell > *, .cv-layout > *, .research-map-layout > *,

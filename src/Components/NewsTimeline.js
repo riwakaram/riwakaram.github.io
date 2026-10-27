@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import NewsEntryHeading from "./NewsEntryHeading";
 
 export default function NewsTimeline({ entries, renderLinks }) {
     const { hash } = useLocation();
@@ -37,8 +38,7 @@ export default function NewsTimeline({ entries, renderLinks }) {
                                     {entries.filter((entry) => entry.date.endsWith(year)).map((entry) => (
                                         <article className={`card-item news-entry-card${entry.media ? " has-media" : ""}`} key={`${entry.date}-${entry.title}`}>
                                             <div className="news-entry-content">
-                                                <time>{entry.date}</time>
-                                                <h3>{entry.title}</h3>
+                                                <NewsEntryHeading entry={entry} />
                                                 <p>{entry.text}</p>
                                                 {renderLinks(entry)}
                                             </div>
